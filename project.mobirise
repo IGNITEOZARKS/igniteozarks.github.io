@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ignite Church at Lakewood",
-    "currentPage": "contactus.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -68,7 +68,7 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
+        "title": "Ignite Church at Lakewood",
         "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
@@ -4791,7 +4791,8 @@
     "contactus.html": {
       "settings": {
         "title": "ContactUs",
-        "order": "1"
+        "order": "1",
+        "meta_descr": ""
       },
       "components": [
         {
