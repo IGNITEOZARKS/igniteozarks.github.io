@@ -35,11 +35,11 @@ body {
 }
 .display-7 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .display-7 > .mbr-iconfont {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
@@ -73,9 +73,9 @@ body {
     line-height: calc( 1.4 * (1.42rem + (2.2 - 1.42) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-7 {
-    font-size: 0.96rem;
-    font-size: calc( 1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 0.8rem;
+    font-size: calc( 1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20))));
   }
 }
 /* Buttons */
@@ -682,6 +682,38 @@ body {
 a {
   transition: color 0.6s;
 }
+.cid-dPVsrmzS4D {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  background: transparent;
+}
+.cid-dPVsrmzS4D .news {
+  width: 250px;
+  background-color: #22a5e5;
+  height: 31px;
+}
+.cid-dPVsrmzS4D .news-scroll a {
+  text-decoration: none;
+}
+.cid-dPVsrmzS4D .dot {
+  height: 6px;
+  width: 6px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 2px !important;
+  background-color: #d20320;
+  border-radius: 50%;
+  display: inline-block;
+}
+.cid-dPVsrmzS4D DIV {
+  color: #ffffff;
+}
+.cid-dPVsrmzS4D .mbr-text {
+  color: #030303;
+}
+.cid-dPVsrmzS4D .mbr-section-subtitle {
+  color: #ffffff;
+}
 .cid-tqsSQoVE7T {
   padding-top: 0rem;
   padding-bottom: 0rem;
@@ -811,7 +843,7 @@ a {
 }
 .cid-trT1Mp1p2z .mbr-text,
 .cid-trT1Mp1p2z .mbr-section-btn {
-  text-align: center;
+  text-align: left;
 }
 .cid-trT1Mp1p2z .item-title {
   text-align: center;
@@ -1300,6 +1332,34 @@ a {
     max-width: calc(100% + 2rem);
     left: -1rem;
   }
+}
+.cid-KsHfqJrjNA .hidden {
+  display: none;
+}
+.cid-KsHfqJrjNA .floating-bar {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #149dcc;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 2px #999;
+  transition: 0.3s;
+  z-index: 99999;
+}
+.cid-KsHfqJrjNA .floating-bar:hover {
+  background-color: #4db6da;
+}
+.cid-KsHfqJrjNA .floating-button {
+  color: #ffffff;
+}
+.cid-KsHfqJrjNA .valign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .cid-s48OLK6784 {
   z-index: 1000;
