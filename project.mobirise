@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ignite Church at Lakewood",
-    "currentPage": "about.html",
+    "currentPage": "privacy.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -60,7 +60,7 @@
         "url": "https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 87,
+    "uniqCompNum": 89,
     "versionPublish": "5.7.4",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -70,7 +70,19 @@
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
-    "cookiesAlert": false,
+    "cookiesAlert": {
+      "customDialogSelector": false,
+      "colorText": "#424a4d",
+      "colorBg": "#ffffff",
+      "colorButton": "#148ed7",
+      "rejectColor": "#ffffff",
+      "colorLink": "#424a4d",
+      "underlineLink": true,
+      "opacityOverlay": "1",
+      "text": "We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.",
+      "textButton": "GOT IT",
+      "rejectText": "REJECT"
+    },
     "gdpr": false,
     "publishChangesOnly": false,
     "witsec-white-label": true,
@@ -1029,7 +1041,7 @@
     "about.html": {
       "settings": {
         "title": "About Us",
-        "order": "7",
+        "order": "8",
         "meta_descr": ""
       },
       "components": [
@@ -1687,7 +1699,7 @@
     "contact.html": {
       "settings": {
         "title": "Contact",
-        "order": "6"
+        "order": "7"
       },
       "components": [
         {
@@ -2389,7 +2401,7 @@
     "giving.html": {
       "settings": {
         "title": "Giving",
-        "order": "4"
+        "order": "5"
       },
       "components": [
         {
@@ -3042,7 +3054,7 @@
     "prayer.html": {
       "settings": {
         "title": "Need Prayer?",
-        "order": "3"
+        "order": "4"
       },
       "components": [
         {
@@ -3689,7 +3701,7 @@
     "email.html": {
       "settings": {
         "title": "Email Signup",
-        "order": "2"
+        "order": "3"
       },
       "components": [
         {
@@ -4298,7 +4310,7 @@
     "connect.html": {
       "settings": {
         "title": "Connect",
-        "order": "5"
+        "order": "6"
       },
       "components": [
         {
@@ -4990,7 +5002,7 @@
     "contactus.html": {
       "settings": {
         "title": "Contact Us",
-        "order": "1"
+        "order": "2"
       },
       "components": [
         {
@@ -5549,6 +5561,443 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        }
+      ]
+    },
+    "privacy.html": {
+      "settings": {
+        "title": "Privacy",
+        "order": "1",
+        "meta_descr": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@sticky)": {
+              ".navbar-dropdown": {
+                "position": "relative !important"
+              }
+            },
+            "& when (@sticky)": {
+              "z-index": "1000",
+              "width": "100%",
+              "& when not (@transparent)": {
+                "position": "relative",
+                "min-height": "60px"
+              },
+              "nav.navbar": {
+                "position": "fixed"
+              }
+            },
+            ".dropdown-item:before": {
+              "font-family": "Moririse2 !important",
+              "content": "'\\e966'",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "transform": "scale(0, 1)",
+              "transition": "all 0.25s ease-in-out"
+            },
+            ".dropdown-menu": {
+              "padding": "0"
+            },
+            ".dropdown-item": {
+              "border-bottom": "1px solid #e6e6e6",
+              "&:hover, &:focus": {
+                "background": "@primaryColor !important",
+                "color": "white !important"
+              }
+            },
+            ".nav-dropdown .link": {
+              "padding": "0 0.3em !important",
+              "margin": ".667em 1em !important"
+            },
+            ".nav-dropdown .link.dropdown-toggle::after": {
+              "margin-left": "0.5rem",
+              "margin-top": "0.2rem"
+            },
+            ".nav-link": {
+              "position": "relative"
+            },
+            ".container": {
+              "display": "flex",
+              "margin": "auto"
+            },
+            ".iconfont-wrapper": {
+              "color": "@iconsColor !important",
+              "font-size": "1.5rem",
+              "padding-right": ".5rem"
+            },
+            ".navbar-caption": {
+              "padding-right": "4rem"
+            },
+            ".navbar-nav": {},
+            ".dropdown-menu, .navbar.opened": {
+              "background": "@menuBgColor !important"
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              ".mbr-iconfont": {
+                "margin-left": "-1.8rem",
+                "padding-right": "1rem",
+                "font-size": "inherit",
+                "&:before": {
+                  "display": "inline-block",
+                  "transform": "scale(1, 1)",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.235em 1.5em 0.235em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar": {
+              "min-height": "77px",
+              "transition": "all .3s",
+              "border-bottom": "1px solid transparent",
+              "&:not(.navbar-short)": {
+                "border-bottom": "1px solid #e6e6e6"
+              },
+              "& when not (@transparent)": {
+                "background": "@menuBgColor"
+              },
+              "& when (@transparent)": {
+                "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity)"
+              },
+              "&.opened": {
+                "transition": "all .3s"
+              },
+              ".dropdown-item": {
+                "padding": ".5rem 1.8rem"
+              },
+              ".navbar-logo img": {
+                "width": "auto"
+              },
+              ".navbar-collapse": {
+                "justify-content": "flex-end",
+                "z-index": "1",
+                "& when not (@showItems)": {
+                  "display": "none !important"
+                }
+              },
+              "&.collapsed": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                      "max-height": "~\"calc(98.5vh - @{logoSize}rem)\""
+                    }
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem",
+                  "text-align": "center"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-right": "0",
+                  "padding-top": ".5rem",
+                  "padding-bottom": ".5rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3.8rem !important"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem !important",
+                  "text-align": "center"
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial",
+                  "flex-basis": "auto",
+                  "word-break": "break-word",
+                  "padding-right": "2rem"
+                },
+                ".navbar-toggler": {
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": ".5rem",
+                  "padding-bottom": ".5rem"
+                }
+              },
+              "&.navbar-short": {
+                "min-height": "60px",
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3rem !important"
+                  }
+                },
+                ".navbar-brand": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "flex-shrink": "0",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "0",
+              "transition": "all .3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".dropdown-item.active, .dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded=\"true\"]": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center",
+              "min-width": "170px"
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all .2s",
+              "position": "relative",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "currentColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all .2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all .2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              },
+              "&:nth-child(2)": {
+                "transform": "rotate(45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(3)": {
+                "transform": "rotate(-45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "padding": ".5rem 1rem",
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center"
+            },
+            ".icons-menu": {
+              "flex-wrap": "nowrap",
+              "display": "flex",
+              "justify-content": "center",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "padding-top": "0.3rem",
+              "text-align": "center"
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "77px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~'+' 2rem)",
+                "left": "-1rem"
+              }
+            }
+          },
+          "_name": "menu1",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcons\" checked>\n        <select title=\"Amount\" name=\"iconsAmount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#fafafa\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButtons\">\n        <header>Styles</header>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"range\" title=\"Opacity\" name=\"opacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"transparent\">\n        <input type=\"color\" title=\"Color\" name=\"menuBgColor\" value=\"#000000\">\n    </mbr-parameters>\n    <nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n                     'collapsed':collapsed}\">\n        <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/ignitelakewood-white-121x71.png\" alt=\"Ignite Church at Lakewood\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"></a></span>\n            </div>\n            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems\">\n                <div class=\"hamburger\">\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                </div>\n            </button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n                <ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\"><a class=\"nav-link link text-warning text-primary\" href=\"connect.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Connect</a></li><li class=\"nav-item\"><a class=\"nav-link link text-warning text-primary\" href=\"about.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">About<br></a></li><li class=\"nav-item\"><a class=\"nav-link link text-warning text-primary\" href=\"giving.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Giving</a></li></ul>\n                <div class=\"icons-menu\" mbr-if=\"showIcons\">\n                    <a class=\"iconfont-wrapper\" href=\"https://www.facebook.com/ignitestonecounty/\" target=\"_blank\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-facebook socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"mailto:ignitetheozarks@gmail.com\" mbr-if=\"iconsAmount > 1\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont mobi-mbri-letter mobi-mbri\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-instagram socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-linkedin socicon\"></span>\n                    </a>\n                </div>\n                <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Download Now</a></div>\n            </div>\n        </div>\n    </nav>\n<div class=\"powr-popup\" id=\"2f0ed3a7_1673524878\"></div><script src=\"https://www.powr.io/powr.js?platform=html\"></script>\n</section>",
+          "_cid": "s48OLK6784",
+          "_sourceTheme": "mobirise5",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script src=\"https://www.powr.io/powr.js?platform=html\"></script>"
+          ],
+          "_anchor": "menu1-2f",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": "witsec-code-editor/components",
+          "_isSecondary": true,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "img": {
+              "width": "auto"
+            }
+          },
+          "_name": "witsec-html-block",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"mbr-section mbr-section--no-padding\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n    <input type=\"image\" title=\"Background Image\" value=\"../_images/background.jpg\" parallax>\n    <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n    <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<!-- Place your own code below -->\n<style>\n  [data-custom-class='body'], [data-custom-class='body'] * {\n          background: transparent !important;\n        }\n[data-custom-class='title'], [data-custom-class='title'] * {\n          font-family: Arial !important;\nfont-size: 26px !important;\ncolor: #000000 !important;\n        }\n[data-custom-class='subtitle'], [data-custom-class='subtitle'] * {\n          font-family: Arial !important;\ncolor: #595959 !important;\nfont-size: 14px !important;\n        }\n[data-custom-class='heading_1'], [data-custom-class='heading_1'] * {\n          font-family: Arial !important;\nfont-size: 19px !important;\ncolor: #000000 !important;\n        }\n[data-custom-class='heading_2'], [data-custom-class='heading_2'] * {\n          font-family: Arial !important;\nfont-size: 17px !important;\ncolor: #000000 !important;\n        }\n[data-custom-class='body_text'], [data-custom-class='body_text'] * {\n          color: #595959 !important;\nfont-size: 14px !important;\nfont-family: Arial !important;\n        }\n[data-custom-class='link'], [data-custom-class='link'] * {\n          color: #3030F1 !important;\nfont-size: 14px !important;\nfont-family: Arial !important;\nword-break: break-word !important;\n        }\n</style>\n\n      <div data-custom-class=\"body\">\n      <div><strong><span style=\"font-size: 26px;\"><span data-custom-class=\"title\"><bdt class=\"block-component\"></bdt><bdt class=\"question\">PRIVACY POLICY</bdt><bdt class=\"statement-end-if-in-editor\"></bdt></span></span></strong></div><div><br></div><div><span style=\"color: rgb(127, 127, 127);\"><strong><span style=\"font-size: 15px;\"><span data-custom-class=\"subtitle\">Last updated <bdt class=\"question\">March 04, 2023</bdt></span></span></strong></span></div><div><br></div><div><br></div><div><br></div><div style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span data-custom-class=\"body_text\">This privacy notice for <bdt class=\"question\">Ignite Church at Lakewood<bdt class=\"block-component\"></bdt></bdt> (<bdt class=\"block-component\"></bdt>\"<bdt class=\"block-component\"></bdt><strong>Company</strong><bdt class=\"statement-end-if-in-editor\"></bdt>,\" \"<strong>we</strong>,\" \"<strong>us</strong>,\" or \"<strong>our</strong>\"<bdt class=\"statement-end-if-in-editor\"></bdt></span><span data-custom-class=\"body_text\">), describes how and why we might collect, store, use, and/or share (<bdt class=\"block-component\"></bdt>\"<strong>process</strong>\"<bdt class=\"statement-end-if-in-editor\"></bdt>) your information when you use our services (<bdt class=\"block-component\"></bdt>\"<strong>Services</strong>\"<bdt class=\"statement-end-if-in-editor\"></bdt>), such as when you:</span></span></span><span style=\"font-size: 15px;\"><span style=\"color: rgb(127, 127, 127);\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></div><ul><li style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">Visit our website<bdt class=\"block-component\"></bdt> at <bdt class=\"question\"><a href=\"https://www.ignitetheozarks.com\" target=\"_blank\" data-custom-class=\"link\">https://www.ignitetheozarks.com</a></bdt><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><bdt class=\"statement-end-if-in-editor\">, or any website of ours that links to this privacy notice</bdt></span></span></span></span></span></span></span></span></li></ul><div><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(127, 127, 127);\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></bdt></span></span></span></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(127, 127, 127);\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></div><ul><li style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">Engage with us in other related ways, including any sales, marketing, or events<span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><bdt class=\"statement-end-if-in-editor\"></bdt></span></span></span></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(127, 127, 127);\"><span data-custom-class=\"body_text\"><strong>Questions or concerns? </strong>Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <bdt class=\"question\">ignitetheozarks@gmail.com</bdt>.</span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><strong><span style=\"font-size: 15px;\"><span data-custom-class=\"heading_1\">SUMMARY OF KEY POINTS</span></span></strong></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong><em>This summary provides key points from our privacy notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for. You can also click </em></strong></span></span><a data-custom-class=\"link\" href=\"#toc\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong><em>here</em></strong></span></span></a><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong><em> to go directly to our table of contents.</em></strong></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong>What personal information do we process?</strong> When you visit, use, or navigate our Services, we may process personal information depending on how you interact with <bdt class=\"block-component\"></bdt><bdt class=\"question\">Ignite Church at Lakewood</bdt><bdt class=\"statement-end-if-in-editor\"></bdt> and the Services, the choices you make, and the products and features you use. Click </span></span><a data-custom-class=\"link\" href=\"#personalinfo\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\">here</span></span></a><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"> to learn more.</span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong>Do we process any sensitive personal information?</strong> <bdt class=\"block-component\"></bdt>We do not process sensitive personal information.<bdt class=\"else-block\"></bdt></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong>Do we receive any information from third parties?</strong> <bdt class=\"block-component\"></bdt>We do not receive any information from third parties.<bdt class=\"else-block\"></bdt></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong>How do we process your information?</strong> We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Click </span></span><a data-custom-class=\"link\" href=\"#infouse\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\">here</span></span></a><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"> to learn more.</span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong>In what situations and with which <bdt class=\"block-component\"></bdt>parties do we share personal information?</strong> We may share information in specific situations and with specific <bdt class=\"block-component\"></bdt>third parties. Click </span></span><a data-custom-class=\"link\" href=\"#whoshare\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\">here</span></span></a><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"> to learn more.<bdt class=\"block-component\"></bdt></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong>What are your rights?</strong> Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Click </span></span><a data-custom-class=\"link\" href=\"#privacyrights\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\">here</span></span></a><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"> to learn more.</span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong>How do you exercise your rights?</strong> The easiest way to exercise your rights is by filling out our data subject request form available <bdt class=\"block-component\"></bdt></span></span><a data-custom-class=\"link\" href=\"https://app.termly.io/notify/24316b44-5849-4df2-8ee6-84fb1df2ae70\" rel=\"noopener noreferrer\" target=\"_blank\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\">here</span></span></a><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt>, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.</span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\">Want to learn more about what <bdt class=\"block-component\"></bdt><bdt class=\"question\">Ignite Church at Lakewood</bdt><bdt class=\"statement-end-if-in-editor\"></bdt> does with any information we collect? Click </span></span><a data-custom-class=\"link\" href=\"#toc\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\">here</span></span></a><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"> to review the notice in full.</span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><br></div><div id=\"toc\" style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">TABLE OF CONTENTS</span></strong></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><a data-custom-class=\"link\" href=\"#infocollect\"><span style=\"color: rgb(89, 89, 89);\">1. WHAT INFORMATION DO WE COLLECT?</span></a></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><a data-custom-class=\"link\" href=\"#infouse\"><span style=\"color: rgb(89, 89, 89);\">2. HOW DO WE PROCESS YOUR INFORMATION?<bdt class=\"block-component\"></bdt></span></a></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><a data-custom-class=\"link\" href=\"#whoshare\">3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></span><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></a><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><bdt class=\"block-component\"></bdt></span></span> </span> </span> </span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><a data-custom-class=\"link\" href=\"#cookies\"><span style=\"color: rgb(89, 89, 89);\">4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</span></a><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><bdt class=\"statement-end-if-in-editor\"></bdt></span></span><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"color: rgb(89, 89, 89);\"><bdt class=\"block-component\"></bdt></span></span><bdt class=\"block-component\"></bdt></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><a data-custom-class=\"link\" href=\"#inforetain\"><span style=\"color: rgb(89, 89, 89);\">5. HOW LONG DO WE KEEP YOUR INFORMATION?</span></a><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"color: rgb(89, 89, 89);\"><bdt class=\"block-component\"></bdt><bdt class=\"block-component\"></bdt></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><a data-custom-class=\"link\" href=\"#infominors\"><span style=\"color: rgb(89, 89, 89);\">6. DO WE COLLECT INFORMATION FROM MINORS?</span></a><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><bdt class=\"statement-end-if-in-editor\"></bdt></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><a data-custom-class=\"link\" href=\"#privacyrights\">7. WHAT ARE YOUR PRIVACY RIGHTS?</a></span></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><a data-custom-class=\"link\" href=\"#DNT\"><span style=\"color: rgb(89, 89, 89);\">8. CONTROLS FOR DO-NOT-TRACK FEATURES</span></a></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><a data-custom-class=\"link\" href=\"#caresidents\"><span style=\"color: rgb(89, 89, 89);\">9. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</span></a></span><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></bdt></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><a data-custom-class=\"link\" href=\"#policyupdates\"><span style=\"color: rgb(89, 89, 89);\">10. DO WE MAKE UPDATES TO THIS NOTICE?</span></a></span></div><div style=\"line-height: 1.5;\"><a data-custom-class=\"link\" href=\"#contact\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\">11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</span></a></div><div style=\"line-height: 1.5;\"><a data-custom-class=\"link\" href=\"#request\"><span style=\"color: rgb(89, 89, 89);\">12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</span></a></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><br></div><div id=\"infocollect\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">1. WHAT INFORMATION DO WE COLLECT?</span></strong></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div id=\"personalinfo\" style=\"line-height: 1.5;\"><span data-custom-class=\"heading_2\" style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 15px;\"><strong>Personal information you disclose to us</strong></span></span></div><div><div><br></div><div style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong><em>In Short:</em></strong></span></span></span></span><span data-custom-class=\"body_text\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong><em> </em></strong><em>We collect personal information that you provide to us.</em></span></span></span></span></span></span></div></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">We collect personal information that you voluntarily provide to us when you <span style=\"font-size: 15px;\"><bdt class=\"block-component\"></bdt></span></span><span data-custom-class=\"body_text\">express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.</span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><bdt class=\"block-component\"></bdt></span></span></span></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong>Personal Information Provided by You.</strong> The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:<span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"forloop-component\"></bdt></span></span></span></span></span></div><ul><li style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"question\">names</bdt></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"forloop-component\"></bdt></span></span></span></span></span></div><ul><li style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"question\">email addresses</bdt></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"forloop-component\"></bdt></span><span data-custom-class=\"body_text\"><bdt class=\"statement-end-if-in-editor\"></bdt></span></span></span></span></span></div><div id=\"sensitiveinfo\" style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong>Sensitive Information.</strong> <bdt class=\"block-component\"></bdt>We do not process sensitive information.</span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"else-block\"></bdt></span></span><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"><bdt class=\"block-component\"></bdt></bdt></span></span></span></span><bdt class=\"block-component\"></span></span></bdt></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.</span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></bdt></span><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"statement-end-if-in-editor\"><bdt class=\"block-component\"></bdt></bdt></span></span></span></span></bdt></span></span></span></span></span></span></span></span><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></span></div><div id=\"infouse\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">2. HOW DO WE PROCESS YOUR INFORMATION?</span></strong></span></span></span></span></span></div><div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong><em>In Short: </em></strong><em>We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.</em></span></span></span></span></span></span></div></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong>We process your personal information for a variety of reasons, depending on how you interact with our Services, including:</strong><bdt class=\"block-component\"></bdt></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"></bdt></span></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"></bdt></span></span></span></span></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"></bdt></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></li></ul><p style=\"font-size: 15px; line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"></bdt></span></span></span></span></span></span></span></span></span></span></span></li></ul><p style=\"font-size: 15px; line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"></bdt></span></span></span></span></span></span></span></span></span></span></span></li></ul><p style=\"font-size: 15px; line-height: 1.5;\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></span></span></span></span></span></span></li></ul><p style=\"font-size: 15px; line-height: 1.5;\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></span></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"></bdt></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"></bdt></span></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"></bdt></span></span></span></li></ul><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><bdt class=\"block-component\"><span data-custom-class=\"body_text\"></span></bdt></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></bdt></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></div><ul><li style=\"line-height: 1.5;\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><strong>To identify usage trends.</strong> We may process information about how you use our Services to better understand how they are being used so we can improve them.</span></span><bdt class=\"statement-end-if-in-editor\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></bdt></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></bdt></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></bdt></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></bdt></span></span><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></div><div style=\"line-height: 1.5;\"><br></div><div id=\"whoshare\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</span></strong></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong><em>In Short:</em></strong><em> We may share information in specific situations described in this section and/or with the following <bdt class=\"block-component\"></bdt>third parties.</em></span></span></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\">We <bdt class=\"block-component\"></bdt>may need to share your personal information in the following situations:</span></span></div><ul><li style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><strong>Business Transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</span></span></li></ul><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></span></li></ul><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><bdt class=\"block-component\"><span data-custom-class=\"body_text\"></span></bdt></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></bdt></span></span></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></li></ul><div style=\"line-height: 1.5;\"><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><bdt class=\"block-component\"><span data-custom-class=\"heading_1\"></span></bdt></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div id=\"cookies\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</span></strong></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong><em>In Short:</em></strong><em> We may use cookies and other tracking technologies to collect and store your information.</em></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice<span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt>.</span><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"statement-end-if-in-editor\"></bdt></span></span></span></span></span></span></span></span><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span><bdt class=\"block-component\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></span></span></span></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div id=\"inforetain\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">5. HOW LONG DO WE KEEP YOUR INFORMATION?</span></strong></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong><em>In Short: </em></strong><em>We keep your information for as long as necessary to <bdt class=\"block-component\"></bdt>fulfill<bdt class=\"statement-end-if-in-editor\"></bdt> the purposes outlined in this privacy notice unless otherwise required by law.</em></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements).<bdt class=\"block-component\"></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">When we have no ongoing legitimate business need to process your personal information, we will either delete or <bdt class=\"block-component\"></bdt>anonymize<bdt class=\"statement-end-if-in-editor\"></bdt> such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.<span style=\"color: rgb(89, 89, 89);\"><bdt class=\"block-component\"></bdt></span><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div id=\"infominors\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">6. DO WE COLLECT INFORMATION FROM MINORS?</span></strong></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong><em>In Short:</em></strong><em> We do not knowingly collect data from or market to <bdt class=\"block-component\"></bdt>children under 18 years of age<bdt class=\"else-block\"></bdt>.</em><bdt class=\"block-component\"></bdt></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at <span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt><bdt class=\"question\">ignitetheozarks@gmail.com</bdt><bdt class=\"else-block\"></bdt></span></span>.</span><span data-custom-class=\"body_text\"><bdt class=\"else-block\"></bdt></span></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div id=\"privacyrights\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">7. WHAT ARE YOUR PRIVACY RIGHTS?</span></strong></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong><em>In Short:</em></strong><em> <span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><em><bdt class=\"block-component\"></bdt></em></span></span> </span>You may review, change, or terminate your account at any time.</em><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"> </span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here: <span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(48, 48, 241);\"><span data-custom-class=\"body_text\"><a data-custom-class=\"link\" href=\"https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm\" rel=\"noopener noreferrer\" target=\"_blank\"><span style=\"font-size: 15px;\">https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm</span></a></span></span></span></span></span>.</span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">If you are located in Switzerland, the contact details for the data protection authorities are available here: <span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(48, 48, 241);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><a data-custom-class=\"link\" href=\"https://www.edoeb.admin.ch/edoeb/en/home.html\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.edoeb.admin.ch/edoeb/en/home.html</a></span></span></span></span></span></span>.</span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div id=\"withdrawconsent\" style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong><u>Withdrawing your consent:</u></strong> If we are relying on your consent to process your personal information,<bdt class=\"block-component\"></bdt> which may be express and/or implied consent depending on the applicable law,<bdt class=\"statement-end-if-in-editor\"></bdt> you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section <bdt class=\"block-component\"></bdt>\"<bdt class=\"statement-end-if-in-editor\"></bdt></span></span></span><a data-custom-class=\"link\" href=\"#contact\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</span></span></span></a><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt>\"<bdt class=\"statement-end-if-in-editor\"></bdt> below<bdt class=\"block-component\"></bdt>.</span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\">However, please note that this will not affect the lawfulness of the processing before its withdrawal nor,<bdt class=\"block-component\"></bdt> when applicable law allows,<bdt class=\"statement-end-if-in-editor\"></bdt> will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.<bdt class=\"block-component\"></bdt></span></span><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong><u>Cookies and similar technologies:</u></strong> Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Services. To opt out of interest-based advertising by advertisers on our Services visit <span style=\"color: rgb(48, 48, 241);\"><span data-custom-class=\"body_text\"><a data-custom-class=\"link\" href=\"http://www.aboutads.info/choices/\" rel=\"noopener noreferrer\" target=\"_blank\"><span style=\"font-size: 15px;\">http://www.aboutads.info/choices/</span></a></span></span>. <span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><bdt class=\"statement-end-if-in-editor\"></bdt></span></span></span></span></span></span></span></span></span></span></span></span><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\">If you have questions or comments about your privacy rights, you may email us at <bdt class=\"question\">ignitetheozarks@gmail.com</bdt>.</span></span><bdt class=\"statement-end-if-in-editor\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></span></span></bdt></div><div style=\"line-height: 1.5;\"><br></div><div id=\"DNT\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">8. CONTROLS FOR DO-NOT-TRACK FEATURES</span></strong></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (<bdt class=\"block-component\"></bdt>\"DNT\"<bdt class=\"statement-end-if-in-editor\"></bdt>) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage no uniform technology standard for <bdt class=\"block-component\"></bdt>recognizing<bdt class=\"statement-end-if-in-editor\"></bdt> and implementing DNT signals has been <bdt class=\"block-component\"></bdt>finalized<bdt class=\"statement-end-if-in-editor\"></bdt>. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.</span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div id=\"caresidents\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">9. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</span></strong></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><strong><em>In Short: </em></strong><em>Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.</em></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">California Civil Code Section 1798.83, also known as the <bdt class=\"block-component\"></bdt>\"Shine The Light\"<bdt class=\"statement-end-if-in-editor\"></bdt> law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.</span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">If you are under 18 years of age, reside in California, and have a registered account with Services, you have the right to request removal of unwanted data that you publicly post on the Services. To request removal of such data, please contact us using the contact information provided below and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Services, but please be aware that the data may not be completely or comprehensively removed from all our systems (e.g.<bdt class=\"block-component\"></bdt>,<bdt class=\"statement-end-if-in-editor\"></bdt> backups, etc.).<span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></bdt></span></span></span></span></span></span></span></span></span></span></span></bdt></span></span></span></span></span></span></span></span></span></span><bdt class=\"block-component\"><span style=\"font-size: 15px;\"></bdt></span></div><div style=\"line-height: 1.5;\"><br></div><div id=\"policyupdates\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">10. DO WE MAKE UPDATES TO THIS NOTICE?</span></strong></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><em><strong>In Short: </strong>Yes, we will update this notice as necessary to stay compliant with relevant laws.</em></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">We may update this privacy notice from time to time. The updated version will be indicated by an updated <bdt class=\"block-component\"></bdt>\"Revised\"<bdt class=\"statement-end-if-in-editor\"></bdt> date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.</span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div id=\"contact\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</span></strong></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\">If you have questions or comments about this notice, you may <span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt>email us at <bdt class=\"question\">ignitetheozarks@gmail.com</bdt><bdt class=\"statement-end-if-in-editor\"></bdt></span></span><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"> or by post to:</span></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"question\">Ignite Church at Lakewood</bdt></span></span></span></span></span><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt></span></span></bdt></span></span></span></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"question\">19585 MO-413</bdt><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><bdt class=\"block-component\"></bdt></span></span></span></bdt></span></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"question\">Branson West</bdt><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><bdt class=\"block-component\"></bdt><bdt class=\"block-component\"></bdt>, <bdt class=\"question\">MO</bdt><bdt class=\"statement-end-if-in-editor\"></bdt><bdt class=\"block-component\"></bdt><bdt class=\"block-component\"></bdt> <bdt class=\"question\">65737</bdt><bdt class=\"statement-end-if-in-editor\"></bdt><bdt class=\"block-component\"></bdt><bdt class=\"block-component\"></bdt><bdt class=\"block-component\"></bdt></span></span></span></span></div><div style=\"line-height: 1.5;\"><span data-custom-class=\"body_text\" style=\"font-size: 15px;\"><bdt class=\"question\">United States<span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><bdt class=\"statement-end-if-in-editor\"></bdt></span></span></span></span></span></span></span></span></span></bdt></span><bdt class=\"block-component\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"></bdt></span></span></span></bdt><bdt class=\"statement-end-if-in-editor\"></bdt></span></span></span><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><bdt class=\"statement-end-if-in-editor\"></bdt></span></span></span></bdt></span></span></span></span><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89);\"><bdt class=\"statement-end-if-in-editor\"><span style=\"color: rgb(89, 89, 89);\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"><bdt class=\"block-component\"></bdt></span></span></span></span></span></span><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px;\"><span data-custom-class=\"body_text\"><bdt class=\"statement-end-if-in-editor\"><bdt class=\"block-component\"></bdt></span></span></div><div style=\"line-height: 1.5;\"><br></div><div id=\"request\" style=\"line-height: 1.5;\"><span style=\"color: rgb(127, 127, 127);\"><span style=\"color: rgb(89, 89, 89); font-size: 15px;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span id=\"control\" style=\"color: rgb(0, 0, 0);\"><strong><span data-custom-class=\"heading_1\">12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</span></strong></span></span></span></span></span></div><div style=\"line-height: 1.5;\"><br></div><div style=\"line-height: 1.5;\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span style=\"font-size: 15px; color: rgb(89, 89, 89);\"><span data-custom-class=\"body_text\"><bdt class=\"block-component\"></bdt>You have the right to request access to the personal information we collect from you, change that information, or delete it. <bdt class=\"statement-end-if-in-editor\"></bdt>To request to review, update, or delete your personal information, please <bdt class=\"block-component\"></bdt>fill out and submit a </span><span style=\"color: rgb(48, 48, 241);\"><span data-custom-class=\"body_text\"><span style=\"font-size: 15px;\"><a data-custom-class=\"link\" href=\"https://app.termly.io/notify/24316b44-5849-4df2-8ee6-84fb1df2ae70\" rel=\"noopener noreferrer\" target=\"_blank\">data subject access request</a></span></span></span><bdt class=\"block-component\"><span data-custom-class=\"body_text\"></bdt></span></span><span data-custom-class=\"body_text\">.</span></span></span></div><style>\n      ul {\n        list-style-type: square;\n      }\n      ul > li > ul {\n        list-style-type: circle;\n      }\n      ul > li > ul > li > ul {\n        list-style-type: square;\n      }\n      ol li {\n        font-family: Arial ;\n      }\n    </style>\n      </div>\n<!-- Place your own code above -->\n\n</section>",
+          "_cid": "txy900GLEO",
+          "_anchor": "witsec-html-block-2g",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         }
       ]
