@@ -34,7 +34,7 @@ body {
   font-size: 2.75rem;
 }
 .display-7 {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 1.1rem;
   line-height: 1.5;
 }
@@ -2460,6 +2460,7 @@ a {
 .cid-tsxgqg4jzI .mbr-text,
 .cid-tsxgqg4jzI .mbr-section-btn {
   color: #000000;
+  text-align: left;
 }
 .cid-tsxwibQTvR {
   padding-top: 3rem;
@@ -2480,6 +2481,7 @@ a {
 }
 .cid-tsxwibQTvR .mbr-section-subtitle {
   color: #ffffff;
+  text-align: left;
 }
 .cid-tsxvCM4ZOV {
   background-color: #ffffff;
