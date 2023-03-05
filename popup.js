@@ -93,18 +93,18 @@ var createDialog = function(text , title) {
 	//350.00px
     //create the dialog
     //$( ".selector" ).dialog({ dialogClass: 'no-close' });
-    $('#dialog').dialog();
-   // $('#dialog').dialog({open : function() {
-     //   var win = $(window);
+   
+   $('#dialog').dialog({open : function() {
+     var win = $(window);
         //closeBtnText
         //{ dialogClass: 'no-close' });
        // $(this).closest('.ui-dialog').css({'ui-dialog-titlebar-close': 'visibility: contents'});
        // $(this).closest('.ui-dialog').css({'dialogClass': 'no-close'});
        // $(this).closest('.ui-dialog').css({'buttons': {'Close': function () {$(this).dialog('close')}}});
-     //   $(this).closest('.ui-dialog').css({'width':'430px'});
-     //   $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 168});
+     $(this).closest('.ui-dialog').css({'width':'430px'});
+     $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 168});
        // $(this).parent().children().children('.ui-dialog-titlebar-close').hide();
-   // }});
+   }});
 
    // document.getElementById("modalClose").addEventListener("click", closeit);
     //selecttext();
