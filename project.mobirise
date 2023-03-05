@@ -73,7 +73,7 @@
     "gdpr": false,
     "publishChangesOnly": false,
     "witsec-white-label": true,
-    "google-analytics": "  <link rel=\"stylesheet\" href=\"//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css\">\n     <script src=\"https://code.jquery.com/jquery-1.12.4.js\"></script>\n  <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>\n<script src=\"popup.js\"></script>",
+    "google-analytics": " <script src=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js\" integrity=\"sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"></script> \n<link rel=\"stylesheet\" href=\"//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css\">\n     <script src=\"https://code.jquery.com/jquery-1.12.4.js\"></script>\n  <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>\n<script src=\"popup.js\"></script>",
     "witsec-mailform-to": "ckonkol@gmail.com",
     "witsec-mailform-to-alt": "",
     "witsec-mailform-from": "ckonkol@gmail.com",
