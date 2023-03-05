@@ -16,7 +16,5 @@
     <li>Join us every Monday Night @ 7pm</li>
   </ul>
 <br>
-<button id='modalClose' type="button">Close</button>
-<br>
 <center><div id="footer" style="color: coral;font-size: smaller;">last updated 3/05/2023</div></center>
 <br>
