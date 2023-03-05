@@ -98,7 +98,7 @@ var createDialog = function(text , title) {
      var win = $(window);
         //closeBtnText
         //{ dialogClass: 'no-close' });
-       // $(this).closest('.ui-dialog').css({'ui-dialog-titlebar-close': 'visibility: contents'});
+        $(this).closest('.ui-dialog').css({'ui-dialog-titlebar-close': 'visibility: contents'});
        // $(this).closest('.ui-dialog').css({'dialogClass': 'no-close'});
        // $(this).closest('.ui-dialog').css({'buttons': {'Close': function () {$(this).dialog('close')}}});
      $(this).closest('.ui-dialog').css({'width':'430px'});
@@ -106,7 +106,8 @@ var createDialog = function(text , title) {
        // $(this).parent().children().children('.ui-dialog-titlebar-close').hide();
    }});
 
-   // document.getElementById("modalClose").addEventListener("click", closeit);
+    document.getElementById("modalClose").addEventListener("click", closeit);
+	  document.getElementsByClassName("ui-dialog-titlebar-close").innerHTML = "X";
     //selecttext();
 }
 
