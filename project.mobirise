@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ignite Church at Lakewood",
-    "currentPage": "index.html",
+    "currentPage": "welcome.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -64,7 +64,7 @@
     "versionPublish": "5.7.4",
     "imageResize": true,
     "screenshot": "screenshot.png",
-    "favicon": false,
+    "favicon": "@PROJECT_PATH@/assets/images/ignite-flame-red-128x166.png",
     "mbrsiteDomain": "hmezku0kqz",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -109,11 +109,12 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Ignite Church @ The Ozarks",
-        "meta_descr": "",
+        "title": "Ignite Church",
+        "meta_descr": "Ignite Church @ The Ozarks",
         "header_custom": "",
         "footer_custom": "",
-        "html_before": ""
+        "html_before": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/ignite-440x336.jpeg"
       },
       "components": [
         {
@@ -1013,7 +1014,9 @@
     "contact.html": {
       "settings": {
         "title": "Contact",
-        "order": "5"
+        "order": "5",
+        "meta_image": "@PROJECT_PATH@/assets/images/ignitelakewood-black-1-784x606.png",
+        "meta_descr": "Let us know how you are doing!"
       },
       "components": [
         {
@@ -1754,7 +1757,9 @@
     "giving.html": {
       "settings": {
         "title": "Giving",
-        "order": "3"
+        "order": "3",
+        "meta_image": "@PROJECT_PATH@/assets/images/ignitelakewood-black-1-784x606.png",
+        "meta_descr": "Be a cheerful giver!"
       },
       "components": [
         {
@@ -2407,7 +2412,9 @@
     "prayer.html": {
       "settings": {
         "title": "Need Prayer?",
-        "order": "2"
+        "order": "2",
+        "meta_image": "@PROJECT_PATH@/assets/images/prayerchangeseverything-web-600x337.jpg",
+        "meta_descr": "We believe Jesus hears us and prayer works!"
       },
       "components": [
         {
@@ -3054,7 +3061,9 @@
     "email.html": {
       "settings": {
         "title": "Email Signup",
-        "order": "1"
+        "order": "1",
+        "meta_descr": "Sign-up for email news @ Ignite!",
+        "meta_image": "@PROJECT_PATH@/assets/images/ignite-440x336.jpeg"
       },
       "components": [
         {
@@ -3663,7 +3672,9 @@
     "connect.html": {
       "settings": {
         "title": "Connect",
-        "order": "4"
+        "order": "4",
+        "meta_image": "@PROJECT_PATH@/assets/images/ignitelakewood-black-1-784x606.png",
+        "meta_descr": "There is a place for you here!"
       },
       "components": [
         {
@@ -4793,7 +4804,8 @@
       "settings": {
         "title": "Welcome",
         "order": "6",
-        "meta_descr": ""
+        "meta_descr": "Welcome to Ignite Church!",
+        "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
       "components": [
         {
@@ -5450,7 +5462,8 @@
     "loaves.html": {
       "settings": {
         "title": "Loaves",
-        "order": "8"
+        "order": "8",
+        "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
       "components": [
         {
