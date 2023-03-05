@@ -1,0 +1,22 @@
+<ul style="display: inline;">
+  <div id="inputText">
+  <li><b>Upcoming Events:</b></li>
+  <ul><li><b>Upcoming Events: </b>active</li></ul>
+  <ul style="padding-left:60px">
+    <li>report shows schedule with dates greater or equal to today.</li>
+  </ul>
+ <ul><li><b>Growth Track</b></li></ul>
+  <ul style="padding-left:60px">
+    <li>Get connected to Ignite!</li>
+    <li>Meets one hour after worship</li>
+    <li>Childcare Provided</li>
+  </ul>
+ <ul><li><b>Prayer Night</b></li></ul>
+  <ul style="padding-left:60px">
+    <li>Join us every Monday Night @ 7pm</li>
+  </ul>
+<br>
+<button id='modalClose' type="button">Close</button>
+<br>
+<center><div id="footer" style="color: coral;font-size: smaller;">last updated 3/05/2023</div></center>
+<br>
