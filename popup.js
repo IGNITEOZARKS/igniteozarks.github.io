@@ -122,9 +122,9 @@ function checkCookie() {
 }
 
 function closeit(){
-	window.close();
-    //$('#dialog').dialog('close');
-    //location.reload();
+	//window.close();
+    $('#dialog').dialog('close');
+    location.reload();
 }
 function getCookie(cname) {
   var name = cname + "=";
