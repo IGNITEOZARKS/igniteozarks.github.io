@@ -73,7 +73,7 @@
     "gdpr": false,
     "publishChangesOnly": false,
     "witsec-white-label": true,
-    "google-analytics": "<link href=\"https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css\" rel=\"stylesheet\"/>          \n  <script src=\"https://code.jquery.com/jquery-3.6.0.js\"></script>\n  <script src=\"https://code.jquery.com/ui/1.13.2/jquery-ui.js\"></script>\n<script src=\"popup.js\"></script>",
+    "google-analytics": "  <link rel=\"stylesheet\" href=\"//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css\">\n     <script src=\"https://code.jquery.com/jquery-1.12.4.js\"></script>\n  <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>\n<script src=\"popup.js\"></script>",
     "witsec-mailform-to": "ckonkol@gmail.com",
     "witsec-mailform-to-alt": "",
     "witsec-mailform-from": "ckonkol@gmail.com",
