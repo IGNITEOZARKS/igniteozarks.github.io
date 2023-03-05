@@ -44,7 +44,7 @@ jQuery.get('notification.txt', function(data) {
           // initialize title and body variables
         if (data.length > 3){
         var notifs = data;
-        var Titles = "Visitor Management System";
+        var Titles = "IGNITE CHURCH";
     if (getCookie('vmspopup')) {
 		return;
     }
