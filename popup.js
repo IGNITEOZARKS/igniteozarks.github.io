@@ -91,9 +91,12 @@ var createDialog = function(text , title) {
      //$('#dialog').prop('title' , title);
      $('#dialog').dialog({
     open: function(event, ui) {
+	  var win = $(window);  
         $('.ui-dialog-titlebar-close')
             .removeClass("ui-dialog-titlebar-close")
             .html('<span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp;  [close]</span>');
+        $(this).closest('.ui-dialog').css({'width':'430px'});
+        $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 168});
     }
 })
 
