@@ -89,7 +89,13 @@ var createDialog = function(text , title) {
     
     // update the <div>'s title
      $('#dialog').prop('title' , title);
-     $('#dialog').dialog();
+     $('#dialog').dialog({
+    open: function(event, ui) {
+        $('.ui-dialog-titlebar-close')
+            .removeClass("ui-dialog-titlebar-close")
+            .html('<span style="float:right;">Close</span>');
+    }
+})
 
 }
 
