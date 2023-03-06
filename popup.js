@@ -99,6 +99,8 @@ var createDialog = function(text , title) {
         $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 168});
     }
 })
+	
+	document.getElementById("ui-id-1").style.text-align = "center";
 
 }
 
