@@ -1,9 +1,10 @@
 <ul style="display: inline;">
   <div id="inputText">
-  <li><b>Upcoming Events:</b></li>
-  <ul><li><b>Upcoming Events: </b>active</li></ul>
+  <li><b>What's Happening at Ignite?</b></li>
+  <ul><li><b>Life Groups</b></li></ul>
   <ul style="padding-left:60px">
-    <li>report shows schedule with dates greater or equal to today.</li>
+    <li>Check out our LifeGroups!</li>
+    <li>Everyone is welcome!</li>
   </ul>
  <ul><li><b>Growth Track</b></li></ul>
   <ul style="padding-left:60px">
