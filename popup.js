@@ -99,7 +99,6 @@ var createDialog = function(text , title) {
     }
 })
 	
-	
 
 }
 
