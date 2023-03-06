@@ -26,7 +26,7 @@ const getUA = () => {
         console.log("Is mobile?: " + isMobile);
         console.log("Is iPad Pro?: " + isIPadPro);
         if (isMobile || isIPadPro) {
-       
+        setTimeout(loadit,500);
         } else{
             // callwhenback();
             //loadit().fadeIn(10000);
