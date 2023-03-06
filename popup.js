@@ -100,7 +100,7 @@ var createDialog = function(text , title) {
     }
 })
 	
-	document.getElementById("ui-id-1").style.text-align = "center";
+	//document.getElementById("ui-id-1").style.text-align = "center";
 
 }
 
