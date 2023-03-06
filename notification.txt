@@ -3,7 +3,7 @@
   <li><b>What's Happening at Ignite?</b></li>
   <ul><li><b>Life Groups</b></li></ul>
   <ul style="padding-left:60px">
-    <li>Check out our <a href="https://www.ignitechurch-stone.org/LifeGroups.html">LifeGroups!</a></li>
+    <li>Check out our current <a href="https://www.ignitechurch-stone.org/LifeGroups.html" style="color: blue;">LifeGroups!</a></li>
     <li>Everyone is welcome!</li>
   </ul>
  <ul><li><b>Growth Track</b></li></ul>
