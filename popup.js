@@ -95,7 +95,7 @@ var createDialog = function(text , title) {
 	        $(".ui-widget-overlay").css({
             opacity: 1.0,
             filter: "Alpha(Opacity=100)",
-            backgroundColor: "lightgrey"
+            backgroundColor: "#AAAAAA"
         });
         $('.ui-dialog-titlebar-close')
             .removeClass("ui-dialog-titlebar-close")
