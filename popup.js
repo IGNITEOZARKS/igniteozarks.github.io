@@ -94,7 +94,7 @@ var createDialog = function(text , title) {
 	  var win = $(window);  
 	 $(".ui-widget-overlay").css({
             opacity: 1.0,
-            filter: "Alpha(Opacity=50)",
+            filter: "Alpha(Opacity=90)",
             backgroundColor: "black"
         });
         $('.ui-dialog-titlebar-close')
