@@ -97,6 +97,9 @@ var createDialog = function(text , title) {
             filter: "Alpha(Opacity=100)",
             backgroundColor: "#AAAAAA"
         });
+	.ui-dialog-title{
+    color: #FFFFFF !important;
+}
         $('.ui-dialog-titlebar-close')
             .removeClass("ui-dialog-titlebar-close")
             .html('<span style="color: yellow;font-size: small;">click here to close</span>');
