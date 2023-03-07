@@ -102,9 +102,8 @@ var createDialog = function(text , title) {
             .html('<span style="color: yellow;font-size: small;">click here to close</span>');
 	$(this).closest('.ui-dialog').css({'width':'350px'});
         $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 168});
-	$(this).closest('.ui-dialog-titlebar').css({'color':'white'});
     }
-}).prev(".ui-dialog-titlebar").css("background","#D55355");
+}).prev(".ui-dialog-titlebar").css({'background':'#D55355','color':'white'});
 	
 
 }
