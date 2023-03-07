@@ -17,5 +17,5 @@
     <li>Join us every Monday Night @ 7pm</li>
   </ul>
 <br>
-<center><div id="footer" style="color: coral;font-size: smaller;">last updated 3/06/2023</div></center>
+<center><div id="footer" style="color: #cc66ff;font-size: smaller;">last updated 03/07/2023</div></center>
 <br>
