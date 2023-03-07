@@ -92,6 +92,11 @@ var createDialog = function(text , title) {
 	      modal:true,
     open: function(event, ui) {
 	  var win = $(window);  
+	 $(".ui-widget-overlay").css({
+            opacity: 1.0,
+            filter: "Alpha(Opacity=50)",
+            backgroundColor: "black"
+        });
         $('.ui-dialog-titlebar-close')
             .removeClass("ui-dialog-titlebar-close")
             .html('<span style="color: blue;font-size: small;">click here to close</span>');
