@@ -81,7 +81,7 @@ function  selecttext() {
 }
 var createDialog = function(text , title) {
     //create dialog <div> shell
-    var dialog =  '<div id="dialog" title="IGNITE UPDATES!" style="font-size: small;color: white;">' + text + '</div>';
+    var dialog =  '<div id="dialog" title="IGNITE UPDATES!" style="font-size: small;">' + text + '</div>';
     
     // create the dialog <div>
     $('body').append(dialog);
