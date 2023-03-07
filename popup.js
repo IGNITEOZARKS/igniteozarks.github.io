@@ -103,7 +103,7 @@ var createDialog = function(text , title) {
         $(this).closest('.ui-dialog').css({'width':'350px'});
         $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 168});
     }
-}).prev(".ui-dialog-titlebar").css("background","thistle");
+}).prev(".ui-dialog-titlebar").css("background","#D55355");
 	
 
 }
