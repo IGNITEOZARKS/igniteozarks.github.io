@@ -93,7 +93,7 @@ var createDialog = function(text , title) {
 	  var win = $(window);  
         $('.ui-dialog-titlebar-close')
             .removeClass("ui-dialog-titlebar-close")
-            .html('<span style="color: blue;">&nbsp; &nbsp; [close]</span>');
+            .html('<span style="color: blue;font-size: small;">click here to close</span>');
         $(this).closest('.ui-dialog').css({'width':'350px'});
         $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 168});
     }
