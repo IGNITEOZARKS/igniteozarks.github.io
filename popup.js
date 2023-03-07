@@ -81,7 +81,7 @@ function  selecttext() {
 }
 var createDialog = function(text , title) {
     //create dialog <div> shell
-    var dialog =  '<div id="dialog" title="IGNITE UPDATES!" style="font-size: small;">' + text + '</div>';
+    var dialog =  '<div id="dialog" title="IGNITE UPDATES!" style="font-size: small;color: white;">' + text + '</div>';
     
     // create the dialog <div>
     $('body').append(dialog);
@@ -99,7 +99,7 @@ var createDialog = function(text , title) {
         });
         $('.ui-dialog-titlebar-close')
             .removeClass("ui-dialog-titlebar-close")
-            .html('<span style="color: blue;font-size: small;">click here to close</span>');
+            .html('<span style="color: white;font-size: small;">click here to close</span>');
         $(this).closest('.ui-dialog').css({'width':'350px'});
         $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 168});
     }
