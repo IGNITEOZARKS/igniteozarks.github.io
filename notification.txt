@@ -21,5 +21,8 @@
     <li>Join us every Monday Night @ 7pm</li>
   </ul>
 <br>
-<center><div id="footer" style="color: #ccccff;font-size: smaller;">last updated 03/07/2023</div></center>
+<center>
+<a href="https://www.ignitechurch-stone.org/happenings.html">View Events Calendar</a><br>
+<div id="footer" style="color: #ccccff;font-size: smaller;">last updated 03/07/2023</div>
+</center>
 <br>
