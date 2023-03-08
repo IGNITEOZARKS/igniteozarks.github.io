@@ -1,6 +1,8 @@
 <ul style="display: inline;">
   <div id="inputText">
   <li><b>What's Happening at Ignite?</b></li>
+  <ul><li><b>For His Glory Drama Ministry @ Ignite!</b></li><ul>
+  <li>This Saturday October 11th @ 6pm!</li>
   <ul><li><b>Life Groups</b></li></ul>
   <ul style="padding-left:60px">
     <li>Check out our current <a href="https://www.ignitechurch-stone.org/LifeGroups.html" style="color: blue;">LifeGroups!</a></li>
