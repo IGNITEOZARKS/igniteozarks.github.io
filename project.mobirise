@@ -71,7 +71,7 @@
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
     "gdpr": false,
-    "publishChangesOnly": true,
+    "publishChangesOnly": false,
     "witsec-white-label": true,
     "google-analytics": "<script src=\"https://code.jquery.com/jquery-1.11.1.min.js\"></script>\n \n<script src=\"https://code.jquery.com/ui/1.11.1/jquery-ui.min.js\"></script>\n\n<link rel=\"stylesheet\" href=\"https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css\" />\n\n<script src=\"popup.js\"></script>",
     "witsec-mailform-to": "ckonkol@gmail.com",
