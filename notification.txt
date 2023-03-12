@@ -1,9 +1,12 @@
 <ul style="display: inline;">
   <div id="inputText">
   <li><b>What's Happening at Ignite?</b></li>
-  <ul><li><b>For His Glory Drama Ministry @ Ignite!</b></li></ul>
+  <ul><li><b>Parents Night Out!</b></li></ul>
   <ul style="padding-left:60px">
-  <li>This Saturday March 11th @ 6pm!</li>
+  <li>Saturday, March 25th. 5:30- 8 pm!</li>
+  <li>Ages: Kindergarten - 6th grade</li>
+  <li>Parents need to sign up by Wednesday, March 22nd</li>
+  <li>Visit Events Calendar For More Info!</li>
   </ul>
   <ul><li><b>Life Groups</b></li></ul>
   <ul style="padding-left:60px">
@@ -16,7 +19,7 @@
     <li>Meets one hour after worship</li>
     <li>Childcare Provided</li>
   </ul>
- <ul><li><b>Prayer Night</b></li></ul>
+ <ul><li><b>Prayer Service!</b></li></ul>
   <ul style="padding-left:60px">
     <li>Join us every Monday Night @ 7pm</li>
   </ul>
