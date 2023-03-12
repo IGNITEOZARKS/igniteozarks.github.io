@@ -4,12 +4,12 @@
   <ul><li><b>Parents Night Out!</b></li></ul>
   <ul style="padding-left:60px">
   <li>Saturday, March 25th ~ 5:30- 8 pm</li>
-  <li>Ages: Kindergarten - 6th grade</li>
-  <li>Parents! <br>Please Register by Wed March 22nd!</li>
+  <li>Ages: K - 6th grade</li>
+  <li>Parents!Please register by Wed March 22nd!</li>
   </ul>
   <ul><li><b>Life Groups</b></li></ul>
   <ul style="padding-left:60px">
-    <li>Check out our current <a href="https://www.ignitechurch-stone.org/LifeGroups.html" style="color: blue;">LifeGroups!</a></li>
+    <li>Check out current <a href="https://www.ignitechurch-stone.org/LifeGroups.html" style="color: blue;">LifeGroups!</a></li>
     <li>Everyone is welcome!</li>
   </ul>
  <ul><li><b>Growth Track</b></li></ul>
