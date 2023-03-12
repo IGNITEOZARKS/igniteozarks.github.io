@@ -3,10 +3,9 @@
   <li><b>What's Happening at Ignite?</b></li>
   <ul><li><b>Parents Night Out!</b></li></ul>
   <ul style="padding-left:60px">
-  <li>Saturday, March 25th. 5:30- 8 pm!</li>
+  <li>Saturday, March 25th ~ 5:30- 8 pm</li>
   <li>Ages: Kindergarten - 6th grade</li>
-  <li>Parents need to sign up by Wednesday, March 22nd</li>
-  <li>Visit Events Calendar For More Info!</li>
+  <li>Parents need to register by Wed March 22nd!</li>
   </ul>
   <ul><li><b>Life Groups</b></li></ul>
   <ul style="padding-left:60px">
@@ -25,7 +24,7 @@
   </ul>
 <br>
 <center>
-<a href="https://www.ignitechurch-stone.org/happenings.html" style="color: blue;">View Events Calendar</a><br><br>
+<a href="https://www.ignitechurch-stone.org/happenings.html" style="color: blue;">View Events Calendar For More Information!</a><br><br>
 <div id="footer" style="color: #ccccff;font-size: smaller;">last updated 03/08/2023</div>
 </center>
 <br>
