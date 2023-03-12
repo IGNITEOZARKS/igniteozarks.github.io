@@ -105,7 +105,6 @@ var createDialog = function(text , title) {
     }
 }).prev(".ui-dialog-titlebar").css({'background':'#D55355','color':'white','text-align':'center'});
 	
-document.getElementById('ui-id-1').style.left = 'none';
 }
 
 function checkCookie() {
