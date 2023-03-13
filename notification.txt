@@ -7,10 +7,16 @@
   <li>Ages: K - 6th grade</li>
   <li>Parents!<br>- Register by Wed March 22nd!</li>
   </ul>
-  <ul><li><b>Life Groups</b></li></ul>
+  <ul><li><b>Wednesday Night Live</b></li></ul>
   <ul style="padding-left:60px">
-    <li>Check out current <a href="https://www.ignitechurch-stone.org/LifeGroups.html" style="color: blue;">LifeGroups!</a></li>
-    <li>Everyone is welcome!</li>
+    <li>Wednesdays 6-8pm ~ Month of April</li>
+    <li>We will gather, share a meal & have LifeGroups for all!</li>
+    <li><a href="https://www.ignitechurch-stone.org/happenings.html" style="color: blue;">Click here for more information!</a></li>
+  </ul>
+   <ul><li><b>SoulFire Summer Camp (Middle/High School)</b></li></ul>
+  <ul style="padding-left:60px">
+    <li>July 23-29, 2023</li>
+    <li><a href="https://www.ignitechurch-stone.org/happenings.html" style="color: blue;">Click here for more information!</a></li>
   </ul>
  <ul><li><b>Growth Track</b></li></ul>
   <ul style="padding-left:60px">
