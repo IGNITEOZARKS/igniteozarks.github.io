@@ -29,7 +29,7 @@
   </ul>
 <br>
 <center>
-<a href="https://www.ignitechurch-stone.org/happenings.html" style="color: blue;"><b>Visit Events Calendar for More Info!</b></a><br><br>
-<div id="footer" style="color: #ccccff;font-size: smaller;">last updated 03/08/2023</div>
+<a href="https://www.ignitechurch-stone.org/happenings.html" style="color: blue;"><b>View Events Calendar for More Info!</b></a><br><br>
+<div id="footer" style="color: #ccccff;font-size: smaller;">last updated 03/13/2023</div>
 </center>
 <br>
