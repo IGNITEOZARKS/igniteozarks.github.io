@@ -10,13 +10,12 @@
   <ul><li><b>Wednesday Night Live</b></li></ul>
   <ul style="padding-left:60px">
     <li>Wednesdays 6-8pm ~ Month of April</li>
-    <li>We will gather, share a meal & have LifeGroups for all!</li>
-    <li><a href="https://www.ignitechurch-stone.org/happenings.html" style="color: blue;">Click here for more information!</a></li>
+    <li>We will share a meal & have LifeGroups for all!</li>
   </ul>
-   <ul><li><b>SoulFire Summer Camp (Middle/High School)</b></li></ul>
+   <ul><li><b>SoulFire Summer Camp</b></li></ul>
   <ul style="padding-left:60px">
     <li>July 23-29, 2023</li>
-    <li><a href="https://www.ignitechurch-stone.org/happenings.html" style="color: blue;">Click here for more information!</a></li>
+    <li>Middle/High School</li>
   </ul>
  <ul><li><b>Growth Track</b></li></ul>
   <ul style="padding-left:60px">
@@ -30,7 +29,7 @@
   </ul>
 <br>
 <center>
-<a href="https://www.ignitechurch-stone.org/happenings.html" style="color: blue;"><b>Visit Ignite Church Events Calendar!</b></a><br><br>
+<a href="https://www.ignitechurch-stone.org/happenings.html" style="color: blue;"><b>Visit Events Calendar for More Info!</b></a><br><br>
 <div id="footer" style="color: #ccccff;font-size: smaller;">last updated 03/08/2023</div>
 </center>
 <br>
