@@ -5,21 +5,21 @@
   <ul style="padding-left:60px">
   <li>Saturday, March 25th ~ 5:30- 8 pm</li>
   <li>Ages: K - 6th grade</li>
-  <li>Parents!<br>- Register by Wed March 22nd!</li>
+  <li>Parents:Register by Wed March 22nd!</li>
   </ul>
   <ul><li><b>Wednesday Night Live</b></li></ul>
   <ul style="padding-left:60px">
     <li>Wednesdays 6-8pm ~ Month of April</li>
-    <li>We will share a meal & have LifeGroups for all!</li>
+    <li>We will share a meal together</li>
+    <li>LifeGroups for all!</li>
   </ul>
    <ul><li><b>SoulFire Summer Camp</b></li></ul>
   <ul style="padding-left:60px">
     <li>July 23-29, 2023</li>
-    <li>Middle/High School</li>
+    <li>Ages:Middle/High School</li>
   </ul>
  <ul><li><b>Growth Track</b></li></ul>
   <ul style="padding-left:60px">
-    <li>Get connected to Ignite!</li>
     <li>Meets one hour after worship</li>
     <li>Childcare Provided</li>
   </ul>
