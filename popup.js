@@ -52,7 +52,7 @@ jQuery.get('notification.txt', function(data) {
     createDialog(notifs , Titles);
    // 1 week	
    // setCookie('vmspopup', 'yes', 1*24*60*60);
-   // 1 hour	
+   // 1// hour	
     setCookie('vmspopup', 'yes', 1*3600);
     scrollTop();		
 }
