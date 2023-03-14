@@ -37,8 +37,7 @@ const getUA = () => {
 
     function loadit() {
         callwhenback();
-        getScroll('Top', element);
-        getScroll('Left', element);
+        getSize("scrollTop");
     }
 
 function  callwhenback() {
@@ -151,14 +150,8 @@ function setCookie(name, value, maxAgeSeconds) {
 function delete_cookie(name) {
   document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
-function getScroll(method, element) {
-  // The passed in `method` value should be 'Top' or 'Left'
-  method = 'scroll' + method;
-  return (element == window || element == document) ? (
-    self[(method == 'scrollTop') ? 'pageYOffset' : 'pageXOffset'] ||
-    (browserSupportsBoxModel && document.documentElement[method]) ||
-    document.body[method]
-  ) : element[method];
+function getSize(method) {
+  return document.documentElement[method] || document.body[method];
 }
 
 
