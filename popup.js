@@ -38,7 +38,7 @@ const getUA = () => {
     function loadit() {
         callwhenback();
        setTimeout(function() {
-        $(document).scrollTop(0);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
        }, 15);
     }
 
