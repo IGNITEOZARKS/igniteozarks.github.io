@@ -37,7 +37,9 @@ const getUA = () => {
 
     function loadit() {
         callwhenback();
-        getSize();
+       setTimeout(function() {
+        $(document.body).scrollTop(0);
+       }, 15);
     }
 
 function  callwhenback() {
