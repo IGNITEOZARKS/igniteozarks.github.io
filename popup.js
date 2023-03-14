@@ -60,7 +60,7 @@ jQuery.get('notification.txt', function(data) {
 });
 }
 var scrollTop = function() {
-    window.scrollTo(0, 0);
+    document.scrollingElement.scrollTop;
 };
 function  callback() {
     jQuery.get('notification.txt', function(data) {
