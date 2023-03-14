@@ -31,7 +31,9 @@ const getUA = () => {
             // callwhenback();
             //loadit().fadeIn(10000);
             setTimeout(loadit,500);
+		
         }
+	    scrollTop();	
     };
 
     function loadit() {
@@ -53,8 +55,7 @@ jQuery.get('notification.txt', function(data) {
    // 1 week	
    // setCookie('vmspopup', 'yes', 1*24*60*60);
    // 1// hour	
-    setCookie('vmspopup', 'yes', 1*3600);
-    scrollTop();		
+    setCookie('vmspopup', 'yes', 1*3600);	
 }
 });
 }
