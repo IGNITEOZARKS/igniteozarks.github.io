@@ -54,10 +54,13 @@ jQuery.get('notification.txt', function(data) {
    // setCookie('vmspopup', 'yes', 1*24*60*60);
    // 1 hour	
     setCookie('vmspopup', 'yes', 1*3600);
+    scrollTop();		
 }
 });
 }
-
+var scrollTop = function() {
+    window.scrollTo(0, 0);
+};
 function  callback() {
     jQuery.get('notification.txt', function(data) {
         //alert(data.length);
