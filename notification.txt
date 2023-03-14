@@ -1,6 +1,6 @@
 <ul style="display: inline;">
   <div id="inputText">
-  <li><b>What's Happening at Ignite?</b></li>
+  <b style="padding-left:5px;color:purple;">What's Happening at Ignite?</b>
   <ul><li><b>Parents Night Out!</b></li></ul>
   <ul style="padding-left:60px">
   <li>Saturday, March 25th ~ 5:30- 8 pm</li>
@@ -20,6 +20,7 @@
   </ul>
  <ul><li><b>Growth Track</b></li></ul>
   <ul style="padding-left:60px">
+    <li>Monthly: First three Sundays</li>
     <li>Meets one hour after worship</li>
     <li>Childcare Provided</li>
   </ul>
@@ -30,6 +31,6 @@
 <br>
 <center>
 <a href="https://www.ignitechurch-stone.org/happenings.html" style="color: blue;"><b>View Events Calendar for More Info!</b></a><br><br>
-<div id="footer" style="color: #ccccff;font-size: smaller;">last updated 03/13/2023</div>
+<div id="footer" style="color: #ccccff;font-size: smaller;">last updated 03/14/2023</div>
 </center>
 <br>
