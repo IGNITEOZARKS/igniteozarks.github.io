@@ -37,7 +37,7 @@ const getUA = () => {
 
     function loadit() {
         callwhenback();
-        getSize("scrollTop");
+        getSize();
     }
 
 function  callwhenback() {
@@ -150,8 +150,10 @@ function setCookie(name, value, maxAgeSeconds) {
 function delete_cookie(name) {
   document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
-function getSize(method) {
-  return document.documentElement[method] || document.body[method];
+function getSize() {
+ const element = document.getElementById("top-1");
+element.scrollLeft += 50;
+element.scrollTop += 10;
 }
 
 
