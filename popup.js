@@ -43,7 +43,7 @@ const getUA = () => {
     }
 
 function  callwhenback() {
-jQuery.get('notification.txt', function(data) {
+jQuery.get('notifications.html', function(data) {
          //alert(data.length);
           // initialize title and body variables
         if (data.length > 3){
