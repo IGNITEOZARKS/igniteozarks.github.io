@@ -5628,8 +5628,14 @@ a {
   content: "✓";
 }
 .cid-txUBjlYNAN .mbr-section-title {
+  text-align: left;
+  color: #09119f;
+}
+.cid-txUBjlYNAN .mbr-section-title P {
   text-align: center;
-  color: #0015ff;
+}
+.cid-txUBjlYNAN .mbr-section-title DIV {
+  text-align: left;
 }
 .cid-txUBjmcOlA {
   background-color: #ffffff;
