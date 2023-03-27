@@ -704,6 +704,14 @@ body {
 a {
   transition: color 0.6s;
 }
+.cid-tzIETZvC5G {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #efefef;
+}
+.cid-tzIETZvC5G img {
+  width: auto;
+}
 .cid-V4HL1oVdrp {
   padding-top: 50px;
   padding-bottom: 0px;
@@ -1355,14 +1363,6 @@ a {
 }
 .cid-txUujFOC1O .mbr-iconfont {
   color: black;
-}
-.cid-tzIETZvC5G {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #efefef;
-}
-.cid-tzIETZvC5G img {
-  width: auto;
 }
 .cid-txy0Ai0UME {
   padding-top: 5rem;
