@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ignite Church at Lakewood",
-    "currentPage": "monday.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -62,12 +62,12 @@
         "url": "https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 138,
+    "uniqCompNum": 140,
     "versionPublish": "5.7.4",
     "imageResize": true,
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/ignite-flame-red-128x166.png",
-    "mbrsiteDomain": "iwwwgxjz9f",
+    "mbrsiteDomain": "8qfwqs0pzm",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
