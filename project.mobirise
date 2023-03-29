@@ -364,7 +364,8 @@
               "text-align": "center"
             },
             ".item-title": {
-              "text-align": "center"
+              "text-align": "center",
+              "color": "#000000"
             },
             ".item-subtitle": {
               "text-align": "left"
