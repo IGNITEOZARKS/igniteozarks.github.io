@@ -74,7 +74,7 @@
     "sitemapSwitcherAuto": "on",
     "siteUrl": "https://www.ignitetheozarks.com/",
     "gdpr": false,
-    "publishChangesOnly": false,
+    "publishChangesOnly": true,
     "witsec-white-label": true,
     "google-analytics": "<script src=\"https://code.jquery.com/jquery-1.11.1.min.js\"></script>\n \n<script src=\"https://code.jquery.com/ui/1.11.1/jquery-ui.min.js\"></script>\n\n<link rel=\"stylesheet\" href=\"https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css\" />\n\n<script src=\"popup.js\"></script>\n\n<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-1X9JS5MQG1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-1X9JS5MQG1');\n</script>\n\n<script async src=\"https://tally.so/widgets/embed.js\"></script>",
     "witsec-mailform-to": "ckonkol@gmail.com",
