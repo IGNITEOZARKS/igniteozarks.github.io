@@ -111,7 +111,7 @@ var createDialog = function(text , title) {
 	$(".ui-dialog-title" ).css("float", "none" );
     }
 }).prev(".ui-dialog-titlebar").css({'background':'#D55355','color':'white','text-align':'center'});
-	
+	  document.getElementById("modalClose").addEventListener("click", closeit);
 }
 
 function checkCookie() {
