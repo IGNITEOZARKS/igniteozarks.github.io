@@ -57,7 +57,7 @@ jQuery.get('notifications.html', function(data) {
    // 1 week	
    // setCookie('vmspopup', 'yes', 1*24*60*60);
    // 1// hour	
-    setCookie('vmspopup', 'yes', 24*3600);	
+    setCookie('vmspopup', 'yes', 4*3600);	
 }
 });
 }
@@ -106,7 +106,7 @@ var createDialog = function(text , title) {
         $('.ui-dialog-titlebar-close')
             .removeClass("ui-dialog-titlebar-close")
             .html('<span style="color: yellow;font-size: small;">Click here to close & view our website!</span>');
-	$(this).closest('.ui-dialog').css({'width':'400px'});
+	$(this).closest('.ui-dialog').css({'width':'370px'});
         $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 100});
 	$(".ui-dialog-title" ).css("float", "none" );
     }
