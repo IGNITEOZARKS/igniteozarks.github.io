@@ -57,7 +57,7 @@ jQuery.get('notifications.html', function(data) {
    // 1 week	
    // setCookie('vmspopup', 'yes', 1*24*60*60);
    // 1// hour	
-    setCookie('vmspopup', 'yes', 1*3600);	
+    setCookie('vmspopup', 'yes', 24*3600);	
 }
 });
 }
