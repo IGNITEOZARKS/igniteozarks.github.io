@@ -103,12 +103,13 @@ var createDialog = function(text , title) {
             filter: "Alpha(Opacity=100)",
             backgroundColor: "#AAAAAA"
         });
-        $('.ui-dialog-titlebar-close')
-            .removeClass("ui-dialog-titlebar-close")
-             .html('<a href="javascript:closeit();" style="color: yellow;font-size: small;">Click here to close &amp; view our website!</a>');
+       // $('.ui-dialog-titlebar-close')
+       //     .removeClass("ui-dialog-titlebar-close")
+       //      .html('<a href="javascript:closeit();" style="color: yellow;font-size: small;">Click here to close &amp; view our website!</a>');
 	$(this).closest('.ui-dialog').css({'width':'370px'});
         $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 100});
 	$(".ui-dialog-title" ).css("float", "none" );
+	 $(this).parent().children().children('.ui-dialog-titlebar-close').hide();
     }
 }).prev(".ui-dialog-titlebar").css({'background':'#D55355','color':'white','text-align':'center'});
 	  document.getElementById("modalClose").addEventListener("click", closeit);
