@@ -68,19 +68,19 @@
         "url": "https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,300i,400i,500i,600i,700i,800i"
       }
     ],
-    "uniqCompNum": 156,
+    "uniqCompNum": 157,
     "versionPublish": "5.7.4",
     "imageResize": true,
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/ignite-flame-red-128x166.png",
-    "mbrsiteDomain": "kxzotavuct",
+    "mbrsiteDomain": "zpk99chqna",
     "robotsSwitcher": false,
     "sitemapSwitcher": true,
     "sitemapSwitcherAuto": "on",
     "siteUrl": "https://www.ignitetheozarks.com/",
     "publishChangesOnly": false,
     "witsec-white-label": true,
-    "google-analytics": "<script src=\"https://code.jquery.com/jquery-1.11.1.min.js\"></script>\n \n<script src=\"https://code.jquery.com/ui/1.11.1/jquery-ui.min.js\"></script>\n\n<link rel=\"stylesheet\" href=\"https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css\" />\n\n<script src=\"popup.js\"></script>\n\n<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-1X9JS5MQG1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-1X9JS5MQG1');\n</script>\n\n<script async src=\"https://tally.so/widgets/embed.js\"></script>\n\n<script async src=\"//static.getclicky.com/101403880.js\"></script>\n\n<script async src=\"//static.getclicky.com/101403880.js\"></script>\n<noscript><p><img alt=\"Clicky\" width=\"1\" height=\"1\" src=\"//in.getclicky.com/101403880ns.gif\" /></p></noscript>",
+    "google-analytics": "<script src=\"https://code.jquery.com/jquery-1.11.1.min.js\"></script>\n \n<script src=\"https://code.jquery.com/ui/1.11.1/jquery-ui.min.js\"></script>\n\n<link rel=\"stylesheet\" href=\"https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css\" />\n\n<script src=\"popup.js\"></script>\n\n<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-1X9JS5MQG1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-1X9JS5MQG1');\n</script>\n\n<script async src=\"https://tally.so/widgets/embed.js\"></script>",
     "witsec-mailform-to": "ckonkol@gmail.com",
     "witsec-mailform-to-alt": "",
     "witsec-mailform-from": "ckonkol@gmail.com",
@@ -1048,6 +1048,38 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "footers",
+          "_params": {}
+        },
+        {
+          "alias": "witsec-code-editor/components",
+          "_isSecondary": true,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "img": {
+              "width": "auto"
+            }
+          },
+          "_name": "witsec-html-block",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"mbr-section mbr-section--no-padding\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n    <input type=\"image\" title=\"Background Image\" value=\"../_images/background.jpg\" parallax>\n    <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n    <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<!-- Place your own code below -->\n<a title=\"Privacy-friendly Web Analytics\" href=\"https://clicky.com/101403880\"><img alt=\"Clicky\" src=\"//static.getclicky.com/media/links/badge.gif\" border=\"0\"></a>\n[JS_CODE_0]\n<noscript><p><img alt=\"Clicky\" width=\"1\" height=\"1\" src=\"//in.getclicky.com/101403880ns.gif\"></p></noscript>\n<!-- Place your own code above -->\n\n</section>",
+          "_cid": "tzZke6fLcX",
+          "_anchor": "witsec-html-block-4c",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script async src=\"//static.getclicky.com/101403880.js\"></script>"
+          ],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         }
       ]
