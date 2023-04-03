@@ -77,11 +77,11 @@
         .staticrypt-content {
             height: 100%;
             margin-bottom: 1em;
-            background: #76b852; /* fallback for old browsers */
-            background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-            background: -moz-linear-gradient(right, #76b852, #8DC26F);
-            background: -o-linear-gradient(right, #76b852, #8DC26F);
-            background: linear-gradient(to left, #76b852, #8DC26F);
+            background: #FFFFFF; /* fallback for old browsers */
+            background: -webkit-linear-gradient(right, #FFFFFF, #FFFFFE);
+            background: -moz-linear-gradient(right, #FFFFFF, #FFFFFE);
+            background: -o-linear-gradient(right, #FFFFFF, #FFFFFE);
+            background: linear-gradient(to left, #FFFFFF, #FFFFFE);
             font-family: "Arial", sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -166,7 +166,7 @@
                 <input id="staticrypt-password"
                        type="password"
                        name="password"
-                       placeholder="Passphrase"
+                       placeholder="Enter password"
                        autofocus/>
 
                 <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
@@ -176,7 +176,7 @@
                     Remember me
                 </label>
 
-                <input type="submit" class="staticrypt-decrypt-button" value="DECRYPT"/>
+                <input type="submit" class="staticrypt-decrypt-button" value="Login"/>
             </form>
         </div>
 
@@ -773,9 +773,9 @@ exports.init = init;
   return exports;
 })())
 
-    const templateError = 'template_error',
+    const templateError = 'Incorrect Password, Try Again',
         isRememberEnabled = true,
-        staticryptConfig = {"encryptedMsg":"ceb9f079fb6d3e8a5197b6e2b3614432701d197c825e2c2ba4786c17650b9d774b46eb5f8b0959c4fc595b16227c2e86565dfea12906829f541f3aa58bcc4dade8cdb05128fdcd4e3b0eb735584bc4cfe5cf9638ae4fcbf6f2faa95aa8f17fed0db7b0fcc998509e6261da01955c72af9d2342c82ea89675d5df989dd9f08a7e7540c7b1c24450c2ca0c2fff1f05d29111dbd5e150c53836120ca152443474a390dc30d9dbd0c15bc9df38d8ac84c72b2671e450f08337881ea40036181f54ee1945f8695d442a4698d5da71ffe998d88f407ed82345ee2b9961425333d4c630","isRememberEnabled":true,"rememberDurationInDays":0,"salt":"32b6fa32bf8056c0f5f0ee8ee6b18591"};
+        staticryptConfig = {"encryptedMsg":"46d95bb1450df065816d12b1e91420a4467ca37a612b071a7ed36329f7d5811b740f8be8ccfcb2e0e0232f08000e0e4a893041d09627258d3fec1133c180cc070b7d345774b6b991b1eea8c65776fba82199854af166d3dc5a20bdaa866e2c084294cb661c22587c6658e07b7bf43fc7f841d2d7ee4a7b16bab4f8b6c71596794425209af2892a1683c46c12320cef5a4c5a05f724b92d7eca2d68670be95df706942093320fb6b0101db308543a4a6dd8f88bc0ba10960de802642296edafe023e62b67b2b0e2c0b4e4b06682461f44e873ae379791da1a12f27d65e8bfc2d9","isRememberEnabled":true,"rememberDurationInDays":0,"salt":"dc9d45efd150edfb6c8d7e9db417427e"};
 
     // you can edit these values to customize some of the behavior of StatiCrypt
     const templateConfig = {
