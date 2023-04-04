@@ -52,7 +52,7 @@
         .staticrypt-form .staticrypt-decrypt-button {
             text-transform: uppercase;
             outline: 0;
-            background: #4CAF50;
+            background: template_color_primary;
             width: 100%;
             border: 0;
             padding: 15px;
@@ -62,7 +62,8 @@
         }
 
         .staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus {
-            background: #43A047;
+            background: template_color_primary;
+            filter: brightness(92%);
         }
 
         .staticrypt-html {
@@ -77,11 +78,7 @@
         .staticrypt-content {
             height: 100%;
             margin-bottom: 1em;
-            background: #FFFFFF; /* fallback for old browsers */
-            background: -webkit-linear-gradient(right, #FFFFFF, #FFFFFE);
-            background: -moz-linear-gradient(right, #FFFFFF, #FFFFFE);
-            background: -o-linear-gradient(right, #FFFFFF, #FFFFFE);
-            background: linear-gradient(to left, #FFFFFF, #FFFFFE);
+            background: template_color_secondary;
             font-family: "Arial", sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -775,7 +772,7 @@ exports.init = init;
 
     const templateError = 'Incorrect Password, Please Try Again!',
         isRememberEnabled = true,
-        staticryptConfig = {"encryptedMsg":"bb2474d39c3eb05b9c528a09a0fa07a74209edf02628dd0d87e6fe1d50aef04b649f4c5eeb563b62bce104f921eaff34e3a3e9090f113b10a562536881378f94ef696024153a93e53b16a61a91790a278dfb1b7f83bdedeac2182122574c2b22c400eef7a8f6ed89fd60632e8155547ca55007f90b2c57b1b71c2155b6ebb6c74838e702afc6a530f1dbb7fcbe402accea46c718caa5770487a893b4d4ea891a74a7f88d238ca68bfe7ba10ced526fc549b104594c0a66d66fac2e51d4003c2a5d9fbc5bfdf29f9932886af525ee6ba96c56981e02affc78b7ccb389324df5bc","isRememberEnabled":true,"rememberDurationInDays":0,"salt":"99e956a51310ff13000a9d7a5c0e5811"};
+        staticryptConfig = {"encryptedMsg":"0e07aa748a54aa0c361247485cb8eb526b976c7e295c9e02aa57a8c75b2994ba84e37624f41714bb0d6af2671fc9997724bcfb1a4279586e7ccd467ce3bd6beaf13bffcfe033e50248a2cad8844329375fb9459b6a99c3f0aeb441cd5aca0dc422501d8982b4a2e7fe955f1bfe07aaf0dba308bb2f976b2a813360e3c49385ca5a8ffcbd7d65efa75d8e043845dbb40e4620d192e0ac5472231b954e1eb7da93be2c6b8a9697f458685a9fe1b54c3174279c2f6a988d6a9e687500c6afbf926d057cc80f52bfde8237022096a72be3e7250ac870c8f9e3a6b8323532f224d495","isRememberEnabled":true,"rememberDurationInDays":0,"salt":"3a1f4764e907e0a21c729d447b814ff2"};
 
     // you can edit these values to customize some of the behavior of StatiCrypt
     const templateConfig = {
