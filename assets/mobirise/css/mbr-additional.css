@@ -825,7 +825,7 @@ a {
 .cid-trT1Mp1p2z {
   padding-top: 2rem;
   padding-bottom: 4rem;
-  background-color: #efefef;
+  background-color: #ffffff;
 }
 .cid-trT1Mp1p2z .item:focus,
 .cid-trT1Mp1p2z span:focus {
@@ -837,7 +837,7 @@ a {
 .cid-trT1Mp1p2z .slide-content {
   position: relative;
   border-radius: 4px;
-  background: #ffffff;
+  background: #efefef;
   height: 100%;
   display: flex;
   overflow: hidden;
