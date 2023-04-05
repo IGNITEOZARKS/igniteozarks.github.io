@@ -8016,8 +8016,25 @@ a {
 .cid-tynS3ZECt6 img {
   width: 100%;
 }
+.cid-tAyo9H4BeC {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+}
+.cid-tAyo9H4BeC .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-tAyo9H4BeC .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
 .cid-tynS3ZT0Rz {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
