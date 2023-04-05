@@ -7997,7 +7997,7 @@ a {
 }
 .cid-tynS3ZT0Rz {
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   background-color: #ffffff;
 }
 .cid-tynS3ZT0Rz .counter-container ul {
@@ -8028,6 +8028,45 @@ a {
 }
 .cid-tynS3ZT0Rz .mbr-section-title {
   text-align: center;
+}
+.cid-tAxT2XtX3H {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+.cid-tAxT2XtX3H .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-tAxT2XtX3H .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-tAxT2XtX3H .bg-facebook {
+  background: #1778f2;
+  color: #ffffff;
+}
+.cid-tAxT2XtX3H .bg-facebook:hover {
+  background: #0b60cb;
+}
+.cid-tAxT2XtX3H .iconfont-wrapper {
+  display: inline-block;
+  font-size: 32px;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.cid-tAxT2XtX3H [class^="socicon-"]:before,
+.cid-tAxT2XtX3H [class*=" socicon-"]:before {
+  line-height: 55px;
+  padding: .6rem;
 }
 .cid-tynS406Kf7 {
   background-color: #ffffff;
