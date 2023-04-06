@@ -102,7 +102,7 @@ var createDialog = function(text , title) {
     open: function(event, ui) {
 	  var win = $(window);  
 	        $(".ui-widget-overlay").css({
-            opacity: .7,
+            opacity: .5,
             filter: "Alpha(Opacity=100)",
             backgroundColor: "#AAAAAA"
         });
