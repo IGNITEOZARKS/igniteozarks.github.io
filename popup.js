@@ -73,7 +73,9 @@ function  callback() {
             var Titles = "IGNITE CHURCH UPDATES!";
  
             createDialog(notifs , Titles);
-
+             setTimeout(function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+       }, 15);
         }
     });
 }
