@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ignite Church at Lakewood",
-    "currentPage": "messages.html",
+    "currentPage": "giving.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -7429,7 +7429,7 @@
     "privacy.html": {
       "settings": {
         "title": "Privacy",
-        "order": "15",
+        "order": "16",
         "meta_descr": ""
       },
       "components": [
@@ -7949,7 +7949,7 @@
     "loaves.html": {
       "settings": {
         "title": "Loaves",
-        "order": "14",
+        "order": "15",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png",
         "meta_descr": "Loaves @ Ignite Church!"
       },
@@ -8537,7 +8537,7 @@
     "LifeGroups.html": {
       "settings": {
         "title": "Life Groups",
-        "order": "7",
+        "order": "8",
         "meta_descr": "LifeGroups @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/wednesday-512x217.jpg"
       },
@@ -9238,7 +9238,7 @@
     "kids.html": {
       "settings": {
         "title": "Ignite Kids",
-        "order": "10",
+        "order": "11",
         "meta_descr": "Kids @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
@@ -10104,7 +10104,7 @@
     "growth.html": {
       "settings": {
         "title": "Growth Track",
-        "order": "8",
+        "order": "9",
         "meta_descr": "GrowthTrack @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
@@ -10777,7 +10777,7 @@
     "monday.html": {
       "settings": {
         "title": "Monday Night Prayer",
-        "order": "9",
+        "order": "10",
         "meta_descr": "Monday Night Prayer @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
@@ -11519,7 +11519,7 @@
     "events.html": {
       "settings": {
         "title": "Events",
-        "order": "13",
+        "order": "14",
         "meta_descr": "Events @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
@@ -12835,7 +12835,7 @@
     "youth.html": {
       "settings": {
         "title": "Ignite Youth",
-        "order": "12",
+        "order": "13",
         "meta_descr": "Youth @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
@@ -13519,7 +13519,7 @@
     "reports.html": {
       "settings": {
         "title": "Reports",
-        "order": "17",
+        "order": "18",
         "meta_descr": "Anniversary @ Ignite Church!"
       },
       "components": [
@@ -14081,7 +14081,7 @@
     "anniversary.html": {
       "settings": {
         "title": "Anniversary",
-        "order": "16",
+        "order": "17",
         "meta_descr": "Anniversary @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
@@ -14782,7 +14782,7 @@
     "volunteers.html": {
       "settings": {
         "title": "Kids Volunteers",
-        "order": "11",
+        "order": "12",
         "meta_descr": "Kids Volunteers @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
@@ -15381,7 +15381,7 @@
     "messages.html": {
       "settings": {
         "title": "Messages",
-        "order": "18",
+        "order": "7",
         "meta_descr": "Messages @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/ignite-440x336.jpeg"
       },
@@ -15446,7 +15446,7 @@
           },
           "_name": "witsec-html-block",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"mbr-section mbr-section--no-padding\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n    <input type=\"image\" title=\"Background Image\" value=\"../_images/background.jpg\" parallax=\"\">\n    <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected=\"\">\n    <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<!-- Place your own code below -->\n<div class=\"container\">\n\t  <div id=\"fb-root\"></div>\n  [JS_CODE_0]\n\n  <!-- Your embedded video player code -->\n  <h3>Easter Sunday Message ~ 04/09/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/977867400251444\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/977867400251444\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/977867400251444\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, April 09, 2023\n      </blockquote>\n    </div>\n  </div>\n  <hr>\n   <h3>Book of Acts, Chapter 19 ~ 04/02/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/213080714649964\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/213080714649964\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/213080714649964\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, April 09, 2023\n      </blockquote>\n    </div>\n  </div>\n  <hr>\n</div>\n<!-- Place your own code above -->\n\n</section>",
+          "_customHTML": "<section class=\"mbr-section mbr-section--no-padding\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n    <input type=\"image\" title=\"Background Image\" value=\"../_images/background.jpg\" parallax=\"\">\n    <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected=\"\">\n    <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<!-- Place your own code below -->\n<div class=\"container\">\n\t  <div id=\"fb-root\"></div>\n  [JS_CODE_0]\n\n  <!-- Your embedded video player code -->\n  <h3>Easter Sunday Message ~ 04/09/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/977867400251444\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/977867400251444\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/977867400251444\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, April 09, 2023\n      </blockquote>\n    </div>\n  </div>\n  <hr>\n   <h3>Book of Acts, Chapter 19 ~ 04/02/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/213080714649964\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/213080714649964\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/213080714649964\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, April 02, 2023\n      </blockquote>\n    </div>\n  </div>\n  <hr>\n     <h3>Book of Acts, Chapter 17 ~ 03/19/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/1397441824391396\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/1397441824391396\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/1397441824391396\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, March 19, 2023\n      </blockquote>\n    </div>\n  </div>\n  <hr>\n       <h3>Book of Acts, Chapter 16 ~ 03/12/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/145230395130895\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/145230395130895\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/145230395130895\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, March 12, 2023\n      </blockquote>\n    </div>\n  </div>\n  <hr>\n</div>\n<!-- Place your own code above -->\n\n</section>",
           "_cid": "tB1rKY5qrq",
           "_anchor": "witsec-html-block-5k",
           "_PHPplaceholders": [],
