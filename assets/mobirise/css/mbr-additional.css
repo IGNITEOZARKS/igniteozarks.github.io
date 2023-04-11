@@ -12117,6 +12117,21 @@ a {
 .cid-tB1rKY5qrq img {
   width: auto;
 }
+.cid-tB7lH4apV3 {
+  background-color: #ffffff;
+}
+.cid-tB7lH4apV3 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-tB7lH4apV3 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
 .cid-tB1khgAxGN {
   z-index: 1000;
   width: 100%;
