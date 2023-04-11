@@ -145,24 +145,19 @@
 
 <div class="container">
 
-   <iframe width="560" height="315" src="https://www.ignitetheozarks.com/videos.html" title="IGNITE CHURCH MESSAGES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+    <iframe id="iframe" width="560" height="315" src="https://www.ignitetheozarks.com/videos.html" title="IGNITE CHURCH MESSAGES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
      <center>
       <br><br>
-      <button onclick="heightChange()">
-         Click Here to See All Messages!
+      <button onclick="heightChanging()">
+         Press Here to Change
       </button>
-
       <script>
          //function to change the height of iframe using the Javascript 
-         function heightChange() {
-            document.querySelector('iframe').style.width = "100%";
-            document.querySelector('iframe').style.height = "100%";
-            document.querySelector('iframe').style.top = "0";
-            document.querySelector('iframe').style.left = "0";
-            document.querySelector('iframe').style.position = "fixed";
-            document.querySelector('iframe').style.zIndex = "8888";
+         function heightChanging() {
+            var video = document.getElementById('iframe');
+            video.style.height = window.innerHeight;
          }
-      </script> 
+      </script>
         </center>
 </div>
 <!-- Place your own code above -->
