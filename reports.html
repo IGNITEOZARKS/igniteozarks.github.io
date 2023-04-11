@@ -59,28 +59,16 @@
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=642f00f32e43270019720d93&product=sop' async='async'></script>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.container #player {
-  flex-grow: 1;
-}
-
-iframe {
-  height: 100%;
-}
+ body{
+        margin: 0; /* Remove default margin */
+    }
+    iframe{      
+        display: block;  /* iframes are inline by default */   
+        height: 100vh;  /* Set height to 100% of the viewport height */   
+        width: 100vw;  /* Set width to 100% of the viewport width */     
+        border: none; /* Remove default border */
+        background: white; /* Just for styling */
+    }
 </style>
 
 
