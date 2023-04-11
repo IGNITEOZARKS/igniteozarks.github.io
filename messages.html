@@ -62,18 +62,6 @@
 
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=642f00f32e43270019720d93&product=sop' async='async'></script>
 
-<style>
- body{
-        margin: 0; /* Remove default margin */
-    }
-    iframe{      
-        display: block;  /* iframes are inline by default */   
-        height: 100vh;  /* Set height to 100% of the viewport height */   
-        width: 100vw;  /* Set width to 100% of the viewport width */     
-        border: none; /* Remove default border */
-        background: white; /* Just for styling */
-    }
-</style>
 
 
 <!-- /Analytics -->
@@ -156,9 +144,26 @@
 <!-- Place your own code below -->
 
 <div class="container">
-   <div id="player">
-        <iframe src="https://www.ignitetheozarks.com/videos.html"></iframe>
-    </div>
+
+   <iframe width="560" height="315" src="https://www.ignitetheozarks.com/videos.html" title="IGNITE CHURCH MESSAGES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+     <center>
+      <br><br>
+      <button onclick="heightChange()">
+         Click Here to See All Messages!
+      </button>
+
+      <script>
+         //function to change the height of iframe using the Javascript 
+         function heightChange() {
+            document.querySelector('iframe').style.width = "100%";
+            document.querySelector('iframe').style.height = "100%";
+            document.querySelector('iframe').style.top = "0";
+            document.querySelector('iframe').style.left = "0";
+            document.querySelector('iframe').style.position = "fixed";
+            document.querySelector('iframe').style.zIndex = "8888";
+         }
+      </script> 
+        </center>
 </div>
 <!-- Place your own code above -->
 
