@@ -12106,6 +12106,53 @@ a {
   position: absolute;
   top: 0;
 }
+.cid-tBGGzHmrR0 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+.cid-tBGGzHmrR0 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-tBGGzHmrR0 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-tBGGzHmrR0 .content-wrapper {
+  background: #fafafa;
+}
+@media (max-width: 991px) {
+  .cid-tBGGzHmrR0 .content-wrapper .image-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-tBGGzHmrR0 .content-wrapper {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-tBGGzHmrR0 .content-wrapper {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-tBGGzHmrR0 .content-wrapper {
+    padding: 5rem 3rem;
+  }
+  .cid-tBGGzHmrR0 .content-wrapper .text-wrapper {
+    padding-left: 2rem;
+  }
+}
+.cid-tBGGzHmrR0 .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
 .cid-tB1rKY5qrq {
   padding-top: 15px;
   padding-bottom: 60px;
@@ -12535,4 +12582,51 @@ a {
 }
 .cid-tB1khgV1A5 .copyright {
   text-align: left;
+}
+.cid-tBGGyvYLhF {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-tBGGyvYLhF .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-tBGGyvYLhF .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-tBGGyvYLhF .content-wrapper {
+  background: #fafafa;
+}
+@media (max-width: 991px) {
+  .cid-tBGGyvYLhF .content-wrapper .image-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-tBGGyvYLhF .content-wrapper {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-tBGGyvYLhF .content-wrapper {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-tBGGyvYLhF .content-wrapper {
+    padding: 5rem 3rem;
+  }
+  .cid-tBGGyvYLhF .content-wrapper .text-wrapper {
+    padding-left: 2rem;
+  }
+}
+.cid-tBGGyvYLhF .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
 }

@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ignite Church at Lakewood",
-    "currentPage": "LifeGroups.html",
+    "currentPage": "prayer.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -68,7 +68,7 @@
         "url": "https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,300i,400i,500i,600i,700i,800i"
       }
     ],
-    "uniqCompNum": 203,
+    "uniqCompNum": 207,
     "versionPublish": "5.7.4",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -15427,6 +15427,67 @@
           "_params": {}
         },
         {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".content-wrapper": {
+              "background": "@cardColor",
+              "@media (max-width: 991px)": {
+                ".image-wrapper": {
+                  "margin-bottom": "2rem"
+                }
+              },
+              "@media (max-width: 767px)": {
+                "padding": "1rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "5rem 3rem",
+                ".text-wrapper": {
+                  "padding-left": "2rem"
+                }
+              }
+            },
+            ".image-wrapper img": {
+              "width": "100%",
+              "object-fit": "cover"
+            }
+          },
+          "_name": "features17",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features16\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#fafafa\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img src=\"@PROJECT_PATH@/assets/images/ignitemessage-1080x1080.png\" alt=\"Mobirise Website Builder\">\n                    </div>\n                </div>\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Why are we here?</h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            04/16/2023</p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-primary\" href=\"https://fb.watch/jYZjiVyEUh/\" data-app-placeholder=\"Type Text\" target=\"_blank\">Watch Message</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tBGGzHmrR0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features17-5q"
+        },
+        {
           "alias": "witsec-code-editor/components",
           "_isSecondary": true,
           "_styles": {
@@ -15446,13 +15507,12 @@
           },
           "_name": "witsec-html-block",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"mbr-section mbr-section--no-padding\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n    <input type=\"image\" title=\"Background Image\" value=\"../_images/background.jpg\" parallax>\n    <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<!-- Place your own code below -->\n\n<div class=\"container\">\n\n   <center>\n\t  <div id=\"fb-root\"></div>\n  [JS_CODE_0]\n[JS_CODE_1]\n\t<!-- Your embedded video player code -->\n<div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/1016160669769936/\" data-width=\"500\" data-show-text=\"false\"><blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/1016160669769936/\" class=\"fb-xfbml-parse-ignore\"><a href=\"https://www.facebook.com/ignitestonecounty/videos/1016160669769936/\"></a><p>#IgniteLakewood</p>Posted by <a href=\"https://www.facebook.com/ignitestonecounty\">Ignite Church at Lakewood</a> on Sunday, April 16, 2023</blockquote></div>\n  <hr>\n   <h3>Book of Acts, Chapter 19 ~ 04/02/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/213080714649964\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/213080714649964\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/213080714649964\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, April 02, 2023\n      </blockquote>\n    </div>\n  </div>\n  <hr>\n     <h3>Book of Acts, Chapter 17 ~ 03/19/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/1397441824391396\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/1397441824391396\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/1397441824391396\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, March 19, 2023\n      </blockquote>\n    </div>\n  </div>\n  <hr>\n       <h3>Book of Acts, Chapter 16 ~ 03/12/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/145230395130895\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/145230395130895\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/145230395130895\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, March 12, 2023\n      </blockquote>\n    </div>\n  </div>\n\t<hr>\n  <h3>Book of Acts, Chapter 13 ~ 02/12/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/2044771005720241/\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/2044771005720241/\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/2044771005720241/\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, February 12, 2023\n      </blockquote>\n    </div>\n  </div>\n\t<hr>\n  </center>\n\n</div>\n<!-- Place your own code above -->\n\n</section>",
+          "_customHTML": "<section class=\"mbr-section mbr-section--no-padding\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n    <input type=\"image\" title=\"Background Image\" value=\"../_images/background.jpg\" parallax>\n    <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<!-- Place your own code below -->\n\n<div class=\"container\">\n\n   <center>\n\t  <div id=\"fb-root\"></div>\n  [JS_CODE_0]\n\t<!-- Your embedded video player code -->\n     <h3>Book of Acts, Chapter 17 ~ 03/19/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/1397441824391396\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/1397441824391396\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/1397441824391396\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, March 19, 2023\n      </blockquote>\n    </div>\n  </div>\n  <hr>\n       <h3>Book of Acts, Chapter 16 ~ 03/12/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/145230395130895\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/145230395130895\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/145230395130895\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, March 12, 2023\n      </blockquote>\n    </div>\n  </div>\n\t<hr>\n  <h3>Book of Acts, Chapter 13 ~ 02/12/2023</h3>\n  <div class=\"fb-video\" data-href=\"https://www.facebook.com/ignitestonecounty/videos/2044771005720241/\" data-width=\"500\" data-show-text=\"false\">\n    <div class=\"fb-xfbml-parse-ignore\">\n      <blockquote cite=\"https://www.facebook.com/ignitestonecounty/videos/2044771005720241/\">\n        <a href=\"https://www.facebook.com/ignitestonecounty/videos/2044771005720241/\">How to Share With Just Friends</a>\n        <p>How to share with just friends.</p>\n        Posted by <a href=\"https://www.facebook.com/facebook/\">Facebook</a> on Sunday, February 12, 2023\n      </blockquote>\n    </div>\n  </div>\n\t<hr>\n  </center>\n\n</div>\n<!-- Place your own code above -->\n\n</section>",
           "_cid": "tB1rKY5qrq",
           "_anchor": "witsec-html-block-5k",
           "_PHPplaceholders": [],
           "_JSplaceholders": [
-            "<script async defer src=\"https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2\"></script>",
-            "<script async defer crossorigin=\"anonymous\" src=\"https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0&appId=965656367790806&autoLogAppEvents=1\" nonce=\"JYAdX0ev\"></script>"
+            "<script async defer src=\"https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2\"></script>"
           ],
           "_protectedParams": [],
           "_global": false,
@@ -15981,6 +16041,67 @@
           "_global": true,
           "_once": "footers",
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".content-wrapper": {
+              "background": "@cardColor",
+              "@media (max-width: 991px)": {
+                ".image-wrapper": {
+                  "margin-bottom": "2rem"
+                }
+              },
+              "@media (max-width: 767px)": {
+                "padding": "1rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "5rem 3rem",
+                ".text-wrapper": {
+                  "padding-left": "2rem"
+                }
+              }
+            },
+            ".image-wrapper img": {
+              "width": "100%",
+              "object-fit": "cover"
+            }
+          },
+          "_name": "features17",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features16\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked=\"\">\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#fafafa\" selected=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected=\"\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img src=\"../_images/square/sq1.jpg\" alt=\"Mobirise Website Builder\">\n                    </div>\n                </div>\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Easy and simple</b>\n                        </h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            All sites you create with the Mobirise web builder are mobile-friendly natively. No special actions required. You can preview your site inside the app. Check the icons on the top.</p>\n                        <div mbr-buttons=\"\" mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                Learn more\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tBGGyvYLhF",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features17-5p"
         }
       ]
     }
