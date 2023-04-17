@@ -12124,7 +12124,7 @@ a {
   top: 0;
 }
 .cid-tBGGzHmrR0 .content-wrapper {
-  background: #fafafa;
+  background: #ffffff;
 }
 @media (max-width: 991px) {
   .cid-tBGGzHmrR0 .content-wrapper .image-wrapper {
@@ -12171,7 +12171,7 @@ a {
   top: 0;
 }
 .cid-tBGQPcePcl .content-wrapper {
-  background: #fafafa;
+  background: #ffffff;
 }
 @media (max-width: 991px) {
   .cid-tBGQPcePcl .content-wrapper .image-wrapper {
@@ -12218,7 +12218,7 @@ a {
   top: 0;
 }
 .cid-tBGRdcGBcG .content-wrapper {
-  background: #fafafa;
+  background: #ffffff;
 }
 @media (max-width: 991px) {
   .cid-tBGRdcGBcG .content-wrapper .image-wrapper {
@@ -12265,7 +12265,7 @@ a {
   top: 0;
 }
 .cid-tBGRB5frQx .content-wrapper {
-  background: #fafafa;
+  background: #ffffff;
 }
 @media (max-width: 991px) {
   .cid-tBGRB5frQx .content-wrapper .image-wrapper {
@@ -12312,7 +12312,7 @@ a {
   top: 0;
 }
 .cid-tBGS7i0Uqz .content-wrapper {
-  background: #fafafa;
+  background: #ffffff;
 }
 @media (max-width: 991px) {
   .cid-tBGS7i0Uqz .content-wrapper .image-wrapper {
@@ -12359,7 +12359,7 @@ a {
   top: 0;
 }
 .cid-tBGSmHb3et .content-wrapper {
-  background: #fafafa;
+  background: #ffffff;
 }
 @media (max-width: 991px) {
   .cid-tBGSmHb3et .content-wrapper .image-wrapper {
@@ -12809,51 +12809,4 @@ a {
 }
 .cid-tB1khgV1A5 .copyright {
   text-align: left;
-}
-.cid-tBGGyvYLhF {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
-}
-.cid-tBGGyvYLhF .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-tBGGyvYLhF .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-tBGGyvYLhF .content-wrapper {
-  background: #fafafa;
-}
-@media (max-width: 991px) {
-  .cid-tBGGyvYLhF .content-wrapper .image-wrapper {
-    margin-bottom: 2rem;
-  }
-}
-@media (max-width: 767px) {
-  .cid-tBGGyvYLhF .content-wrapper {
-    padding: 1rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .cid-tBGGyvYLhF .content-wrapper {
-    padding: 2rem;
-  }
-}
-@media (min-width: 992px) {
-  .cid-tBGGyvYLhF .content-wrapper {
-    padding: 5rem 3rem;
-  }
-  .cid-tBGGyvYLhF .content-wrapper .text-wrapper {
-    padding-left: 2rem;
-  }
-}
-.cid-tBGGyvYLhF .image-wrapper img {
-  width: 100%;
-  object-fit: cover;
 }
