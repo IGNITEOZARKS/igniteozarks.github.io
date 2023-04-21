@@ -3,7 +3,7 @@ console.log(queryString);
 var urlParams = new URLSearchParams(queryString);
 var g_message = urlParams.get('message')
 console.log(g_message);
-var g_date = urlParams.get('date')
+var g_date = urlParams.get('dates')
 console.log(g_date);
 
 document.getElementById("vid").innerHTML = 'data-href="https://www.facebook.com/ignitestonecounty/videos/' + g_message + '"';
