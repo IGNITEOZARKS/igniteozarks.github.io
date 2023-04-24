@@ -8,5 +8,5 @@ console.log(g_date);
 var g_title = urlParams.get('title')
 console.log(g_title);
 document.getElementById("title").innerHTML = g_title + ' ~ ' + g_date;
-var html = '<iframe src="https://www.facebook.com/plugins/video.php?height=311&href=https%3A%2F%2Fwww.facebook.com%2Fignitestonecounty%2Fvideos%2F' + g_message +'%2F&show_text=false&width=560&t=0" width="560" height="311" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>';
+var html = '<iframe src="https://www.facebook.com/plugins/video.php?height=311&href=https%3A%2F%2Fwww.facebook.com%2Fignitestonecounty%2Fvideos%2F' + g_message +'%2F&show_text=false&width=100%&t=0" width="100%" height="311" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>';
 document.getElementById("vid").innerHTML = html;
