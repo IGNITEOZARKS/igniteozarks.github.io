@@ -33,12 +33,12 @@ const getUA = () => {
             setTimeout(loadit,500);
 		
         }	
-	 setTimeout(removeads,500);
+	 setInterval(removeads,500);
     };
 function removeads() {
-   document.getElementById('wrapper').style.display = 'none';
+   document.getElementById("wrapper").style.display = "none";
   //mys-wrapper
-  document.getElementById('mys-wrapper').style.display = 'none';
+  document.getElementById("mys-wrapper").style.display = "none";
 }
     function loadit() {
         callwhenback();
