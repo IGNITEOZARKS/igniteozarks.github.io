@@ -36,9 +36,16 @@ const getUA = () => {
 	 setInterval(removeads,500);
     };
 function removeads() {
+	try {
    document.getElementById("wrapper").style.display = "none";
-  //mys-wrapper
-  document.getElementById("mys-wrapper").style.display = "none";
+} catch (error) {
+  console.error(error);
+}
+		try {
+    document.getElementById("mys-wrapper").style.display = "none";
+} catch (error) {
+  console.error(error);
+}
 }
     function loadit() {
         callwhenback();
