@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ignite Church at Lakewood",
-    "currentPage": "signup.html",
+    "currentPage": "connect.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -4028,7 +4028,7 @@
     "contact.html": {
       "settings": {
         "title": "Contact",
-        "order": "3",
+        "order": "4",
         "meta_image": "@PROJECT_PATH@/assets/images/ignitelakewood-black-1-784x606.png",
         "meta_descr": "Let us know how you are doing!"
       },
@@ -4774,7 +4774,7 @@
     "giving.html": {
       "settings": {
         "title": "Giving",
-        "order": "2",
+        "order": "3",
         "meta_image": "@PROJECT_PATH@/assets/images/ignitelakewood-black-1-784x606.png",
         "meta_descr": "Be a cheerful giver!"
       },
@@ -5466,7 +5466,7 @@
     "prayer.html": {
       "settings": {
         "title": "Need Prayer?",
-        "order": "7",
+        "order": "8",
         "meta_image": "@PROJECT_PATH@/assets/images/prayerchangeseverything-web-600x337.jpg",
         "meta_descr": "Prayer @ Ignite Church!"
       },
@@ -6118,7 +6118,7 @@
     "email.html": {
       "settings": {
         "title": "Email Signup",
-        "order": "6",
+        "order": "7",
         "meta_descr": "Signup @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/ignite-440x336.jpeg"
       },
@@ -6732,7 +6732,7 @@
     "connect.html": {
       "settings": {
         "title": "Connect",
-        "order": "5",
+        "order": "6",
         "meta_image": "@PROJECT_PATH@/assets/images/ignitelakewood-black-1-784x606.png",
         "meta_descr": "Connect @ Ignite Church!"
       },
@@ -8537,7 +8537,7 @@
     "LifeGroups.html": {
       "settings": {
         "title": "Life Groups",
-        "order": "8",
+        "order": "9",
         "meta_descr": "LifeGroups @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/wednesday-512x217.jpg"
       },
@@ -9238,7 +9238,7 @@
     "kids.html": {
       "settings": {
         "title": "Ignite Kids",
-        "order": "11",
+        "order": "12",
         "meta_descr": "Kids @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
@@ -10104,7 +10104,7 @@
     "growth.html": {
       "settings": {
         "title": "Growth Track",
-        "order": "9",
+        "order": "10",
         "meta_descr": "GrowthTrack @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
@@ -10777,7 +10777,7 @@
     "monday.html": {
       "settings": {
         "title": "Monday Night Prayer",
-        "order": "10",
+        "order": "11",
         "meta_descr": "Monday Night Prayer @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
@@ -14782,7 +14782,7 @@
     "volunteers.html": {
       "settings": {
         "title": "Kids Volunteers",
-        "order": "12",
+        "order": "13",
         "meta_descr": "Kids Volunteers @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
@@ -15381,7 +15381,7 @@
     "messages.html": {
       "settings": {
         "title": "Messages",
-        "order": "4",
+        "order": "5",
         "meta_descr": "Messages @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/ignite-440x336.jpeg"
       },
@@ -16594,7 +16594,7 @@
     "signup.html": {
       "settings": {
         "title": "Sign-Up to Help @ IGNITE",
-        "order": "13",
+        "order": "2",
         "meta_descr": "Kids Volunteers @ Ignite Church!",
         "meta_image": "@PROJECT_PATH@/assets/images/screenshot%202023-01-03%20094004-447x344.png"
       },
