@@ -33,18 +33,18 @@ const getUA = () => {
             setTimeout(loadit,500);
 		
         }	
-	 setInterval(removeads,500);
+	 setInterval(removeads,2000);
     };
 function removeads() {
 	try {
-   document.getElementById("wrapper").style.display = "none";
+		document.getElementById("signup").contentWindow.document.getElementById("wrapper").style.display = "none";
 } catch (error) {
-  console.error(error);
+  console.log(error);
 }
 		try {
-    document.getElementById("mys-wrapper").style.display = "none";
+			document.getElementById("signup").contentWindow.document.getElementById("mys-wrapper").style.display = "none";
 } catch (error) {
-  console.error(error);
+  console.log(error);
 }
 }
     function loadit() {
