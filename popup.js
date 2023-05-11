@@ -33,7 +33,7 @@ const getUA = () => {
             setTimeout(loadit,500);
 		
         }	
-	 setInterval(removeads,5000);
+	 //setInterval(removeads,5000);
     };
 function removeads() {
 	try {
