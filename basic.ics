@@ -1,0 +1,218 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Ignite Church @ Lakewood Calendar
+X-WR-TIMEZONE:America/Chicago
+X-WR-CALDESC:Ignite Church @ Lakewood Calendar
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20230618T110000
+DTEND;TZID=America/Chicago:20230618T120000
+RRULE:FREQ=MONTHLY;BYDAY=3SU
+DTSTAMP:20230525T175111Z
+UID:4gpp9in0u47hmkgivk94j46scn@google.com
+CREATED:20230525T154136Z
+DESCRIPTION:Growth Track happens every month on first three consecutive Sun
+ daysGrowth Track is designed to help you discover your purpose and live the
+  life God created for you.Growth Track meets for about an hour each week af
+ ter worship. Childcare WILL BE provided!Growth Track is made up of four ste
+ ps that equip you to:Connect to IGNITE churchDiscover your strengths and pu
+ rposeDevelop your personal leadershipUse your God-given gifts to make a dif
+ ference in the lives of others \nFull details here: https://tockify.com/ign
+ ite.church/detail/18/1685894400000
+LAST-MODIFIED:20230525T154136Z
+LOCATION:Ignite Church at Lakewood\, 19585 MO-413\, Reeds Spring\, MO 65737
+ \, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Growth Track
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20230611T110000
+DTEND;TZID=America/Chicago:20230611T120000
+RRULE:FREQ=MONTHLY;BYDAY=2SU
+DTSTAMP:20230525T175111Z
+UID:2niqfbi9ro7misq1cs5k4doqjt@google.com
+CREATED:20230525T154117Z
+DESCRIPTION:Growth Track happens every month on first three consecutive Sun
+ daysGrowth Track is designed to help you discover your purpose and live the
+  life God created for you.Growth Track meets for about an hour each week af
+ ter worship. Childcare WILL BE provided!Growth Track is made up of four ste
+ ps that equip you to:Connect to IGNITE churchDiscover your strengths and pu
+ rposeDevelop your personal leadershipUse your God-given gifts to make a dif
+ ference in the lives of others \nFull details here: https://tockify.com/ign
+ ite.church/detail/18/1685894400000
+LAST-MODIFIED:20230525T154117Z
+LOCATION:Ignite Church at Lakewood\, 19585 MO-413\, Reeds Spring\, MO 65737
+ \, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Growth Track
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20230604T110000
+DTEND;TZID=America/Chicago:20230604T120000
+RRULE:FREQ=MONTHLY;BYDAY=1SU
+DTSTAMP:20230525T175111Z
+UID:1j5svmje8dc7hee7glmabgegur@google.com
+CREATED:20230525T154017Z
+DESCRIPTION:Growth Track happens every month on first three consecutive Sun
+ daysGrowth Track is designed to help you discover your purpose and live the
+  life God created for you.Growth Track meets for about an hour each week af
+ ter worship. Childcare WILL BE provided!Growth Track is made up of four ste
+ ps that equip you to:Connect to IGNITE churchDiscover your strengths and pu
+ rposeDevelop your personal leadershipUse your God-given gifts to make a dif
+ ference in the lives of others \nFull details here: https://tockify.com/ign
+ ite.church/detail/18/1685894400000
+LAST-MODIFIED:20230525T154017Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Growth Track
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230723T170000Z
+DTEND:20230729T170000Z
+DTSTAMP:20230525T175111Z
+UID:3trtf8d68mbrpj7s400o64c178@google.com
+CREATED:20230525T153655Z
+DESCRIPTION:July 23-29\, 2023 Panama City\, FLCost: $600 (offset by fundrai
+ sers)This is a week on the beach in beautiful Panama City filled with sun\,
+  sand\, and the Holy Spirit.The week will be filled with Spirit-filled wors
+ hip\, anointed messages\, and time to enjoy the beach and grow in your walk
+  with the Lord.This is a week you do not want to miss!Contact Pastor Rob fo
+ r more information at rbarringer@hotmail.com \nFull details here: https://t
+ ockify.com/ignite.church/detail/9/1690131600000
+LAST-MODIFIED:20230525T153655Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:SoulFire Summer Camp (Middle/High School)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230625T230000Z
+DTEND:20230626T010000Z
+DTSTAMP:20230525T175111Z
+UID:5gp15pcgak5fss6n5cnj9hfvlh@google.com
+CREATED:20230525T153630Z
+DESCRIPTION:Mark your calendars now and invite everyone you know. We have J
+ osh Cherry And The Hucklebearers will be LIVE and in CONCERT at Ignite! Mor
+ e information to come soon\, but we will have food\, bounce houses\, games\
+ , food\, and incredible music! There will be a $20 charge PER CAR. The cove
+ r charge will include the meal and all activities! All proceeds will go to 
+ fund future youth events and activities.  \nFull details here: https://tock
+ ify.com/ignite.church/detail/28/1687734000000
+LAST-MODIFIED:20230525T153630Z
+LOCATION:Ignite Church at Lakewood\, 19585 MO-413\, Reeds Spring\, MO 65737
+ \, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:PARTY IN THE PARKING LOT
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20230619T170000
+DTEND;TZID=America/Chicago:20230619T190000
+RRULE:FREQ=MONTHLY;BYDAY=3MO
+DTSTAMP:20230525T175111Z
+UID:4f5gdfus0g3m9lkn7jkoqoo00c@google.com
+CREATED:20230525T153549Z
+DESCRIPTION:Diaper Bank of Stone & Taney CountyDate/Time: Third Monday of E
+ ach Month 5-7pmLocation: Ignite Church of Lakewood \nFull details here: htt
+ ps://tockify.com/ignite.church/detail/10/1687212000000
+LAST-MODIFIED:20230525T153549Z
+LOCATION:Ignite Church at Lakewood\, 19585 MO-413\, Branson West\, MO 65737
+ \, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Diaper Bank of Stone & Taney County
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230610T230000Z
+DTEND:20230611T010000Z
+DTSTAMP:20230525T175111Z
+UID:24ddop8jhil57jq1nr5dqk6gnb@google.com
+CREATED:20230525T153527Z
+DESCRIPTION:This Daddy Daughter Date will be a wonderful time to connect wh
+ ile making unforgettable memories together! We will be enjoying dinner\, co
+ nnection opportunities\, games\, entertainment and photo ops. Fathers and f
+ ather figures alike are invited to spend this evening with the special girl
+ (s) in their life! All ages are welcome.When: June 10th 6-8pmWhere: IGNITE 
+ CHURCH AT LAKEWOODCost: $5 Suggest Donation (for Daddy & Daughter combined)
+ Click Here To Get Tickets Now! (bootsbeauties.eventbrite.com)Agenda: Dinner
+ Connection opportunitiesGamesEntertainmentPhoto opsMemories that will last 
+ a lifetime!Prer... \nFull details here: https://tockify.com/ignite.church/d
+ etail/25/1686438000000
+LAST-MODIFIED:20230525T153527Z
+LOCATION:IGNITE CHURCH AT LAKEWOOD\, 19585 MO-413\, Branson West\, MO 65737
+ \, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Boots & Beauties: Daddy/Daughter Date
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230603T150000Z
+DTEND:20230603T230000Z
+DTSTAMP:20230525T175111Z
+UID:65df3bk2s6a7cc672lssrkkjhq@google.com
+CREATED:20230525T153456Z
+DESCRIPTION:Hey Fellas! Check out this event in Bolivar for Dudes of all ag
+ es! It is absolutely FREE and is going to be INCREDIBLE! We would love to s
+ ee men from Ignite bringing their Jeeps\, side by sides\, and buddies to th
+ is.Our annual Dude's Day is coming up this summer and you're not going to w
+ ant to miss out!!!We have tons of new and exciting things happening this ye
+ ar and we want YOU to be a part of it!For more information\, to fill out th
+ e required waiver for park entry and to register for competitions and tourn
+ aments visit iamthehill.com/dudesday \nFull details here: https://tockify.c
+ om/ignite.church/detail/27/1685804400000
+LAST-MODIFIED:20230525T153456Z
+LOCATION:PITBULL POWERSPORTS\, 4198 MO-13\, Bolivar\, MO 65613\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Dude's Day
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20230529T190000
+DTEND;TZID=America/Chicago:20230529T200000
+RRULE:FREQ=WEEKLY;BYDAY=MO
+DTSTAMP:20230525T175111Z
+UID:7uej0rl19uhb71rs935ogh76jh@google.com
+CREATED:20230525T153422Z
+DESCRIPTION:Join us at 7pm every Monday for prayer service.Click here for m
+ ore information! \nFull details here: https://tockify.com/ignite.church/det
+ ail/5/1685404800000
+LAST-MODIFIED:20230525T153422Z
+LOCATION:Ignite Church at Lakewood\, 19585 MO-413\, Branson West\, MO 65737
+ \, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Prayer service
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
