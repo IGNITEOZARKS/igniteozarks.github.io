@@ -88,7 +88,7 @@ function  callback() {
              setTimeout(function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
        }, 15);
-		document.getElementById("navbarSupportedContent").style.width = "200";
+		document.getElementById("navbarSupportedContent").style.width = "0";
         }
     });
 }
