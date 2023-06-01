@@ -78,7 +78,7 @@
     "sitemapSwitcher": true,
     "sitemapSwitcherAuto": "on",
     "siteUrl": "https://www.ignitetheozarks.com/",
-    "publishChangesOnly": true,
+    "publishChangesOnly": false,
     "witsec-white-label": true,
     "google-analytics": "<script src=\"https://code.jquery.com/jquery-1.11.1.min.js\"></script>\n \n<script src=\"https://code.jquery.com/ui/1.11.1/jquery-ui.min.js\"></script>\n\n<link rel=\"stylesheet\" href=\"https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css\" />\n\n<script src=\"popup.js\"></script>\n\n<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-V4Z7PZFP8J\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-V4Z7PZFP8J');\n</script>\n\n<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=642f00f32e43270019720d93&product=sop' async='async'></script>\n\n",
     "witsec-mailform-to": "ckonkol@gmail.com",
@@ -16168,7 +16168,7 @@
         "title": "Sign-Up to Serve",
         "order": "6",
         "meta_descr": "Sign-Up to Serve @ Ignite Church!",
-        "meta_image": "@PROJECT_PATH@/assets/images/volunteersneeded-2-940x788.png"
+        "meta_image": "@PROJECT_PATH@/assets/images/volunteersneededcopped1-899x637.png"
       },
       "components": [
         {
