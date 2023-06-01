@@ -16168,7 +16168,7 @@
         "title": "Sign-Up to Serve",
         "order": "6",
         "meta_descr": "Sign-Up to Serve @ Ignite Church!",
-        "meta_image": "@PROJECT_PATH@/assets/images/volunteersneededcopped1-899x637.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignite.png"
       },
       "components": [
         {
