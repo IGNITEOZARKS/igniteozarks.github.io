@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ignite Church at Lakewood",
-    "currentPage": "signup.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -16168,7 +16168,8 @@
         "title": "Sign-Up to Serve",
         "order": "6",
         "meta_descr": "Sign-Up to Serve @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignite.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignite.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/volunteersignite%20(1)-1018x550.png"
       },
       "components": [
         {
