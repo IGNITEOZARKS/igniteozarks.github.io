@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ignite Church at Lakewood",
-    "currentPage": "index.html",
+    "currentPage": "anniversary.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -123,7 +123,7 @@
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -4031,7 +4031,7 @@
         "title": "Contact",
         "order": "3",
         "meta_descr": "Let us know how you are doing!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -4778,7 +4778,7 @@
         "title": "Giving",
         "order": "2",
         "meta_descr": "Be a cheerful giver!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -5431,9 +5431,8 @@
       "settings": {
         "title": "Need Prayer?",
         "order": "9",
-        "meta_image": "@PROJECT_PATH@/assets/images/prayerchangeseverything-web-600x337.jpg",
         "meta_descr": "Prayer @ Ignite Church!",
-        "socialSharingUrl": ""
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -6086,7 +6085,7 @@
         "title": "Email Signup",
         "order": "8",
         "meta_descr": "Signup @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -6701,7 +6700,7 @@
         "title": "Connect",
         "order": "5",
         "meta_descr": "Connect @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -7922,7 +7921,7 @@
         "title": "Loaves",
         "order": "17",
         "meta_descr": "Loaves @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -8511,7 +8510,7 @@
         "title": "Life Groups",
         "order": "10",
         "meta_descr": "LifeGroups @ Ignite Church!",
-        "meta_image": "@PROJECT_PATH@/assets/images/wednesday-512x217.jpg"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -9213,7 +9212,7 @@
         "title": "Ignite Kids",
         "order": "13",
         "meta_descr": "Kids @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -10080,7 +10079,7 @@
         "title": "Growth Track",
         "order": "11",
         "meta_descr": "GrowthTrack @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -10754,7 +10753,7 @@
         "title": "Monday Night Prayer",
         "order": "12",
         "meta_descr": "Monday Night Prayer @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -11497,7 +11496,7 @@
         "title": "Events",
         "order": "16",
         "meta_descr": "Events @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -12071,7 +12070,7 @@
         "title": "About",
         "order": "1",
         "meta_descr": "About Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -12776,7 +12775,7 @@
         "title": "Ignite Youth",
         "order": "15",
         "meta_descr": "Youth @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -13461,7 +13460,7 @@
         "title": "Anniversary",
         "order": "19",
         "meta_descr": "Anniversary @ Ignite Church!",
-        "meta_image": "@PROJECT_PATH@/assets/images/ignitecelebration-940x788%20(1)-940x788.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -14163,7 +14162,7 @@
         "title": "Kids Volunteers",
         "order": "14",
         "meta_descr": "Kids Volunteers @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -14763,7 +14762,7 @@
         "title": "Messages",
         "order": "4",
         "meta_descr": "Messages @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
@@ -16800,7 +16799,7 @@
         "title": "Food Pantry",
         "order": "7",
         "meta_descr": "Food Pantry @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/volunteersignitenew.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
       },
       "components": [
         {
