@@ -11649,6 +11649,53 @@ a {
   position: absolute;
   top: 0;
 }
+.cid-tLLYs1o9rW {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+}
+.cid-tLLYs1o9rW .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-tLLYs1o9rW .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-tLLYs1o9rW .content-wrapper {
+  background: #ffffff;
+}
+@media (max-width: 991px) {
+  .cid-tLLYs1o9rW .content-wrapper .image-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-tLLYs1o9rW .content-wrapper {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-tLLYs1o9rW .content-wrapper {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-tLLYs1o9rW .content-wrapper {
+    padding: 5rem 3rem;
+  }
+  .cid-tLLYs1o9rW .content-wrapper .text-wrapper {
+    padding-left: 2rem;
+  }
+}
+.cid-tLLYs1o9rW .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
 .cid-tKhy2ZhlSg {
   padding-top: 1rem;
   padding-bottom: 1rem;
