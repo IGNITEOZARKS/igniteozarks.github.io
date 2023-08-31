@@ -68,7 +68,7 @@
         "url": "https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,300i,400i,500i,600i,700i,800i"
       }
     ],
-    "uniqCompNum": 286,
+    "uniqCompNum": 287,
     "versionPublish": "5.7.4",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -8968,82 +8968,17 @@
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".counter-container": {
-              "ul": {
-                "margin": "0",
-                "list-style": "none",
-                "padding-left": "2.5rem",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "position": "relative",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "position": "relative",
-                    "padding-left": "1rem",
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "-40px",
-                      "content": "\"\"",
-                      "display": "flex",
-                      "justify-content": "center",
-                      "align-items": "center",
-                      "color": "contrast(@iconColor)",
-                      "background-color": "@iconColor",
-                      "width": "40px",
-                      "height": "40px",
-                      "border-radius": "50%",
-                      "margin-top": "5px",
-                      "& when (@countersType = \"circle\")": {
-                        "background": "none",
-                        "border": "1px solid @iconColor",
-                        "color": "@iconColor"
-                      },
-                      "& when (@countersType = \"square\")": {
-                        "border-radius": "0"
-                      },
-                      "& when (@mark)": {
-                        "content": "\"✓\""
-                      }
-                    }
-                  },
-                  "& when not (@stylizedCounters)": {
-                    "&:before": {
-                      "position": "absolute",
-                      "left": "-1.6rem",
-                      "content": "\"\\2022\"",
-                      "color": "@iconColor",
-                      "font-weight": "bold",
-                      "font-size": "2rem",
-                      "width": "1.6rem",
-                      "line-height": "1.2"
-                    }
-                  }
-                }
-              }
-            },
-            ".mbr-section-title": {
-              "text-align": "left",
-              "color": "#09119f"
-            },
-            ".mbr-section-title P": {
-              "text-align": "center"
-            },
-            ".mbr-section-title DIV": {
-              "text-align": "left"
-            }
+            "background-color": "@bgColor"
           },
-          "_name": "content8",
+          "_name": "content5",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content8\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Stylized\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Mark\" name=\"mark\" condition=\"stylizedCounters\" checked>\n        <select title=\"Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n        </select>\n        <input type=\"color\" name=\"iconColor\" title=\"Color\" value=\"#6592e6\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"counter-container col-md-12 col-lg-{{textWidth}}\">\n                <h4 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\"><p><b style=\"font-size: 2.2rem;\">Starts September 13th, 2023</b><br></p><p><span style=\"font-size: 2.2rem;\"><b>\n</b></span></p><b><div><b><br></b></div>Time:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b><b>6:00pm - 8:00pm\n</b><div><b>Location:&nbsp; Ignite Church<br><br>6:00pm:</b>&nbsp; &nbsp; &nbsp;Gather &amp; Share a Meal<div>\n</div><div><b style>6:45pm:</b>&nbsp; &nbsp; &nbsp;Dismiss to LifeGroup</div><div><br><b>LifeGroup Offerings Are Coming Soon!</b></div></div><br><b>We are looking for LifeGroup Host!</b><br><div><div>Are you interested in hosting a LifeGroup? <a href=\"lifegroupform.html\" class=\"text-primary\" style=\"font-weight: normal;\">Click here to fill out an interest form</a></div></div><div><br></div></h4>\n                <div class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <div><br></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "txUBjlYNAN",
-          "_anchor": "content8-34",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Starts September 13th, 2023\n</b><div><b>\n</b></div><div><b>\n</b></div><div><b><br></b></div></h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><div><b>Starts September 13th, 2023</b></div></h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><b>Time:&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b>6:00pm - 8:00pm\n<br><b>Location:</b>  Ignite Church\n<br>\n<br><b>6:00pm:&nbsp; &nbsp;</b>Gather &amp; Share a Meal\n<br><b>6:45pm:</b>&nbsp; &nbsp;Dismiss to LifeGroup\n<br>\n<br><b>LifeGroup Offerings Are Coming Soon!\n</b><br>\n<br><b>We are looking for LifeGroup Host!\n</b><br>Are you interested in hosting a LifeGroup? <a href=\"lifegroupform.html\" class=\"text-primary\">Click here to fill out an interest form&nbsp;</a><br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tOvwa4Tlge",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "content5-7y"
         },
         {
           "alias": false,
