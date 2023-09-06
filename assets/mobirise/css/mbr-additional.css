@@ -806,47 +806,14 @@ a {
 .cid-tsIOYaIiTl .mbr-text,
 .cid-tsIOYaIiTl .mbr-section-btn {
   text-align: center;
+  color: #000000;
 }
 .cid-tsIOYaIiTl .item-title {
   text-align: center;
-  color: #000000;
+  color: #148ed7;
 }
 .cid-tsIOYaIiTl .item-subtitle {
   text-align: left;
-}
-.cid-tP4wXhWejo {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: #ffffff;
-}
-.cid-tP4wXhWejo .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-tP4wXhWejo .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-@media (min-width: 1500px) {
-  .cid-tP4wXhWejo .container {
-    max-width: 1400px;
-  }
-}
-.cid-tP4wXhWejo .mbr-iconfont {
-  display: block;
-  font-size: 5rem;
-  color: #6592e6;
-  margin-bottom: 2rem;
-}
-.cid-tP4wXhWejo .card-wrapper {
-  margin-top: 3rem;
-}
-.cid-tP4wXhWejo .row {
-  justify-content: center;
 }
 .cid-trT1Mp1p2z {
   padding-top: 2rem;
