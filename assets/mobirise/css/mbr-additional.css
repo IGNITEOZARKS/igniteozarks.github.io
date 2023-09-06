@@ -910,6 +910,11 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .cid-trT1Mp1p2z .embla__button {
+    display: none;
+  }
+}
 .cid-trT1Mp1p2z .embla__button:disabled {
   cursor: default;
   display: none;
