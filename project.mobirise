@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ignite Church at Lakewood",
-    "currentPage": "LifeGroups.html",
+    "currentPage": "giving.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -118,8 +118,8 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Ignite Church",
-        "meta_descr": "Ignite Church @ Lakewood",
+        "title": "IGNITE Church",
+        "meta_descr": "IGNITE Church @ Lakewood",
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
@@ -4001,7 +4001,8 @@
         "title": "Lakewood Campus",
         "order": "3",
         "meta_descr": "Let us know how you are doing!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -4747,7 +4748,8 @@
         "title": "Giving",
         "order": "2",
         "meta_descr": "Be a cheerful giver!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -5402,8 +5404,9 @@
       "settings": {
         "title": "Need Prayer?",
         "order": "9",
-        "meta_descr": "Prayer @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Prayer @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -6054,8 +6057,9 @@
       "settings": {
         "title": "Email Signup",
         "order": "8",
-        "meta_descr": "Signup @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Signup @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -6668,8 +6672,9 @@
       "settings": {
         "title": "Connect",
         "order": "5",
-        "meta_descr": "Connect @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Connect @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -7885,10 +7890,11 @@
     },
     "loaves.html": {
       "settings": {
-        "title": "Loaves",
+        "title": "Loaves & Fishes",
         "order": "19",
-        "meta_descr": "Loaves @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Loaves & Fishes @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -8473,10 +8479,11 @@
     },
     "LifeGroups.html": {
       "settings": {
-        "title": "Life Groups",
+        "title": "LifeGroups",
         "order": "11",
-        "meta_descr": "LifeGroups @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "LifeGroups @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -9174,10 +9181,11 @@
     },
     "kids.html": {
       "settings": {
-        "title": "Ignite Kids",
+        "title": "IGNITEKids",
         "order": "15",
-        "meta_descr": "Kids @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Kids @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -10045,8 +10053,9 @@
       "settings": {
         "title": "Growth Track",
         "order": "13",
-        "meta_descr": "GrowthTrack @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Growth Track @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -10718,8 +10727,9 @@
       "settings": {
         "title": "Monday Night Prayer",
         "order": "14",
-        "meta_descr": "Monday Night Prayer @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Monday Night Prayer @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -11460,8 +11470,9 @@
       "settings": {
         "title": "Events",
         "order": "18",
-        "meta_descr": "Events @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Events @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -12130,8 +12141,9 @@
       "settings": {
         "title": "About",
         "order": "1",
-        "meta_descr": "About Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "About IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -12832,10 +12844,11 @@
     },
     "youth.html": {
       "settings": {
-        "title": "Ignite Youth",
+        "title": "IGNITEYouth",
         "order": "17",
-        "meta_descr": "Youth @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Youth @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -14219,8 +14232,9 @@
       "settings": {
         "title": "Kids Volunteers",
         "order": "16",
-        "meta_descr": "Kids Volunteers @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Kids Volunteers @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -14818,8 +14832,9 @@
       "settings": {
         "title": "Messages",
         "order": "4",
-        "meta_descr": "Messages @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Messages @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -17183,8 +17198,9 @@
       "settings": {
         "title": "Sign-Up to Serve",
         "order": "6",
-        "meta_descr": "Sign-Up to Serve @ Ignite Church!",
-        "socialSharingUrl": "https://ignitetheozarks.com/volunteersignitenew.png"
+        "meta_descr": "Sign-Up to Serve @ IGNITE Church!",
+        "socialSharingUrl": "https://ignitetheozarks.com/volunteersignitenew.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -17834,8 +17850,9 @@
       "settings": {
         "title": "Food Pantry",
         "order": "7",
-        "meta_descr": "Food Pantry @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Food Pantry @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -18460,10 +18477,11 @@
     },
     "lifegroupform.html": {
       "settings": {
-        "title": "Life Groups Form",
+        "title": "LifeGroups Form",
         "order": "12",
-        "meta_descr": "LifeGroups @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "LifeGroups @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
@@ -19111,8 +19129,9 @@
       "settings": {
         "title": "Baptism",
         "order": "10",
-        "meta_descr": "Baptism @ Ignite Church!",
-        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png"
+        "meta_descr": "Baptism @ IGNITE Church!",
+        "socialSharingUrl": "https://www.ignitetheozarks.com/logosocial.png",
+        "meta_image": "@PROJECT_PATH@/assets/images/logosocial-1018x550.png"
       },
       "components": [
         {
