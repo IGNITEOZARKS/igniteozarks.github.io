@@ -15771,34 +15771,6 @@ a {
   position: absolute;
   top: 0;
 }
-.cid-tOeUDu8d77 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
-.cid-tOeUDu8d77 .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-tOeUDu8d77 .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-@media (max-width: 991px) {
-  .cid-tOeUDu8d77 .image-wrapper {
-    margin-bottom: 1rem;
-  }
-}
-.cid-tOeUDu8d77 .row {
-  flex-direction: row-reverse;
-}
-.cid-tOeUDu8d77 img {
-  width: 100%;
-}
 .cid-tOfsnSNlzG {
   padding-top: 15px;
   padding-bottom: 90px;
