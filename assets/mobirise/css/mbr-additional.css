@@ -11645,6 +11645,100 @@ a {
   position: absolute;
   top: 0;
 }
+.cid-ueJDvlTqsi {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+}
+.cid-ueJDvlTqsi .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-ueJDvlTqsi .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-ueJDvlTqsi .content-wrapper {
+  background: #ffffff;
+}
+@media (max-width: 991px) {
+  .cid-ueJDvlTqsi .content-wrapper .image-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-ueJDvlTqsi .content-wrapper {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-ueJDvlTqsi .content-wrapper {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-ueJDvlTqsi .content-wrapper {
+    padding: 5rem 3rem;
+  }
+  .cid-ueJDvlTqsi .content-wrapper .text-wrapper {
+    padding-left: 2rem;
+  }
+}
+.cid-ueJDvlTqsi .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+.cid-ueJDxqUeat {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+}
+.cid-ueJDxqUeat .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-ueJDxqUeat .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-ueJDxqUeat .content-wrapper {
+  background: #ffffff;
+}
+@media (max-width: 991px) {
+  .cid-ueJDxqUeat .content-wrapper .image-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-ueJDxqUeat .content-wrapper {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-ueJDxqUeat .content-wrapper {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-ueJDxqUeat .content-wrapper {
+    padding: 5rem 3rem;
+  }
+  .cid-ueJDxqUeat .content-wrapper .text-wrapper {
+    padding-left: 2rem;
+  }
+}
+.cid-ueJDxqUeat .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
 .cid-udjsNIEMPV {
   padding-top: 1rem;
   padding-bottom: 1rem;
