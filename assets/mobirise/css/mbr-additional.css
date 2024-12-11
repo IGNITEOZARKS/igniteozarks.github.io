@@ -11645,6 +11645,100 @@ a {
   position: absolute;
   top: 0;
 }
+.cid-uwEvKV1tGA {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+}
+.cid-uwEvKV1tGA .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uwEvKV1tGA .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uwEvKV1tGA .content-wrapper {
+  background: #ffffff;
+}
+@media (max-width: 991px) {
+  .cid-uwEvKV1tGA .content-wrapper .image-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-uwEvKV1tGA .content-wrapper {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-uwEvKV1tGA .content-wrapper {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-uwEvKV1tGA .content-wrapper {
+    padding: 5rem 3rem;
+  }
+  .cid-uwEvKV1tGA .content-wrapper .text-wrapper {
+    padding-left: 2rem;
+  }
+}
+.cid-uwEvKV1tGA .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+.cid-uwEvLX1sNb {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+}
+.cid-uwEvLX1sNb .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uwEvLX1sNb .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uwEvLX1sNb .content-wrapper {
+  background: #ffffff;
+}
+@media (max-width: 991px) {
+  .cid-uwEvLX1sNb .content-wrapper .image-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-uwEvLX1sNb .content-wrapper {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-uwEvLX1sNb .content-wrapper {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-uwEvLX1sNb .content-wrapper {
+    padding: 5rem 3rem;
+  }
+  .cid-uwEvLX1sNb .content-wrapper .text-wrapper {
+    padding-left: 2rem;
+  }
+}
+.cid-uwEvLX1sNb .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
 .cid-uv8Xj0hITu {
   padding-top: 1rem;
   padding-bottom: 1rem;
