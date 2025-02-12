@@ -4190,7 +4190,7 @@ a {
 .cid-trTosfsphe .card-wrapper {
   display: flex;
   border-radius: 4px;
-  background: #fafafa;
+  background: #fff0b0;
 }
 .cid-trTosfsphe .card-wrapper:not(:nth-last-child(1)) {
   margin-bottom: 2rem;
@@ -4211,8 +4211,8 @@ a {
   color: #148ed7;
 }
 .cid-tsxwZgGSm5 {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 0rem;
+  padding-bottom: 4rem;
   background-color: #ffffff;
 }
 .cid-tsxwZgGSm5 .mbr-fallback-image.disabled {
