@@ -30,9 +30,6 @@
 		<loc>https://www.ignitetheozarks.com/kids.html</loc>
 	</url>
 	<url>
-		<loc>https://www.ignitetheozarks.com/growth.html</loc>
-	</url>
-	<url>
 		<loc>https://www.ignitetheozarks.com/monday.html</loc>
 	</url>
 	<url>
@@ -70,5 +67,8 @@
 	</url>
 	<url>
 		<loc>https://www.ignitetheozarks.com/wednesday.html</loc>
+	</url>
+	<url>
+		<loc>https://www.ignitetheozarks.com/nextsteps.html</loc>
 	</url>
 </urlset>
