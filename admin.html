@@ -42,7 +42,7 @@
     </div>
 
     <script type="module">
-        import { db, auth, doc, getDoc, updateDoc, signInWithEmailAndPassword, onAuthStateChanged, signOut } from './firebase-config.js';
+       import { db, auth, doc, getDoc, setDoc, signInWithEmailAndPassword, onAuthStateChanged, signOut } from './firebase-config.js';
 
         const loginSection = document.getElementById('login-section');
         const dashboardSection = document.getElementById('dashboard-section');
@@ -125,21 +125,16 @@
 
             const docRef = doc(db, "pages", pageId);
             try {
-                // This will create the document if it doesn't exist, or update it
-                await updateDoc(docRef, updateData).catch(async (err) => {
-                    // If document doesn't exist, we might need setDoc (not imported here for brevity, usually updateDoc is enough if doc exists)
-                    // For simplicity, ensure you create empty docs in Firestore console first or use setDoc logic.
-                    console.error("Error updating", err);
-                    document.getElementById('status-msg').innerText = "Error saving. Check console.";
-                    document.getElementById('status-msg').className = "text-danger";
-                });
-                
-                document.getElementById('status-msg').innerText = "Saved Successfully!";
-                document.getElementById('status-msg').className = "text-success";
-            } catch (e) {
-                // If update fails (e.g. doc doesn't exist), try handling that or creating the doc manually in console first
-                document.getElementById('status-msg').innerText = "Saved!"; 
-            }
+    // { merge: true } creates the file if missing, or just updates fields if it exists
+    await setDoc(docRef, updateData, { merge: true }); 
+    
+    document.getElementById('status-msg').innerText = "Saved Successfully!";
+    document.getElementById('status-msg').className = "text-success";
+} catch (err) {
+    console.error("Error saving:", err);
+    document.getElementById('status-msg').innerText = "Error saving: " + err.message;
+    document.getElementById('status-msg').className = "text-danger";
+}
         });
 
     </script>
