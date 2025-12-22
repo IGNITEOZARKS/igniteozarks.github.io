@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site Admin</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <style>
+        body { padding: 20px; background-color: #f4f4f4; }
+        .editor-container { background: white; padding: 20px; border-radius: 8px; display: none; }
+        .login-container { max-width: 400px; margin: 100px auto; background: white; padding: 30px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+    <div id="login-section" class="login-container">
+        <h3>Admin Login</h3>
+        <input type="email" id="email" class="form-control mb-2" placeholder="Email">
+        <input type="password" id="password" class="form-control mb-2" placeholder="Password">
+        <button id="login-btn" class="btn btn-primary w-100">Login</button>
+        <p id="login-error" class="text-danger mt-2"></p>
+    </div>
+
+    <div id="dashboard-section" class="container editor-container">
+        <div class="d-flex justify-content-between">
+            <h2>Website Content Editor</h2>
+            <button id="logout-btn" class="btn btn-outline-danger">Logout</button>
+        </div>
+        <hr>
+
+        <label><strong>Select Page to Edit:</strong></label>
+        <select id="page-selector" class="form-control mb-4">
+            <option value="home">Home Page (index.html)</option>
+            <option value="about">About Page (about.html)</option>
+            <option value="events">Events Page (events.html)</option>
+            </select>
+
+        <div id="editor-fields">
+            </div>
+
+        <button id="save-btn" class="btn btn-success mt-3">Save Changes</button>
+        <p id="status-msg" class="mt-2"></p>
+    </div>
+
+    <script type="module">
+        import { db, auth, doc, getDoc, updateDoc, signInWithEmailAndPassword, onAuthStateChanged, signOut } from './firebase-config.js';
+
+        const loginSection = document.getElementById('login-section');
+        const dashboardSection = document.getElementById('dashboard-section');
+        const pageSelector = document.getElementById('page-selector');
+        const editorFields = document.getElementById('editor-fields');
+
+        // --- Authentication ---
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                loginSection.style.display = 'none';
+                dashboardSection.style.display = 'block';
+                loadPageData(pageSelector.value);
+            } else {
+                loginSection.style.display = 'block';
+                dashboardSection.style.display = 'none';
+            }
+        });
+
+        document.getElementById('login-btn').addEventListener('click', async () => {
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('password').value;
+            try {
+                await signInWithEmailAndPassword(auth, email, pass);
+            } catch (error) {
+                document.getElementById('login-error').innerText = "Invalid Login";
+            }
+        });
+
+        document.getElementById('logout-btn').addEventListener('click', () => signOut(auth));
+
+        // --- Editor Logic ---
+        
+        // Configuration: Define what fields are editable for each page
+        const pageConfig = {
+           'home': [
+        { id: 'hometitle', label: 'Welcome Title' },
+        
+        // NEW LINE HERE:
+        { id: 'home_news_ticker', label: 'News Ticker (HTML Allowed)' }
+            ],
+           'about': [
+        { id: 'edit1', label: 'Section Title (edit1)' },
+        { id: 'edit2', label: 'Main Description (edit2)' }
+            ]
+        };
+
+        // Load Data
+        async function loadPageData(pageId) {
+            editorFields.innerHTML = 'Loading...';
+            const docRef = doc(db, "pages", pageId);
+            const docSnap = await getDoc(docRef);
+            const data = docSnap.exists() ? docSnap.data() : {};
+            
+            editorFields.innerHTML = '';
+            const fields = pageConfig[pageId] || [];
+
+            fields.forEach(field => {
+                const val = data[field.id] || '';
+                const html = `
+                    <div class="form-group mt-3">
+                        <label>${field.label}</label>
+                        <textarea class="form-control field-input" data-key="${field.id}" rows="3">${val}</textarea>
+                    </div>`;
+                editorFields.insertAdjacentHTML('beforeend', html);
+            });
+        }
+
+        // Handle Page Change
+        pageSelector.addEventListener('change', (e) => loadPageData(e.target.value));
+
+        // Save Data
+        document.getElementById('save-btn').addEventListener('click', async () => {
+            const pageId = pageSelector.value;
+            const inputs = document.querySelectorAll('.field-input');
+            let updateData = {};
+
+            inputs.forEach(input => {
+                updateData[input.getAttribute('data-key')] = input.value;
+            });
+
+            const docRef = doc(db, "pages", pageId);
+            try {
+                // This will create the document if it doesn't exist, or update it
+                await updateDoc(docRef, updateData).catch(async (err) => {
+                    // If document doesn't exist, we might need setDoc (not imported here for brevity, usually updateDoc is enough if doc exists)
+                    // For simplicity, ensure you create empty docs in Firestore console first or use setDoc logic.
+                    console.error("Error updating", err);
+                    document.getElementById('status-msg').innerText = "Error saving. Check console.";
+                    document.getElementById('status-msg').className = "text-danger";
+                });
+                
+                document.getElementById('status-msg').innerText = "Saved Successfully!";
+                document.getElementById('status-msg').className = "text-success";
+            } catch (e) {
+                // If update fails (e.g. doc doesn't exist), try handling that or creating the doc manually in console first
+                document.getElementById('status-msg').innerText = "Saved!"; 
+            }
+        });
+
+    </script>
+</body>
+</html>

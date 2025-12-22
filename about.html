@@ -127,7 +127,7 @@
             <div class="title col-md-12 col-lg-10">
                 <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5">
                     <strong>Everyone Is Welcome!</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">If you are looking for a church to call home, we invite you to join us on Sunday mornings at 9:30. Come as you are and join us in this new Adventure where we believe we are called to help people Find God, Know Freedom, Discover their Purpose, and Make a Difference!</h4>
+                <h4 id="edit1" class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">If you are looking for a church to call home, we invite you to join us on Sunday mornings at 9:30. Come as you are and join us in this new Adventure where we believe we are called to help people Find God, Know Freedom, Discover their Purpose, and Make a Difference!</h4>
                 
             </div>
         </div>
@@ -152,7 +152,7 @@
                         <div class="card-box">
                             <h5 class="card-title mbr-fonts-style m-0 mb-3 display-5"><strong>Our Pastors</strong></h5>
                             <h6 class="card-subtitle mbr-fonts-style mb-3 display-4"><strong>Pastor Rob &amp; Rebecca Barringer</strong></h6>
-                            <p class="mbr-text mbr-fonts-style display-7"><br>Pastor Rob Barringer, and his wife, Rebecca, are the founders of IGNITE Church. They were married in 1996 and have been in ministry together since 1997. Ten of those years were spent in the Reeds Spring area. In 2018, the Barringer family left the area to minister in a new place, but God continued to burden their hearts for the people of Stone County. After much prayer and discernment, Rob and Rebecca have returned to start a new thing with Ignite Church. They will reside in the area with their daughter, Riley. They also have a grown son, Sam, who resides in Springfield. In short, this community is their home and their desire is for Ignite to minister to and serve this community in ways that only God can do!<br><br><br><br><br></p>
+                            <p id="edit2" class="mbr-text mbr-fonts-style display-7"><br>Pastor Rob Barringer, and his wife, Rebecca, are the founders of IGNITE Church. They were married in 1996 and have been in ministry together since 1997. Ten of those years were spent in the Reeds Spring area. In 2018, the Barringer family left the area to minister in a new place, but God continued to burden their hearts for the people of Stone County. After much prayer and discernment, Rob and Rebecca have returned to start a new thing with Ignite Church. They will reside in the area with their daughter, Riley. They also have a grown son, Sam, who resides in Springfield. In short, this community is their home and their desire is for Ignite to minister to and serve this community in ways that only God can do!<br><br><br><br><br></p>
                             
                         </div>
                     </div>
@@ -255,5 +255,27 @@
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
+<script type="module">
+  import { db, doc, getDoc } from './firebase-config.js';
+
+  async function loadContent() {
+    // 1. Point to the "about" document in Firebase
+    const docRef = doc(db, "pages", "about"); 
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      const data = docSnap.data();
+
+      // 2. Connect your specific IDs
+      // Using .innerHTML allows you to save bold text/links if needed
+      if (data.edit1) document.getElementById('edit1').innerHTML = data.edit1;
+      if (data.edit2) document.getElementById('edit2').innerHTML = data.edit2;
+    } else {
+      console.log("No content found for About page.");
+    }
+  }
+
+  loadContent();
+</script>
   </body>
 </html>
