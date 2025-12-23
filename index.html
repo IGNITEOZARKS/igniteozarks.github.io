@@ -147,7 +147,7 @@
             <h4 id="hometitle" class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Welcome Home</strong></h4>
             
         </div>
-        <div class="row mt-4">
+        <div class="row mt-4" id="home_features_container">
             
             <div class="item features-image сol-12 col-md-6 col-lg-4 active">
                 <div class="item-wrapper">
@@ -201,7 +201,7 @@
         </div>
         <div class="embla mt-4" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-auto-play="true" data-auto-play-interval="5" data-draggable="true">
             <div class="embla__viewport container">
-                <div class="embla__container">
+                <div class="embla__container" id="home_slider_container">
                     
                     <div class="embla__slide slider-image item active" style="margin-left: 1rem; margin-right: 1rem;">
                         <div class="slide-content">
@@ -391,33 +391,64 @@
     if (docSnap.exists()) {
       const data = docSnap.data();
       
-      // Update Title
+      // 1. Update Title
       if (data.hometitle) document.getElementById('hometitle').innerHTML = `<strong>${data.hometitle}</strong>`;
 
-      // Update Ticker
+      // 2. Update Ticker
       if (data.home_news_ticker) {
           let html = '';
-          const items = data.home_news_ticker;
-          
-          // Check if it's the new Array format (List) or old String format
-          if (Array.isArray(items)) {
-              items.forEach(item => {
-                  // Standard Dot
-                  html += `<span class="dot" style="font-size: 1rem;"></span>&nbsp;`;
-                  
-                  // Text with or without Link
-                  if (item.link) {
-                      html += `<a href="${item.link}" class="text-primary">${item.text}</a>&nbsp;`;
-                  } else {
-                      html += `<span class="text-primary">${item.text}</span>&nbsp;`;
-                  }
-              });
-          } else {
-              // Fallback for old data format
-              html = items;
-          }
-          
+          const items = Array.isArray(data.home_news_ticker) ? data.home_news_ticker : [];
+          items.forEach(item => {
+              html += `<span class="dot" style="font-size: 1rem;"></span>&nbsp;`;
+              if (item.link) {
+                  html += `<a href="${item.link}" class="text-primary">${item.text}</a>&nbsp;`;
+              } else {
+                  html += `<span class="text-primary">${item.text}</span>&nbsp;`;
+              }
+          });
           document.getElementById('home_news_ticker').innerHTML = html;
+      }
+
+      // 3. Update Features Section (Welcome Home)
+      if (data.home_features && Array.isArray(data.home_features)) {
+          const container = document.getElementById('home_features_container');
+          container.innerHTML = data.home_features.map(item => `
+            <div class="item features-image сol-12 col-md-6 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <a href="${item.link || '#'}"><img src="${item.image || ''}" alt="${item.title}"></a>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="item-title mbr-fonts-style display-5"><a href="${item.link || '#'}" class="text-primary"><strong>${item.title}</strong></a></h5>
+                        <p class="mbr-text mbr-fonts-style mt-3 display-7">${item.text}</p>
+                    </div>
+                </div>
+            </div>
+          `).join('');
+      }
+
+      // 4. Update Slider Section (What's Happening)
+      if (data.home_slider && Array.isArray(data.home_slider)) {
+          const container = document.getElementById('home_slider_container');
+          container.innerHTML = data.home_slider.map(item => `
+            <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                <div class="slide-content">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <a href="${item.link || '#'}"><img src="${item.image || ''}" alt="${item.title}"></a>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="item-title mbr-fonts-style display-4"><em>${item.text || ''}</em></h5>
+                        <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><a href="${item.link || '#'}" class="text-primary">${item.title}</a></h6>
+                    </div>
+                    <div class="mbr-section-btn item-footer mt-2"><a href="${item.link || '#'}" class="btn item-btn btn-primary display-7">Find Out More!</a></div>
+                </div>
+            </div>
+          `).join('');
+          
+          // Re-init Embla (Simple Reload workaround if dynamic inject breaks init)
+          // Note: Ideally, check if Embla API is available globally or re-trigger init script if needed.
       }
     }
   }

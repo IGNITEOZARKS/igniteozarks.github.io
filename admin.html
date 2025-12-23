@@ -44,8 +44,7 @@
         <button id="save-btn" class="btn btn-success mt-3">Save Changes</button>
         <p id="status-msg" class="mt-2"></p>
     </div>
-
-   <script type="module">
+<script type="module">
     import { db, auth, doc, getDoc, setDoc, signInWithEmailAndPassword, onAuthStateChanged, signOut } from './firebase-config.js';
 
     const loginSection = document.getElementById('login-section');
@@ -81,7 +80,9 @@
     const pageConfig = {
         'home': [
             { id: 'hometitle', label: 'Welcome Title' },
-            { id: 'home_news_ticker', label: 'News Ticker Items', type: 'ticker' } 
+            { id: 'home_news_ticker', label: 'News Ticker Items', type: 'ticker' },
+            { id: 'home_features', label: 'Feature Cards (Welcome Home)', type: 'cards' }, // New
+            { id: 'home_slider', label: 'Slider Images (What\'s Happening)', type: 'cards' } // New
         ],
         'about': [
             { id: 'edit1', label: 'Section Description' },
@@ -96,17 +97,15 @@
             { id: 'notification_title', label: 'Header Title' },
             { id: 'notification_items', label: 'Notifications', type: 'ticker' } 
         ],
-     'youngadults': [
-        { id: 'youngadults_schedule', label: 'Meeting Schedule (Time & Location) & Info' }
-    ],
-    'youth': [
-        { id: 'youth_schedule', label: 'Meeting Schedule (Time & Location) & Info' }
-    ],
-'kids': [
-        { id: 'kids', label: 'Upcoming Events & Info' }
-    ]
-
-        // Add events or other pages here as needed
+        'youngadults': [
+            { id: 'youngadults_schedule', label: 'Meeting Schedule (Time & Location)' }
+        ],
+        'youth': [
+            { id: 'youth_schedule', label: 'Meeting Schedule (Time & Location)' }
+        ],
+        'kids': [
+            { id: 'kids', label: 'Upcoming Events & Info' }
+        ]
     };
 
     // --- Load Data ---
@@ -122,6 +121,8 @@
         fields.forEach(field => {
             if (field.type === 'ticker') {
                 renderTickerEditor(field, data[field.id]);
+            } else if (field.type === 'cards') {
+                renderCardListEditor(field, data[field.id]);
             } else {
                 renderTextField(field, data[field.id]);
             }
@@ -140,23 +141,20 @@
 
     // Helper: Render Ticker List Editor
     function renderTickerEditor(field, data = []) {
-        // If old data was a string (old HTML), reset it to empty array to avoid errors
         const items = Array.isArray(data) ? data : []; 
-
         const container = document.createElement('div');
         container.className = 'form-group mt-3 p-3 border rounded bg-light';
-        container.innerHTML = `<label><strong>${field.label}</strong></label><div id="ticker-list-${field.id}"></div>`;
+        container.innerHTML = `<label><strong>${field.label}</strong></label><div id="list-${field.id}"></div>`;
         
         const addButton = document.createElement('button');
         addButton.className = 'btn btn-sm btn-info mt-2';
-        addButton.innerText = '+ Add Ticker Item';
+        addButton.innerText = '+ Add Item';
         addButton.onclick = () => addTickerRow(listDiv);
 
         editorFields.appendChild(container);
         container.appendChild(addButton);
         
-        const listDiv = container.querySelector(`#ticker-list-${field.id}`);
-        // Add existing items
+        const listDiv = container.querySelector(`#list-${field.id}`);
         items.forEach(item => addTickerRow(listDiv, item));
     }
 
@@ -165,8 +163,54 @@
         row.className = 'ticker-row d-flex gap-2 mt-2 align-items-center';
         row.innerHTML = `
             <input type="text" class="form-control ticker-text" placeholder="Display Text" value="${item.text}">
-            <input type="text" class="form-control ticker-link" placeholder="Link URL (Optional)" value="${item.link}">
+            <input type="text" class="form-control ticker-link" placeholder="Link URL" value="${item.link}">
             <button class="btn btn-danger btn-sm" onclick="this.parentElement.remove()">X</button>
+        `;
+        container.appendChild(row);
+    }
+
+    // Helper: Render Card List Editor (Features & Slider)
+    function renderCardListEditor(field, data = []) {
+        const items = Array.isArray(data) ? data : [];
+        const container = document.createElement('div');
+        container.className = 'form-group mt-3 p-3 border rounded bg-light';
+        container.innerHTML = `<label><strong>${field.label}</strong></label><div id="card-list-${field.id}"></div>`;
+        
+        const addButton = document.createElement('button');
+        addButton.className = 'btn btn-sm btn-info mt-2';
+        addButton.innerText = '+ Add Card/Slide';
+        addButton.onclick = () => addCardRow(listDiv);
+
+        editorFields.appendChild(container);
+        container.appendChild(addButton);
+        
+        const listDiv = container.querySelector(`#card-list-${field.id}`);
+        items.forEach(item => addCardRow(listDiv, item));
+    }
+
+    function addCardRow(container, item = { title: '', text: '', image: '', link: '' }) {
+        const row = document.createElement('div');
+        row.className = 'card-row mt-3 p-2 border bg-white';
+        row.innerHTML = `
+            <div class="row g-2">
+                <div class="col-md-6">
+                    <label class="small">Image URL</label>
+                    <input type="text" class="form-control card-image" value="${item.image || ''}" placeholder="assets/images/...">
+                </div>
+                <div class="col-md-6">
+                    <label class="small">Link URL</label>
+                    <input type="text" class="form-control card-link" value="${item.link || ''}" placeholder="http://...">
+                </div>
+                <div class="col-md-6">
+                    <label class="small">Title</label>
+                    <input type="text" class="form-control card-title" value="${item.title || ''}" placeholder="Title">
+                </div>
+                <div class="col-md-6">
+                    <label class="small">Subtitle / Description</label>
+                    <textarea class="form-control card-text" rows="1" placeholder="Description">${item.text || ''}</textarea>
+                </div>
+            </div>
+            <button class="btn btn-danger btn-sm mt-2" onclick="this.parentElement.remove()">Remove Card</button>
         `;
         container.appendChild(row);
     }
@@ -180,11 +224,9 @@
         const config = pageConfig[pageId] || [];
         let updateData = {};
 
-        // Loop through config to gather data correctly
         config.forEach(field => {
             if (field.type === 'ticker') {
-                // Gather List Data
-                const rows = document.querySelectorAll(`#ticker-list-${field.id} .ticker-row`);
+                const rows = document.querySelectorAll(`#list-${field.id} .ticker-row`);
                 const items = [];
                 rows.forEach(row => {
                     const text = row.querySelector('.ticker-text').value;
@@ -192,8 +234,19 @@
                     if(text) items.push({ text, link });
                 });
                 updateData[field.id] = items;
+            } else if (field.type === 'cards') {
+                const rows = document.querySelectorAll(`#card-list-${field.id} .card-row`);
+                const items = [];
+                rows.forEach(row => {
+                    items.push({
+                        image: row.querySelector('.card-image').value,
+                        link: row.querySelector('.card-link').value,
+                        title: row.querySelector('.card-title').value,
+                        text: row.querySelector('.card-text').value
+                    });
+                });
+                updateData[field.id] = items;
             } else {
-                // Gather Standard Data
                 const input = document.querySelector(`.field-input[data-key="${field.id}"]`);
                 if (input) updateData[field.id] = input.value;
             }
