@@ -29,9 +29,10 @@
 
         <label><strong>Select Page to Edit:</strong></label>
         <select id="page-selector" class="form-control mb-4">
-            <option value="home">Home Page (index.html)</option>
-            <option value="about">About Page (about.html)</option>
-            <option value="events">Events Page (events.html)</option>
+          <option value="home">Home Page</option>
+    <option value="about">About Page</option>
+    <option value="contact">Contact Page</option>
+    <option value="notifications">Notifications Popup</option>
             </select>
 
         <div id="editor-fields">
@@ -89,6 +90,10 @@
             { id: 'contact_phone', label: 'Phone Number' },
             { id: 'contact_email', label: 'Email Address' }
         ],
+        'notifications': [
+            { id: 'notification_title', label: 'Header Title' },
+            { id: 'notification_items', label: 'Notification Links', type: 'ticker' } 
+        ]
         // Add events or other pages here as needed
     };
 
