@@ -32,46 +32,48 @@
         document.getElementById("footer").innerHTML = "last updated: " + month + "/" + day + "/" + year + "<br>by ckonkol";
     </script>
 </center>
+<script>
+  // We use an "Immediately Invoked Async Function" to allow imports in a standard script
+  (async () => {
+    try {
+        // Dynamically import the config
+        const { db, doc, getDoc } = await import('./firebase-config.js');
 
-<script type="module">
-  import { db, doc, getDoc } from './firebase-config.js';
+        const docRef = doc(db, "pages", "notifications"); 
+        const docSnap = await getDoc(docRef);
 
-  async function loadContent() {
-    // 1. Fetch data for 'notifications' page
-    const docRef = doc(db, "pages", "notifications"); 
-    const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          const data = docSnap.data();
 
-    if (docSnap.exists()) {
-      const data = docSnap.data();
+          // Update Header
+          if (data.notification_title) {
+              const titleEl = document.getElementById('notification_title');
+              if(titleEl) titleEl.innerHTML = data.notification_title;
+          }
 
-      // 2. Update Header Title
-      if (data.notification_title) {
-          document.getElementById('notification_title').innerHTML = data.notification_title;
-      }
-
-      // 3. Update Link List
-      if (data.notification_items && Array.isArray(data.notification_items)) {
-          let html = '';
-          
-          data.notification_items.forEach(item => {
-              // This mimics your existing style: <ul><li><b><a...>TEXT</a></b></li></ul>
-              html += `
-                <ul>
-                    <li>
-                        <b>
-                            <a href="${item.link || '#'}" style="color: blue;" target="_blank">
-                                <u>${item.text}</u>
-                            </a>
-                        </b>
-                    </li>
-                </ul>
-                <ul style="padding-left:60px"></ul> `;
-          });
-
-          document.getElementById('notification_list').innerHTML = html;
-      }
+          // Update List
+          if (data.notification_items && Array.isArray(data.notification_items)) {
+              let html = '';
+              data.notification_items.forEach(item => {
+                  html += `
+                    <ul>
+                        <li>
+                            <b>
+                                <a href="${item.link || '#'}" style="color: blue;" target="_blank">
+                                    <u>${item.text}</u>
+                                </a>
+                            </b>
+                        </li>
+                    </ul>
+                    <ul style="padding-left:60px"></ul>`;
+              });
+              
+              const listEl = document.getElementById('notification_list');
+              if(listEl) listEl.innerHTML = html;
+          }
+        }
+    } catch (error) {
+        console.error("Error loading notification data:", error);
     }
-  }
-
-  loadContent();
+  })();
 </script>
