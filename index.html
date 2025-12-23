@@ -380,41 +380,50 @@
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
+
 <script type="module">
   import { db, doc, getDoc } from './firebase-config.js';
 
   async function loadContent() {
-    console.log("Attempting to load content..."); // Debug Step 1
     const docRef = doc(db, "pages", "home"); 
-    
-    try {
-        const docSnap = await getDoc(docRef);
+    const docSnap = await getDoc(docRef);
 
-        if (docSnap.exists()) {
-          const data = docSnap.data();
-         // console.log("Data found in Firebase:", data); // Debug Step 2: Look at this in Console!
+    if (docSnap.exists()) {
+      const data = docSnap.data();
+      
+      // Update Title
+      if (data.hometitle) document.getElementById('hometitle').innerHTML = `<strong>${data.hometitle}</strong>`;
 
-          // Update Title
-          if (data.hometitle) {
-           //   console.log("Updating Title to:", data.hometitle);
-              document.getElementById('hometitle').innerHTML = `<strong>${data.hometitle}</strong>`;
+      // Update Ticker
+      if (data.home_news_ticker) {
+          let html = '';
+          const items = data.home_news_ticker;
+          
+          // Check if it's the new Array format (List) or old String format
+          if (Array.isArray(items)) {
+              items.forEach(item => {
+                  // Standard Dot
+                  html += `<span class="dot" style="font-size: 1rem;"></span>&nbsp;`;
+                  
+                  // Text with or without Link
+                  if (item.link) {
+                      html += `<a href="${item.link}" class="text-primary">${item.text}</a>&nbsp;`;
+                  } else {
+                      html += `<span class="text-primary">${item.text}</span>&nbsp;`;
+                  }
+              });
           } else {
-           //   console.warn("Field 'hometitle' is missing in the database data.");
+              // Fallback for old data format
+              html = items;
           }
-
-          // Update Ticker
-          if (data.home_news_ticker) {
-              document.getElementById('home_news_ticker').innerHTML = data.home_news_ticker;
-          }
-        } else {
-          console.log("No document found in 'pages/home'!");
-        }
-    } catch (error) {
-        console.error("Error fetching data:", error);
+          
+          document.getElementById('home_news_ticker').innerHTML = html;
+      }
     }
   }
 
   loadContent();
 </script>
+
   </body>
 </html>

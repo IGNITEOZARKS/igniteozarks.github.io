@@ -41,102 +41,158 @@
         <p id="status-msg" class="mt-2"></p>
     </div>
 
-    <script type="module">
-       import { db, auth, doc, getDoc, setDoc, signInWithEmailAndPassword, onAuthStateChanged, signOut } from './firebase-config.js';
+   <script type="module">
+    import { db, auth, doc, getDoc, setDoc, signInWithEmailAndPassword, onAuthStateChanged, signOut } from './firebase-config.js';
 
-        const loginSection = document.getElementById('login-section');
-        const dashboardSection = document.getElementById('dashboard-section');
-        const pageSelector = document.getElementById('page-selector');
-        const editorFields = document.getElementById('editor-fields');
+    const loginSection = document.getElementById('login-section');
+    const dashboardSection = document.getElementById('dashboard-section');
+    const pageSelector = document.getElementById('page-selector');
+    const editorFields = document.getElementById('editor-fields');
 
-        // --- Authentication ---
-        onAuthStateChanged(auth, (user) => {
-            if (user) {
-                loginSection.style.display = 'none';
-                dashboardSection.style.display = 'block';
-                loadPageData(pageSelector.value);
-            } else {
-                loginSection.style.display = 'block';
-                dashboardSection.style.display = 'none';
-            }
-        });
-
-        document.getElementById('login-btn').addEventListener('click', async () => {
-            const email = document.getElementById('email').value;
-            const pass = document.getElementById('password').value;
-            try {
-                await signInWithEmailAndPassword(auth, email, pass);
-            } catch (error) {
-                document.getElementById('login-error').innerText = "Invalid Login";
-            }
-        });
-
-        document.getElementById('logout-btn').addEventListener('click', () => signOut(auth));
-
-        // --- Editor Logic ---
-        
-        // Configuration: Define what fields are editable for each page
-        const pageConfig = {
-           'home': [
-        { id: 'hometitle', label: 'Welcome Title' },
-        
-        // NEW LINE HERE:
-        { id: 'home_news_ticker', label: 'News Ticker (HTML Allowed)' }
-            ],
-           'about': [
-        { id: 'edit1', label: 'Section Title (edit1)' },
-        { id: 'edit2', label: 'Main Description (edit2)' }
-            ]
-        };
-
-        // Load Data
-        async function loadPageData(pageId) {
-            editorFields.innerHTML = 'Loading...';
-            const docRef = doc(db, "pages", pageId);
-            const docSnap = await getDoc(docRef);
-            const data = docSnap.exists() ? docSnap.data() : {};
-            
-            editorFields.innerHTML = '';
-            const fields = pageConfig[pageId] || [];
-
-            fields.forEach(field => {
-                const val = data[field.id] || '';
-                const html = `
-                    <div class="form-group mt-3">
-                        <label>${field.label}</label>
-                        <textarea class="form-control field-input" data-key="${field.id}" rows="3">${val}</textarea>
-                    </div>`;
-                editorFields.insertAdjacentHTML('beforeend', html);
-            });
+    // --- Authentication ---
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            loginSection.style.display = 'none';
+            dashboardSection.style.display = 'block';
+            loadPageData(pageSelector.value);
+        } else {
+            loginSection.style.display = 'block';
+            dashboardSection.style.display = 'none';
         }
+    });
 
-        // Handle Page Change
-        pageSelector.addEventListener('change', (e) => loadPageData(e.target.value));
+    document.getElementById('login-btn').addEventListener('click', async () => {
+        const email = document.getElementById('email').value;
+        const pass = document.getElementById('password').value;
+        try {
+            await signInWithEmailAndPassword(auth, email, pass);
+        } catch (error) {
+            document.getElementById('login-error').innerText = "Invalid Login";
+        }
+    });
 
-        // Save Data
-        document.getElementById('save-btn').addEventListener('click', async () => {
-            const pageId = pageSelector.value;
-            const inputs = document.querySelectorAll('.field-input');
-            let updateData = {};
+    document.getElementById('logout-btn').addEventListener('click', () => signOut(auth));
 
-            inputs.forEach(input => {
-                updateData[input.getAttribute('data-key')] = input.value;
-            });
+    // --- Editor Configuration ---
+    const pageConfig = {
+        'home': [
+            { id: 'hometitle', label: 'Welcome Title' },
+            // UPDATED: specific type for ticker
+            { id: 'home_news_ticker', label: 'News Ticker Items', type: 'ticker' } 
+        ],
+        'about': [
+            { id: 'edit1', label: 'Section Title' },
+            { id: 'edit2', label: 'Main Description' }
+        ],
+        'contact': [
+            { id: 'contact_title', label: 'Page Title' },
+            { id: 'contact_phone', label: 'Phone Number' },
+            { id: 'contact_email', label: 'Email Address' }
+        ],
+        // Add events or other pages here as needed
+    };
 
-            const docRef = doc(db, "pages", pageId);
-            try {
-    // { merge: true } creates the file if missing, or just updates fields if it exists
-    await setDoc(docRef, updateData, { merge: true }); 
-    
-    document.getElementById('status-msg').innerText = "Saved Successfully!";
-    document.getElementById('status-msg').className = "text-success";
-} catch (err) {
-    console.error("Error saving:", err);
-    document.getElementById('status-msg').innerText = "Error saving: " + err.message;
-    document.getElementById('status-msg').className = "text-danger";
-}
+    // --- Load Data ---
+    async function loadPageData(pageId) {
+        editorFields.innerHTML = 'Loading...';
+        const docRef = doc(db, "pages", pageId);
+        const docSnap = await getDoc(docRef);
+        const data = docSnap.exists() ? docSnap.data() : {};
+        
+        editorFields.innerHTML = '';
+        const fields = pageConfig[pageId] || [];
+
+        fields.forEach(field => {
+            if (field.type === 'ticker') {
+                renderTickerEditor(field, data[field.id]);
+            } else {
+                renderTextField(field, data[field.id]);
+            }
+        });
+    }
+
+    // Helper: Render Standard Text Area
+    function renderTextField(field, value = '') {
+        const html = `
+            <div class="form-group mt-3">
+                <label><strong>${field.label}</strong></label>
+                <textarea class="form-control field-input" data-key="${field.id}" rows="3">${value}</textarea>
+            </div>`;
+        editorFields.insertAdjacentHTML('beforeend', html);
+    }
+
+    // Helper: Render Ticker List Editor
+    function renderTickerEditor(field, data = []) {
+        // If old data was a string (old HTML), reset it to empty array to avoid errors
+        const items = Array.isArray(data) ? data : []; 
+
+        const container = document.createElement('div');
+        container.className = 'form-group mt-3 p-3 border rounded bg-light';
+        container.innerHTML = `<label><strong>${field.label}</strong></label><div id="ticker-list-${field.id}"></div>`;
+        
+        const addButton = document.createElement('button');
+        addButton.className = 'btn btn-sm btn-info mt-2';
+        addButton.innerText = '+ Add Ticker Item';
+        addButton.onclick = () => addTickerRow(listDiv);
+
+        editorFields.appendChild(container);
+        container.appendChild(addButton);
+        
+        const listDiv = container.querySelector(`#ticker-list-${field.id}`);
+        // Add existing items
+        items.forEach(item => addTickerRow(listDiv, item));
+    }
+
+    function addTickerRow(container, item = { text: '', link: '' }) {
+        const row = document.createElement('div');
+        row.className = 'ticker-row d-flex gap-2 mt-2 align-items-center';
+        row.innerHTML = `
+            <input type="text" class="form-control ticker-text" placeholder="Display Text" value="${item.text}">
+            <input type="text" class="form-control ticker-link" placeholder="Link URL (Optional)" value="${item.link}">
+            <button class="btn btn-danger btn-sm" onclick="this.parentElement.remove()">X</button>
+        `;
+        container.appendChild(row);
+    }
+
+    // Handle Page Change
+    pageSelector.addEventListener('change', (e) => loadPageData(e.target.value));
+
+    // --- Save Data ---
+    document.getElementById('save-btn').addEventListener('click', async () => {
+        const pageId = pageSelector.value;
+        const config = pageConfig[pageId] || [];
+        let updateData = {};
+
+        // Loop through config to gather data correctly
+        config.forEach(field => {
+            if (field.type === 'ticker') {
+                // Gather List Data
+                const rows = document.querySelectorAll(`#ticker-list-${field.id} .ticker-row`);
+                const items = [];
+                rows.forEach(row => {
+                    const text = row.querySelector('.ticker-text').value;
+                    const link = row.querySelector('.ticker-link').value;
+                    if(text) items.push({ text, link });
+                });
+                updateData[field.id] = items;
+            } else {
+                // Gather Standard Data
+                const input = document.querySelector(`.field-input[data-key="${field.id}"]`);
+                if (input) updateData[field.id] = input.value;
+            }
         });
 
-    </script>
+        const docRef = doc(db, "pages", pageId);
+        try {
+            await setDoc(docRef, updateData, { merge: true });
+            document.getElementById('status-msg').innerText = "Saved Successfully!";
+            document.getElementById('status-msg').className = "text-success";
+        } catch (err) {
+            console.error(err);
+            document.getElementById('status-msg').innerText = "Error: " + err.message;
+            document.getElementById('status-msg').className = "text-danger";
+        }
+    });
+</script>
 </body>
 </html>
