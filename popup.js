@@ -122,7 +122,7 @@ var createDialog = function(text , title) {
        //     .removeClass("ui-dialog-titlebar-close")
        //      .html('<a href="javascript:closeit();" style="color: yellow;font-size: small;">Click here to close &amp; view our website!</a>');
 	$(this).closest('.ui-dialog').css({'width':'370px'});
-        $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 100});
+        $(this).closest('.ui-dialog').css({'position':'absolute',left: (win.width() - $(this).parent().outerWidth()) / 2,top: 150});
 	$(".ui-dialog-title" ).css("float", "none" );
 	 $(this).parent().children().children('.ui-dialog-titlebar-close').hide();
     }
