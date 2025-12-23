@@ -29,11 +29,12 @@
 
         <label><strong>Select Page to Edit:</strong></label>
         <select id="page-selector" class="form-control mb-4">
-          <option value="home">Home Page</option>
+    <option value="home">Home Page</option>
     <option value="about">Welcome Page</option>
     <option value="contact">Contact Page</option>
     <option value="notifications">Notifications Popup</option>
-            </select>
+    <option value="youngadults">Young Adults Page</option>
+</select>
 
         <div id="editor-fields">
             </div>
@@ -92,7 +93,10 @@
         'notifications': [
             { id: 'notification_title', label: 'Header Title' },
             { id: 'notification_items', label: 'Notification Links', type: 'ticker' } 
-        ]
+        ],
+     'youngadults': [
+        { id: 'youngadults_schedule', label: 'Meeting Schedule (Time & Location) & Info' }
+    ]
         // Add events or other pages here as needed
     };
 

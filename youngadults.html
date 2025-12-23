@@ -147,7 +147,7 @@
                     <div class="card-box align-left">
                         <h4 class="card-title mbr-fonts-style mb-4 display-2">
                             <strong>Young Adult Ministry</strong></h4>
-                        <p class="mbr-text mbr-fonts-style mb-4 display-7">Sunday @ 5:30pm ~ IGNITE CHURCH!</p>
+                        <p id="youngadults_schedule" class="mbr-text mbr-fonts-style mb-4 display-7">Sunday @ 5:30pm ~ IGNITE CHURCH!</p>
                         
                     </div>
                 </div>
@@ -276,5 +276,36 @@
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
+<script type="module">
+  // Import the database connection from your config file
+  import { db, doc, getDoc } from './firebase-config.js';
+
+  async function loadPageContent() {
+    try {
+      // 1. Reference the "youngadults" document in the "pages" collection
+      // Note: 'youngadults' matches the value we added to the admin dropdown
+      const docRef = doc(db, "pages", "youngadults");
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        const data = docSnap.data();
+
+        // 2. Check if the schedule data exists and update the HTML element
+        // Note: 'youngadults_schedule' matches the ID you added to the <p> tag
+        if (data.youngadults_schedule) {
+          const scheduleElement = document.getElementById('youngadults_schedule');
+          if (scheduleElement) {
+            scheduleElement.innerText = data.youngadults_schedule;
+          }
+        }
+      }
+    } catch (error) {
+      console.error("Error loading content:", error);
+    }
+  }
+
+  // Run the function when the script loads
+  loadPageContent();
+</script>
   </body>
 </html>
