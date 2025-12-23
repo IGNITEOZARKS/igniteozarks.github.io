@@ -454,6 +454,18 @@
   }
 
   loadContent();
+// Add this inside your existing <script type="module"> or a new script tag
+  const emblaNode = document.querySelector('.embla')
+  const viewportNode = emblaNode.querySelector('.embla__viewport')
+  
+  // Logic to stop autoplay on mouse enter and resume on leave
+  // (Note: This depends on how your specific embla implementation handles autoplay)
+  if (emblaNode) {
+      emblaNode.addEventListener('mouseenter', () => {
+          // If the slider has an exposed 'autoplay' plugin api, you would use it here.
+          // Since we don't have the internal object, the HTML change above (Method 1) is safer/guaranteed.
+      });
+  }
 </script>
 
   </body>
