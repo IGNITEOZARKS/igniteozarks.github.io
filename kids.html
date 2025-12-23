@@ -144,7 +144,7 @@
             <div class="title col-md-12 col-lg-10">
                 <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>We love kids at IGNITE Church!&nbsp;</strong></h3>
                 <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">IGNITEKids Children's Ministry meets every Sunday morning during the regular service time. <br>Children from birth to 6th grade are invited to participate in a service just for them!<br><br><a href="volunteers.html" class="text-primary">IGNITEKids Volunteer Portal</a><br><br><a href="https://tockify.com/ignite.church/agenda?tags=ignitekids" class="text-primary">IGNITEKids Calendar Events</a></h4>
-                
+<h4 id="kids" class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7 animate__animated animate__delay-1s animate__fadeInUp"></h4>                
             </div>
         </div>
     </div>
@@ -292,4 +292,35 @@
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
   </body>
+<script type="module">
+  // Import the database connection from your config file
+  import { db, doc, getDoc } from './firebase-config.js';
+
+  async function loadPageContent() {
+    try {
+      // 1. Reference the "kids" document in the "pages" collection
+      // Note: 'kids' matches the value we added to the admin dropdown
+      const docRef = doc(db, "pages", "kids");
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        const data = docSnap.data();
+
+        // 2. Check if the schedule data exists and update the HTML element
+        // Note: 'kids' matches the ID you added to the <p> tag
+        if (data.kids) {
+          const scheduleElement = document.getElementById('kids');
+          if (scheduleElement) {
+            scheduleElement.innerText = data.kids;
+          }
+        }
+      }
+    } catch (error) {
+      console.error("Error loading content:", error);
+    }
+  }
+
+  // Run the function when the script loads
+  loadPageContent();
+</script>
 </html>
