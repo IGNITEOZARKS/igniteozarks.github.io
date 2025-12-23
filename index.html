@@ -199,7 +199,7 @@
             <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>What's Happening At <br>IGNITE Church?</strong></h4>
             
         </div>
-        <div class="embla mt-4" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-auto-play="true" data-auto-play-interval="5" data-draggable="true">
+        <div class="embla mt-4" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-draggable="true">
             <div class="embla__viewport container">
                 <div class="embla__container" id="home_slider_container">
                     
@@ -409,7 +409,7 @@
           document.getElementById('home_news_ticker').innerHTML = html;
       }
 
-      // 3. Update Features Section (Welcome Home)
+      // 3. Update Features Section
       if (data.home_features && Array.isArray(data.home_features)) {
           const container = document.getElementById('home_features_container');
           container.innerHTML = data.home_features.map(item => `
@@ -427,9 +427,11 @@
           `).join('');
       }
 
-      // 4. Update Slider Section (What's Happening)
+      // 4. Update Slider Section & Init Manual Autoplay
       if (data.home_slider && Array.isArray(data.home_slider)) {
           const container = document.getElementById('home_slider_container');
+          
+          // Inject HTML
           container.innerHTML = data.home_slider.map(item => `
             <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
                 <div class="slide-content">
@@ -447,25 +449,56 @@
             </div>
           `).join('');
           
-          // Re-init Embla (Simple Reload workaround if dynamic inject breaks init)
-          // Note: Ideally, check if Embla API is available globally or re-trigger init script if needed.
+          // --- MANUAL SLIDER CONTROL ---
+          // We target the specific slider container ID to be safe
+          const section = document.getElementById('slider6-x');
+          const emblaNode = section ? section.querySelector('.embla') : document.querySelector('.embla');
+          const viewportNode = emblaNode ? emblaNode.querySelector('.embla__viewport') : null;
+          
+          if (window.EmblaCarousel && viewportNode) {
+              const options = { loop: true, align: 'center', skipSnaps: true };
+              const emblaApi = window.EmblaCarousel(viewportNode, options);
+
+              // Autoplay Settings
+              const autoplayIntervalTime = 5000; // 5 Seconds
+              let autoplayTimer = null;
+
+              const startAutoplay = () => {
+                  if (autoplayTimer) return; // Already running
+                  console.log("Slider: Autoplay Started");
+                  autoplayTimer = setInterval(() => {
+                      if (emblaApi.canScrollNext()) {
+                          emblaApi.scrollNext();
+                      } else {
+                          emblaApi.scrollTo(0);
+                      }
+                  }, autoplayIntervalTime);
+              };
+
+              const stopAutoplay = () => {
+                  if (autoplayTimer) {
+                      console.log("Slider: Paused on Hover");
+                      clearInterval(autoplayTimer);
+                      autoplayTimer = null;
+                  }
+              };
+
+              // Event Listeners for Pause on Hover
+              emblaNode.addEventListener('mouseenter', stopAutoplay);
+              emblaNode.addEventListener('mouseleave', startAutoplay);
+              
+              // Also stop when user touches/drags the slider
+              emblaApi.on('pointerDown', stopAutoplay);
+              emblaApi.on('pointerUp', startAutoplay);
+
+              // Start the loop initially
+              startAutoplay();
+          }
       }
     }
   }
 
   loadContent();
-// Add this inside your existing <script type="module"> or a new script tag
-  const emblaNode = document.querySelector('.embla')
-  const viewportNode = emblaNode.querySelector('.embla__viewport')
-  
-  // Logic to stop autoplay on mouse enter and resume on leave
-  // (Note: This depends on how your specific embla implementation handles autoplay)
-  if (emblaNode) {
-      emblaNode.addEventListener('mouseenter', () => {
-          // If the slider has an exposed 'autoplay' plugin api, you would use it here.
-          // Since we don't have the internal object, the HTML change above (Method 1) is safer/guaranteed.
-      });
-  }
 </script>
 
   </body>
