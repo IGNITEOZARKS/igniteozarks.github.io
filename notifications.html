@@ -33,11 +33,12 @@
     </script>
 </center>
 <script>
-  // We use an "Immediately Invoked Async Function" to allow imports in a standard script
   (async () => {
     try {
-        // Dynamically import the config
-        const { db, doc, getDoc } = await import('./firebase-config.js');
+        // FIX: Use the full URL to find the config file
+        // This solves the "Failed to resolve module specifier" error
+        const configUrl = window.location.origin + '/firebase-config.js';
+        const { db, doc, getDoc } = await import(configUrl);
 
         const docRef = doc(db, "pages", "notifications"); 
         const docSnap = await getDoc(docRef);
