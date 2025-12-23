@@ -276,5 +276,40 @@
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
+<script type="module">
+  import { db, doc, getDoc } from './firebase-config.js';
+
+  async function loadContent() {
+    // 1. Fetch data for 'contact' page
+    const docRef = doc(db, "pages", "contact"); 
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      const data = docSnap.data();
+
+      // 2. Update Page Title
+      if (data.contact_title) {
+          document.getElementById('contact_title').innerHTML = `<strong>${data.contact_title}</strong>`;
+      }
+
+      // 3. Update Phone (Text + Link)
+      if (data.contact_phone) {
+          const el = document.getElementById('contact_phone');
+          el.innerHTML = data.contact_phone;
+          // Auto-create telephone link (removes non-numbers like dashes/spaces)
+          el.href = `tel:${data.contact_phone.replace(/[^0-9]/g, '')}`;
+      }
+
+      // 4. Update Email (Text + Link)
+      if (data.contact_email) {
+          const el = document.getElementById('contact_email');
+          el.innerHTML = data.contact_email;
+          el.href = `mailto:${data.contact_email}`;
+      }
+    }
+  }
+
+  loadContent();
+</script>
   </body>
 </html>
