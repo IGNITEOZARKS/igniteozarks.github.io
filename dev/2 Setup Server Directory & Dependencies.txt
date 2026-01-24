@@ -1,0 +1,3 @@
+mkdir C:\AquaApps\AquaScannerApp
+mkdir C:\AquaApps\AquaScannerApp\public
+cd C:\AquaApps\AquaScannerApp
