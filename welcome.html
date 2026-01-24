@@ -178,65 +178,102 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="footer1 cid-txUujFOC1O" once="footers" id="footer1-tsDKFCcBsJ-30">
-
-    
-
-    
-    
+<section data-bs-version="5.1" class="footer1 cid-tzZ6mGrxML" once="footers" id="footer1-tsDKFCcBsJ-6v">
     <div class="container">
         <div class="row mbr-white">
             <div class="col-12 col-md-6 col-lg-3">
-                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"></h5>
                 <ul class="list mbr-fonts-style display-4">
-                    <li class="mbr-text item-wrap"><a href="connect.html" class="text-primary">Connect</a></li><li class="mbr-text item-wrap"><a href="contact.html" class="text-primary">Contact&nbsp;Us</a></li><a href="contact.html" class="text-primary">
-                    </a><li class="mbr-text item-wrap"><br></li>
+                    <li class="mbr-text item-wrap"><a href="contact.html" class="text-primary">Contact Us</a></li><li class="mbr-text item-wrap"><br></li>
                 </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"></h5>
                 <ul class="list mbr-fonts-style display-4">
-
-                    <li class="mbr-text item-wrap"><a href="welcome.html" class="text-primary">Welcome</a></li><li class="mbr-text item-wrap"><a href="email.html" class="text-primary">Join Our Email List</a></li>
+                    <li class="mbr-text item-wrap"><a href="email.html" class="text-primary">Join Our Email List</a></li><li class="mbr-text item-wrap"><br></li>
                 </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"></h5>
                 <ul class="list mbr-fonts-style display-4">
-                    <li class="mbr-text item-wrap"><a href="giving.html" class="text-primary">Giving</a></li><li class="mbr-text item-wrap"><a href="prayer.html" class="text-primary">Need Prayer?</a></li>
+                    <li class="mbr-text item-wrap"><a href="prayer.html" class="text-primary">Need Prayer?</a></li><li class="mbr-text item-wrap"><br></li>
                 </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"></h5>
                 <p class="mbr-text mbr-fonts-style mb-4 display-4">
-                    <a href="tel:(417) 272-9813" class="text-primary">417.272.9813</a></p>
-                <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">
-                    <strong>Social</strong>
-                </h5>
+                    <a href="tel:(417) 272-9813" class="text-primary" id="footer_phone">417.272.9813</a>
+                </p>
+                
                 <div class="social-row display-7">
                     <div class="soc-item">
-                        <a href="https://www.facebook.com/ignitestonecounty" target="_blank">
+                        <a href="https://www.facebook.com/ignitestonecounty" target="_blank" id="footer_facebook">
                             <span class="mbr-iconfont socicon-facebook socicon"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="mailto:ignitetheozarks@gmail.com">
-                            <span class="mbr-iconfont socicon-mail socicon" style="color: rgb(0, 0, 0); fill: rgb(0, 0, 0);"></span>
+                        <a href="https://www.youtube.com/@IgniteChurchatLakewoood" target="_blank" id="footer_youtube">
+                            <span class="mbr-iconfont mbrib-video" style="color: rgb(0, 0, 0); fill: rgb(0, 0, 0);"></span>
                         </a>
                     </div>
-                    
-                    
                 </div>
             </div>
             <div class="col-12 mt-4">
-                <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7">
-                    © Copyright 2023 Ignite Church at Lakewood - All Rights Reserved
+                  <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7" id="footer_copyright">
+                    ©2026 IGNITE Church at Lakewood
                 </p>
             </div>
         </div>
     </div>
-</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section>
+
+<section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
-  
+ <script type="module">
+  import { db, doc, getDoc } from './firebase-config.js';
+
+  // Existing loadContent function...
+  async function loadContent() {
+     // ... your existing code for home page content ...
+  }
+
+  // NEW: Function to load Global Footer Data
+  async function loadFooter() {
+    // We fetch from the 'footer' document in the pages collection
+    const docRef = doc(db, "pages", "footer"); 
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+        const data = docSnap.data();
+
+        // Update Phone
+        if (data.footer_phone) {
+            const phoneEl = document.getElementById('footer_phone');
+            if(phoneEl) {
+                phoneEl.innerText = data.footer_phone;
+                phoneEl.href = `tel:${data.footer_phone}`;
+            }
+        }
+
+        // Update Copyright
+        if (data.footer_copyright) {
+            const copyEl = document.getElementById('footer_copyright');
+            if(copyEl) copyEl.innerText = data.footer_copyright;
+        }
+
+        // Update Facebook
+        if (data.footer_facebook) {
+            const fbEl = document.getElementById('footer_facebook');
+            if(fbEl) fbEl.href = data.footer_facebook;
+        }
+
+        // Update YouTube
+        if (data.footer_youtube) {
+            const ytEl = document.getElementById('footer_youtube');
+            if(ytEl) ytEl.href = data.footer_youtube;
+        }
+    }
+  }
+
+  // Run both functions
+  loadContent();
+  loadFooter(); // <--- Make sure to call this
+</script> 
 </body>
 </html>
