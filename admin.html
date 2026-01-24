@@ -81,8 +81,8 @@
         'home': [
             { id: 'hometitle', label: 'Welcome Title' },
             { id: 'home_news_ticker', label: 'News Ticker Items', type: 'ticker' },
-            { id: 'home_features', label: 'Feature Cards (Welcome Home)', type: 'cards' }, // New
-            { id: 'home_slider', label: 'Slider Images (What\'s Happening)', type: 'cards' } // New
+            { id: 'home_features', label: 'Feature Cards (Welcome Home)', type: 'cards' },
+            { id: 'home_slider', label: 'Slider Images (What\'s Happening)', type: 'cards' }
         ],
         'about': [
             { id: 'edit1', label: 'Section Description' },
@@ -158,14 +158,38 @@
         items.forEach(item => addTickerRow(listDiv, item));
     }
 
+    // UPDATED: Added Up/Down buttons for Ticker
     function addTickerRow(container, item = { text: '', link: '' }) {
         const row = document.createElement('div');
         row.className = 'ticker-row d-flex gap-2 mt-2 align-items-center';
+        
+        // HTML Structure
         row.innerHTML = `
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-up" style="font-size: 0.6rem; padding: 0 4px;">▲</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-down" style="font-size: 0.6rem; padding: 0 4px;">▼</button>
+            </div>
             <input type="text" class="form-control ticker-text" placeholder="Display Text" value="${item.text}">
             <input type="text" class="form-control ticker-link" placeholder="Link URL" value="${item.link}">
-            <button class="btn btn-danger btn-sm" onclick="this.parentElement.remove()">X</button>
+            <button class="btn btn-danger btn-sm btn-remove">X</button>
         `;
+
+        // Functionality
+        row.querySelector('.btn-remove').onclick = () => row.remove();
+        
+        row.querySelector('.btn-up').onclick = () => {
+            if (row.previousElementSibling) {
+                row.parentNode.insertBefore(row, row.previousElementSibling);
+            }
+        };
+
+        row.querySelector('.btn-down').onclick = () => {
+            if (row.nextElementSibling) {
+                // To move down, we insert the *next* element before the *current* element
+                row.parentNode.insertBefore(row.nextElementSibling, row);
+            }
+        };
+
         container.appendChild(row);
     }
 
@@ -188,9 +212,11 @@
         items.forEach(item => addCardRow(listDiv, item));
     }
 
+    // UPDATED: Added Up/Down buttons for Cards
     function addCardRow(container, item = { title: '', text: '', image: '', link: '' }) {
         const row = document.createElement('div');
         row.className = 'card-row mt-3 p-2 border bg-white';
+        
         row.innerHTML = `
             <div class="row g-2">
                 <div class="col-md-6">
@@ -210,8 +236,30 @@
                     <textarea class="form-control card-text" rows="1" placeholder="Description">${item.text || ''}</textarea>
                 </div>
             </div>
-            <button class="btn btn-danger btn-sm mt-2" onclick="this.parentElement.remove()">Remove Card</button>
+            <div class="d-flex justify-content-between mt-2">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-secondary btn-sm btn-up">Move Up</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm btn-down">Move Down</button>
+                </div>
+                <button class="btn btn-danger btn-sm btn-remove">Remove Card</button>
+            </div>
         `;
+
+        // Functionality
+        row.querySelector('.btn-remove').onclick = () => row.remove();
+
+        row.querySelector('.btn-up').onclick = () => {
+            if (row.previousElementSibling) {
+                row.parentNode.insertBefore(row, row.previousElementSibling);
+            }
+        };
+
+        row.querySelector('.btn-down').onclick = () => {
+            if (row.nextElementSibling) {
+                row.parentNode.insertBefore(row.nextElementSibling, row);
+            }
+        };
+
         container.appendChild(row);
     }
 
@@ -226,6 +274,7 @@
 
         config.forEach(field => {
             if (field.type === 'ticker') {
+                // Logic updated to query strictly by class within specific container to ensure order is preserved
                 const rows = document.querySelectorAll(`#list-${field.id} .ticker-row`);
                 const items = [];
                 rows.forEach(row => {
