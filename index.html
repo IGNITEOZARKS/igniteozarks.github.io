@@ -36,21 +36,15 @@
 .news-scroll {
     position: relative;
     overflow: hidden;
-    white-space: nowrap;
-    flex: 1 1 auto;
-    min-width: 0;
     width: 100%;
+    background: #ffffff; /* Matches your container background */
 }
 
 .news-scroll-track {
-    display: inline-flex;
-    align-items: center;
-    white-space: nowrap;
+    display: flex;
     width: max-content;
     will-change: transform;
-    transform: translate3d(0, 0, 0);
     animation: ticker-scroll 35s linear infinite;
-    backface-visibility: hidden;
 }
 
 .news-scroll:hover .news-scroll-track {
@@ -59,39 +53,27 @@
 
 #home_news_ticker,
 #home_news_ticker_clone {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     white-space: nowrap;
-    flex: 0 0 auto;
-    padding-right: 80px;
+    padding-right: 60px; /* Space between the end of list and start of clone */
 }
 
 @keyframes ticker-scroll {
-    from { transform: translate3d(0, 0, 0); }
-    to   { transform: translate3d(-50%, 0, 0); }
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
 }
+
+/* Mobile Adjustments */
 @media (max-width: 767px) {
-    .news-scroll {
-        -webkit-text-size-adjust: 100%;
-        overflow: hidden;
-    }
-
     .news-scroll-track {
-        animation-duration: 24s;
-        width: max-content;
-        transform: translate3d(0, 0, 0);
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        will-change: transform;
+        /* Mobile feels slower due to screen width; 25s keeps it moving nicely */
+        animation-duration: 25s; 
     }
-
+    
     #home_news_ticker,
     #home_news_ticker_clone {
-        padding-right: 40px;
-        display: inline-flex;
-        align-items: center;
-        white-space: nowrap;
-        flex: 0 0 auto;
+        padding-right: 30px; /* Tighter gap for smaller screens */
     }
 }
   </style>
@@ -539,17 +521,23 @@
     }
   }
 
-  function updateTicker(items) {
+function updateTicker(items) {
     const ticker = document.getElementById('home_news_ticker');
     const tickerClone = document.getElementById('home_news_ticker_clone');
+    const track = document.getElementById('news_scroll_track');
 
-    if (!ticker || !tickerClone) return;
+    if (!ticker || !tickerClone || !track) return; // Added track check
+
+    // 1. Kill the animation entirely
+    track.style.animation = 'none';
+    track.style.transform = 'translateX(0)';
 
     let html = '';
+    const itemsArray = Array.isArray(items) ? items : [];
 
-    (Array.isArray(items) ? items : []).forEach(item => {
-        html += `<span class="dot" style="font-size: 1rem;"></span>&nbsp;`;
-
+    itemsArray.forEach(item => {
+        // Using a standard bullet point character for reliability
+        html += `<span class="dot" style="font-size: 1rem;">•</span>&nbsp;`;
         if (item.link) {
             html += `<a href="${item.link}" class="text-primary">${item.text}</a>&nbsp;&nbsp;&nbsp;&nbsp;`;
         } else {
@@ -557,8 +545,17 @@
         }
     });
 
+    // 2. Inject identical content
     ticker.innerHTML = html;
     tickerClone.innerHTML = html;
+
+    // 3. Re-trigger layout and restart animation
+    // Using requestAnimationFrame is smoother than setTimeout for mobile
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            track.style.animation = ''; 
+        });
+    });
 }
 
 // NEW: Function to load Global Footer Data
