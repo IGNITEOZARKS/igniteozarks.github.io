@@ -70,6 +70,30 @@
     from { transform: translate3d(0, 0, 0); }
     to   { transform: translate3d(-50%, 0, 0); }
 }
+@media (max-width: 767px) {
+    .news-scroll {
+        -webkit-text-size-adjust: 100%;
+        overflow: hidden;
+    }
+
+    .news-scroll-track {
+        animation-duration: 24s;
+        width: max-content;
+        transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        will-change: transform;
+    }
+
+    #home_news_ticker,
+    #home_news_ticker_clone {
+        padding-right: 40px;
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+        flex: 0 0 auto;
+    }
+}
   </style>
 </head>
 <body>
