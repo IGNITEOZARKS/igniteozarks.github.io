@@ -33,20 +33,24 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=qPRCrg"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=qPRCrg" type="text/css">
 
   <style>
-  .news-scroll {
+.news-scroll {
     position: relative;
     overflow: hidden;
     white-space: nowrap;
     flex: 1 1 auto;
     min-width: 0;
+    width: 100%;
 }
 
 .news-scroll-track {
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
+    width: max-content;
     will-change: transform;
-    animation: ticker-scroll 30s linear infinite;
+    transform: translate3d(0, 0, 0);
+    animation: ticker-scroll 35s linear infinite;
+    backface-visibility: hidden;
 }
 
 .news-scroll:hover .news-scroll-track {
@@ -55,18 +59,16 @@
 
 #home_news_ticker,
 #home_news_ticker_clone {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     white-space: nowrap;
-    padding-right: 4rem;
+    flex: 0 0 auto;
+    padding-right: 80px;
 }
 
 @keyframes ticker-scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
+    from { transform: translate3d(0, 0, 0); }
+    to   { transform: translate3d(-50%, 0, 0); }
 }
   </style>
 </head>
@@ -144,7 +146,7 @@
             <div class="d-flex justify-content-between align-items-center breaking-news" style="background: #ffffff">
                 <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center py-2  px-2 news"><span class="d-flex align-items-center"><p class="mbr-section-subtitle mbr-fonts-style mb-0 display-7"></p></span></div>
             <div class="news-scroll">
-  <div class="news-scroll-track">
+ <div class="news-scroll-track" id="news_scroll_track">
     <div id="home_news_ticker" class="mbr-text mbr-fonts-style mb-0 display-7"></div>
     <div id="home_news_ticker_clone" class="mbr-text mbr-fonts-style mb-0 display-7" aria-hidden="true"></div>
   </div>
@@ -420,19 +422,9 @@
       if (data.hometitle) document.getElementById('hometitle').innerHTML = `<strong>${data.hometitle}</strong>`;
 
       // 2. Update Ticker
-      if (data.home_news_ticker) {
-          let html = '';
-          const items = Array.isArray(data.home_news_ticker) ? data.home_news_ticker : [];
-          items.forEach(item => {
-              html += `<span class="dot" style="font-size: 1rem;"></span>&nbsp;`;
-              if (item.link) {
-                  html += `<a href="${item.link}" class="text-primary">${item.text}</a>&nbsp;`;
-              } else {
-                  html += `<span class="text-primary">${item.text}</span>&nbsp;`;
-              }
-          });
-          document.getElementById('home_news_ticker').innerHTML = html;
-      }
+   if (data.home_news_ticker) {
+    updateTicker(data.home_news_ticker);
+}
 
       // 3. Update Features Section
       if (data.home_features && Array.isArray(data.home_features)) {
@@ -522,6 +514,28 @@
       }
     }
   }
+
+  function updateTicker(items) {
+    const ticker = document.getElementById('home_news_ticker');
+    const tickerClone = document.getElementById('home_news_ticker_clone');
+
+    if (!ticker || !tickerClone) return;
+
+    let html = '';
+
+    (Array.isArray(items) ? items : []).forEach(item => {
+        html += `<span class="dot" style="font-size: 1rem;"></span>&nbsp;`;
+
+        if (item.link) {
+            html += `<a href="${item.link}" class="text-primary">${item.text}</a>&nbsp;&nbsp;&nbsp;&nbsp;`;
+        } else {
+            html += `<span class="text-primary">${item.text}</span>&nbsp;&nbsp;&nbsp;&nbsp;`;
+        }
+    });
+
+    ticker.innerHTML = html;
+    tickerClone.innerHTML = html;
+}
 
 // NEW: Function to load Global Footer Data
   async function loadFooter() {
