@@ -32,9 +32,43 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=qPRCrg"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=qPRCrg" type="text/css">
 
-  
-  
-  
+  <style>
+  .news-scroll {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.news-scroll-track {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    will-change: transform;
+    animation: ticker-scroll 30s linear infinite;
+}
+
+.news-scroll:hover .news-scroll-track {
+    animation-play-state: paused;
+}
+
+#home_news_ticker,
+#home_news_ticker_clone {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 4rem;
+}
+
+@keyframes ticker-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+  </style>
 </head>
 <body>
 
@@ -109,7 +143,12 @@
         <div class="col-md-12 ">
             <div class="d-flex justify-content-between align-items-center breaking-news" style="background: #ffffff">
                 <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center py-2  px-2 news"><span class="d-flex align-items-center"><p class="mbr-section-subtitle mbr-fonts-style mb-0 display-7"></p></span></div>
-                <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> <a href="#"></a><p id="home_news_ticker" class="mbr-text mbr-fonts-style mb-0 display-7"><span class="dot" style="font-size: 1rem;"></span><span style="font-size: 1rem;">&nbsp;<a href="events.html" class="text-primary">View Upcoming Events</a>&nbsp;</span><span class="dot" style="font-size: 1rem;"></span><span style="font-size: 1rem;">&nbsp;<a href="wednesday.html" class="text-primary">Wednesday Night Worship!</a>&nbsp; &nbsp;</span><span class="dot" style="font-size: 1rem;"></span><span style="font-size: 1rem;">&nbsp;</span><a href="monday.html" class="text-primary" target="_blank" style="font-size: 1rem;">Prayer Night: Mondays @ 7pm!</a><span style="font-size: 1rem;">&nbsp;&nbsp;</span><span class="dot" style="font-size: 1rem;"></span><span style="font-size: 1rem;">&nbsp;<a href="signup.html" class="text-primary">Sign-Up to Help @ Upcoming Events!</a></span><span style="font-size: 1rem;"><a href="signup.html" class="text-primary">&nbsp;</a>&nbsp;</span><em style="font-size: 1rem;">&nbsp;</em><span class="dot" style="font-size: 1rem;"></span><span style="font-size: 1rem;">&nbsp; <a href="messages.html" class="text-primary">Watch Latest Messages!</a></span><span style="font-size: 1rem;">&nbsp;&nbsp;</span><span class="dot" style="font-size: 1rem;"></span><span style="font-size: 1rem;">&nbsp;</span><a href="happenings.html" class="text-primary" style="font-size: 1rem;">View Upcoming Events!</a></p></marquee>
+            <div class="news-scroll">
+  <div class="news-scroll-track">
+    <div id="home_news_ticker" class="mbr-text mbr-fonts-style mb-0 display-7"></div>
+    <div id="home_news_ticker_clone" class="mbr-text mbr-fonts-style mb-0 display-7" aria-hidden="true"></div>
+  </div>
+</div>    
             </div>
         </div>
     </div>
