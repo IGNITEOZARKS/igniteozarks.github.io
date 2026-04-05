@@ -1,114 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IGNITE CHURCH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IGNITE CHURCH</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
 
-<style>
-body {
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #f4f4f4;
-    padding: 20px;
-}
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
 
-.container {
-    width: 100%;
-    max-width: 800px;
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
+        .video-box {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #000;
+        }
 
-.video-box {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    background: #000;
-}
+        .video-box iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
 
-.video-box iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+        .sub-section {
+            margin-top: 25px;
+            text-align: center;
+            padding: 20px 0 0;
+            border-top: 1px solid #eee;
+        }
 
-.sub-section {
-    margin-top: 25px;
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #eee;
-}
+        .btn-sub {
+            display: inline-block;
+            background: #ff0000;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background 0.2s ease;
+        }
 
-.btn-sub {
-    display: inline-block;
-    background: #ff0000;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-}
-
-.btn-sub:hover {
-    background: #cc0000;
-}
-</style>
+        .btn-sub:hover {
+            background: #cc0000;
+        }
+    </style>
 </head>
-
 <body>
 
 <div class="container">
+    <div class="video-box">
+        <iframe
+            src="https://www.youtube.com/embed/videoseries?list=UUFY9Qg6Q2KTAwqgVoD6ZHIRq8hoKJnbRh"
+            title="Newest Sermon"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
 
-<div class="video-box">
-    <iframe id="latestVideo"
-        src=""
-        title="Latest Sermon"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
+    <div class="sub-section">
+        <h3>Join Our Community</h3>
+        <a href="https://www.youtube.com/@IgniteChurchatLakewoood?sub_confirmation=1"
+           class="btn-sub"
+           target="_blank"
+           rel="noopener">
+           SUBSCRIBE ON YOUTUBE
+        </a>
+    </div>
 </div>
-
-<div class="sub-section">
-    <h3>Join Our Community</h3>
-
-    <a href="https://www.youtube.com/@IgniteChurchatLakewoood?sub_confirmation=1"
-       class="btn-sub"
-       target="_blank">
-       SUBSCRIBE ON YOUTUBE
-    </a>
-</div>
-
-</div>
-
-<script>
-
-const channelID = "UCFY9Qg6Q2KTAwqgVoD6ZHIRq8hoKJnbRh";
-
-fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?channel_id=${channelID}`)
-.then(response => response.json())
-.then(data => {
-
-    const latestVideoURL = data.items[0].link;
-    const videoID = latestVideoURL.split("v=")[1];
-
-    document.getElementById("latestVideo").src =
-        `https://www.youtube.com/embed/${videoID}`;
-
-})
-.catch(err => {
-    console.log("Could not load latest sermon", err);
-});
-
-</script>
 
 </body>
 </html>
