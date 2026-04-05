@@ -2,37 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IGNITE CHURCH</title>
-    
+    <title>IGNITE CHURCH - LATEST VIDEO</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
-            background-color: #f9f9f9;
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
-        .video-wrapper {
+        .container {
             width: 100%;
-            max-width: 800px;
-            margin-bottom: 20px;
+            max-width: 850px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
-        .playlist-container {
+        .video-container {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
-            background: #000;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background: #000;
         }
 
-        .playlist-container iframe {
+        .video-container iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -40,32 +41,56 @@
             height: 100%;
         }
 
-        .subscribe-panel {
+        .action-area {
+            margin-top: 25px;
             text-align: center;
-            padding: 15px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        /* Styling the manual subscribe button as a backup */
+        .sub-btn {
+            display: inline-block;
+            background-color: #ff0000;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+        }
+
+        .sub-btn:hover {
+            background-color: #cc0000;
         }
     </style>
 </head>
 <body>
 
-    <div class="video-wrapper">
-        <div class="playlist-container">
-            <iframe 
-                src="https://www.youtube.com/embed/videoseries?list=UUFY9Qg6Q2KTAwqgVoD6ZHIRq8hoKJnbRh" 
-                title="Ignite Church Latest Video" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
-        </div>
+<div class="container">
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed?listType=user_uploads&list=IgniteChurchatLakewoood" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
     </div>
 
-    <div class="subscribe-panel">
-        <h3>Join us on YouTube</h3>
+    <div class="action-area">
+        <h2 style="margin-top:0;">Never Miss a Service</h2>
+        
         <script src="https://apis.google.com/js/platform.js"></script>
         <div class="g-ytsubscribe" data-channelid="UCFY9Qg6Q2KTAwqgVoD6ZHIRq8hoKJnbRh" data-layout="full" data-count="default"></div>
+        
+        <div style="margin-top: 15px;">
+            <p>Or click below to visit our channel:</p>
+            <a href="https://www.youtube.com/@IgniteChurchatLakewoood?sub_confirmation=1" class="sub-btn" target="_blank">Subscribe on YouTube</a>
+        </div>
     </div>
+</div>
 
 </body>
 </html>
