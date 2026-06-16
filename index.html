@@ -15,7 +15,7 @@
             --bg-light: #161b26;
             --text-primary: #ffffff;
             --text-secondary: #9ca3af;
-            --accent-color: #e63946; /* Professional, grounded red */
+            --accent-color: #e63946; 
             --accent-hover: #d62828;
             --card-bg: rgba(22, 27, 38, 0.7);
             --border-color: rgba(255, 255, 255, 0.06);
@@ -39,7 +39,7 @@
         }
 
         .container {
-            max-width: 1000px; /* Tighter layout for professional feel */
+            max-width: 600px; /* Tighter for a single column of accordions to keep it clean */
             margin: 0 auto;
             padding: 2rem 1.5rem;
             width: 100%;
@@ -48,19 +48,19 @@
         /* Header / Hero */
         .hero {
             text-align: center;
-            padding: 4rem 0 3rem;
+            padding: 3rem 0 2rem;
             animation: fadeIn 1s ease-out;
         }
 
         .logo-image {
-            max-height: 110px;
+            max-height: 100px;
             width: auto;
-            margin: 0 auto 2rem;
+            margin: 0 auto 1.5rem;
             display: block;
         }
 
         .title {
-            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-size: clamp(2rem, 6vw, 3.5rem);
             font-weight: 800;
             color: var(--text-primary);
             margin-bottom: 0.25rem;
@@ -70,51 +70,104 @@
         
         .title-small {
             display: block;
-            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
             font-weight: 400;
             color: var(--text-secondary);
             margin-top: 0.25rem;
         }
 
         .welcome-text {
-            font-size: clamp(1.25rem, 5vw, 1.75rem);
+            font-size: clamp(1.1rem, 4vw, 1.4rem);
             color: var(--accent-color);
             font-weight: 700;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
             letter-spacing: 0.5px;
             text-transform: uppercase;
         }
 
         .subtitle {
-            font-size: clamp(1rem, 3.5vw, 1.25rem);
+            font-size: clamp(0.95rem, 3vw, 1.1rem);
             color: var(--text-secondary);
             font-weight: 400;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             margin-top: 0.5rem;
         }
 
-        /* Social / Contact */
+        /* Accordions */
+        .accordion-group {
+            animation: fadeIn 1s ease-out 0.2s both;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .accordion {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .accordion:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .accordion summary {
+            padding: 1.25rem 1.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .accordion summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        .accordion summary .summary-title {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .accordion summary .summary-title i {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        .accordion summary .chevron {
+            transition: transform 0.3s ease;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .accordion[open] summary .chevron {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            padding: 0 1.5rem 1.5rem;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Contact Actions */
         .contact-actions {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
-            margin-bottom: 4rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .contact-row-top {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        @media (min-width: 640px) {
-            .contact-row-top {
-                flex-direction: row;
-            }
+            gap: 0.75rem;
         }
 
         .btn {
@@ -122,7 +175,7 @@
             align-items: center;
             justify-content: center;
             gap: 0.75rem;
-            padding: 1rem 1.5rem;
+            padding: 0.85rem 1.25rem;
             border-radius: 12px;
             text-decoration: none;
             font-weight: 500;
@@ -134,13 +187,10 @@
         .btn-primary {
             background-color: var(--accent-color);
             color: white;
-            box-shadow: 0 4px 14px rgba(230, 57, 70, 0.2);
         }
 
         .btn-primary:hover {
             background-color: var(--accent-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(230, 57, 70, 0.3);
         }
 
         .btn-secondary {
@@ -151,63 +201,20 @@
 
         .btn-secondary:hover {
             background-color: rgba(255, 255, 255, 0.08);
-            transform: translateY(-2px);
             border-color: rgba(255, 255, 255, 0.15);
         }
 
-        /* Info Grid */
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            animation: fadeIn 1s ease-out 0.2s both;
-        }
-
-        @media (min-width: 768px) {
-            .info-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            color: var(--text-primary);
-            font-weight: 700;
-        }
-        
-        .card h3 i {
-            color: var(--accent-color);
-            font-size: 1.3rem;
-        }
-
+        /* Schedule Lists */
         .schedule-list {
             list-style: none;
         }
 
         .schedule-list li {
-            padding: 1rem 0;
+            padding: 0.85rem 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.03);
             display: flex;
             flex-direction: column;
-            gap: 0.4rem;
+            gap: 0.25rem;
         }
 
         @media (min-width: 480px) {
@@ -231,11 +238,11 @@
 
         .event-time {
             color: var(--text-secondary);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 500;
             background: rgba(255, 255, 255, 0.03);
-            padding: 0.4rem 0.8rem;
-            border-radius: 8px;
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
             border: 1px solid rgba(255, 255, 255, 0.05);
             display: inline-block;
         }
@@ -243,9 +250,9 @@
         footer {
             margin-top: auto;
             text-align: center;
-            padding: 3rem 1.5rem 2rem;
+            padding: 2rem 1.5rem;
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         /* Animations */
@@ -262,62 +269,78 @@
             <h1 class="title">IGNITE Church<span class="title-small">at Lakewood</span></h1>
             <h2 class="welcome-text">Welcome Home!</h2>
             <p class="subtitle">Our new website is coming soon.</p>
-            
-            <div class="contact-actions">
-                <div class="contact-row-top">
-                    <a href="https://www.facebook.com/ignitestonecounty/" target="_blank" class="btn btn-primary">
-                        <i class="fa-brands fa-facebook-f"></i> Follow on Facebook
-                    </a>
-                    <a href="mailto:info@ignitetheozark.com" class="btn btn-secondary">
-                        <i class="fa-solid fa-envelope"></i> Email Us
-                    </a>
-                </div>
-                <a href="https://maps.google.com/?q=19585+Hwy+413,+Branson+West,+MO,+65737" target="_blank" class="btn btn-secondary address-btn">
-                    <i class="fa-solid fa-location-dot"></i> 19585 Hwy 413, Branson West, MO 65737
-                </a>
-            </div>
         </header>
 
-        <main class="info-grid">
-            <div class="card">
-                <h3><i class="fa-regular fa-calendar-check"></i> Sunday Services</h3>
-                <ul class="schedule-list">
-                    <li>
-                        <span class="event-name">IGNITESundays</span>
-                        <span class="event-time">9:30 AM</span>
-                    </li>
-                    <li>
-                        <span class="event-name">IGNITEKids</span>
-                        <span class="event-time">9:30 AM</span>
-                    </li>
-                    <li>
-                        <span class="event-name">IGNITEYoungAdults</span>
-                        <span class="event-time">5:30 PM</span>
-                    </li>
-                    <li>
-                        <span class="event-name">IGNITEYouth</span>
-                        <span class="event-time">6:00 PM - 8:00 PM</span>
-                    </li>
-                </ul>
-            </div>
+        <main class="accordion-group">
+            <details class="accordion" open>
+                <summary>
+                    <div class="summary-title"><i class="fa-solid fa-address-book"></i> Contact Us</div>
+                    <i class="fa-solid fa-chevron-down chevron"></i>
+                </summary>
+                <div class="accordion-content">
+                    <div class="contact-actions">
+                        <a href="https://www.facebook.com/ignitestonecounty/" target="_blank" class="btn btn-primary">
+                            <i class="fa-brands fa-facebook-f"></i> Follow on Facebook
+                        </a>
+                        <a href="mailto:info@ignitetheozark.com" class="btn btn-secondary">
+                            <i class="fa-solid fa-envelope"></i> Email Us
+                        </a>
+                        <a href="https://maps.google.com/?q=19585+Hwy+413,+Branson+West,+MO,+65737" target="_blank" class="btn btn-secondary">
+                            <i class="fa-solid fa-location-dot"></i> 19585 Hwy 413, Branson West, MO 65737
+                        </a>
+                    </div>
+                </div>
+            </details>
 
-            <div class="card">
-                <h3><i class="fa-solid fa-hands-holding-circle"></i> Weekly & Monthly</h3>
-                <ul class="schedule-list">
-                    <li>
-                        <span class="event-name">Monday Prayer Service</span>
-                        <span class="event-time">Mondays @ 7:00 PM</span>
-                    </li>
-                    <li>
-                        <span class="event-name">Food Pantry</span>
-                        <span class="event-time">Tuesdays 4:00 PM - 6:00 PM</span>
-                    </li>
-                    <li>
-                        <span class="event-name">Family Diaper Bank</span>
-                        <span class="event-time">3rd Monday Monthly</span>
-                    </li>
-                </ul>
-            </div>
+            <details class="accordion">
+                <summary>
+                    <div class="summary-title"><i class="fa-regular fa-calendar-check"></i> Sunday Services</div>
+                    <i class="fa-solid fa-chevron-down chevron"></i>
+                </summary>
+                <div class="accordion-content">
+                    <ul class="schedule-list">
+                        <li>
+                            <span class="event-name">IGNITESundays</span>
+                            <span class="event-time">9:30 AM</span>
+                        </li>
+                        <li>
+                            <span class="event-name">IGNITEKids</span>
+                            <span class="event-time">9:30 AM</span>
+                        </li>
+                        <li>
+                            <span class="event-name">IGNITEYoungAdults</span>
+                            <span class="event-time">5:30 PM</span>
+                        </li>
+                        <li>
+                            <span class="event-name">IGNITEYouth</span>
+                            <span class="event-time">6:00 PM - 8:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="accordion">
+                <summary>
+                    <div class="summary-title"><i class="fa-solid fa-hands-holding-circle"></i> Weekly & Monthly</div>
+                    <i class="fa-solid fa-chevron-down chevron"></i>
+                </summary>
+                <div class="accordion-content">
+                    <ul class="schedule-list">
+                        <li>
+                            <span class="event-name">Monday Prayer Service</span>
+                            <span class="event-time">Mondays @ 7:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="event-name">Food Pantry</span>
+                            <span class="event-time">Tuesdays 4:00 PM - 6:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="event-name">Family Diaper Bank</span>
+                            <span class="event-time">3rd Monday Monthly</span>
+                        </li>
+                    </ul>
+                </div>
+            </details>
         </main>
     </div>
 

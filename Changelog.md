@@ -22,3 +22,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refined the landing page layout for a cleaner, more professional aesthetic.
 - Removed floating orb animations in favor of a subtle, elegant dark theme.
 - Improved mobile responsiveness with dynamic font scaling (`clamp()`) and better button stacking on small screens.
+- Reorganized the main content into three modern, collapsible accordion sections to reduce visual clutter.
