@@ -19,3 +19,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Replaced the placeholder icon with the official IGNITE Church at Lakewood logo.
 - Updated the primary heading to prominently feature "IGNITE Church at Lakewood".
+- Refined the landing page layout for a cleaner, more professional aesthetic.
+- Removed floating orb animations in favor of a subtle, elegant dark theme.
+- Improved mobile responsiveness with dynamic font scaling (`clamp()`) and better button stacking on small screens.
