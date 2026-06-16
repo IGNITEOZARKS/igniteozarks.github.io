@@ -25,3 +25,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Reorganized the main content into three modern, collapsible accordion sections to reduce visual clutter.
 - Updated the background image to feature a majestic, translucent cross embossed into a beautiful sunny Ozark landscape.
 - Redesigned the layout: transitioned to a split-screen desktop view and adjusted mobile spacing to ensure the embossed cross in the center background is clearly visible and not obscured by content.
+- Adjusted the background image alignment to ensure the cross is not cut off at the top on desktop screens.
