@@ -23,4 +23,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed floating orb animations in favor of a subtle, elegant dark theme.
 - Improved mobile responsiveness with dynamic font scaling (`clamp()`) and better button stacking on small screens.
 - Reorganized the main content into three modern, collapsible accordion sections to reduce visual clutter.
-- Added a majestic, photorealistic background image of an Ozarks chapel in the sunshine.
+- Updated the background image to feature a church steeple with a cross and the rolling hills of the Ozarks on a sunny day.
