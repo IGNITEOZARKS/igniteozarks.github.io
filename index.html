@@ -58,12 +58,22 @@
             margin-top: 5vh;
         }
 
-        .logo-image {
-            max-height: 120px;
+        .top-left-logo {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            max-height: 70px;
             width: auto;
-            margin: 0 auto 1.5rem;
-            display: block;
+            z-index: 100;
             filter: drop-shadow(0 0 15px rgba(0,0,0,0.6));
+        }
+
+        @media (min-width: 992px) {
+            .top-left-logo {
+                top: 2.5rem;
+                left: 2.5rem;
+                max-height: 90px;
+            }
         }
 
         .title {
@@ -291,9 +301,6 @@
                 text-align: left;
                 margin-top: 0;
             }
-            .logo-image {
-                margin: 0 0 1.5rem 0;
-            }
             .accordion-group {
                 flex: 1;
                 max-width: 500px;
@@ -310,9 +317,9 @@
     </style>
 </head>
 <body>
+    <img src="assets/images/ignitelakewood-white-121x71.png" alt="IGNITE Church at Lakewood Logo" class="top-left-logo">
     <div class="container">
         <header class="hero">
-            <img src="assets/images/ignitelakewood-white-121x71.png" alt="IGNITE Church at Lakewood Logo" class="logo-image">
             <h1 class="title">IGNITE Church<span class="title-small">at Lakewood</span></h1>
             <h2 class="welcome-text">Welcome Home!</h2>
             <p class="subtitle">Our new website is coming soon.</p>
