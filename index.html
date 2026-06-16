@@ -371,7 +371,7 @@
         </header>
 
         <main class="accordion-group">
-            <details class="accordion" open>
+            <details class="accordion" name="church-info" open>
                 <summary>
                     <div class="summary-title"><i class="fa-solid fa-address-book"></i> Contact Us</div>
                     <i class="fa-solid fa-chevron-down chevron"></i>
@@ -392,7 +392,7 @@
                 </div>
             </details>
 
-            <details class="accordion">
+            <details class="accordion" name="church-info">
                 <summary>
                     <div class="summary-title"><i class="fa-regular fa-calendar-check"></i> Sunday Services</div>
                     <i class="fa-solid fa-chevron-down chevron"></i>
@@ -447,6 +447,22 @@
     <footer>
         <p>&copy; 2026 IGNITE Church at Lakewood. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Ensure only one accordion is open at a time
+        const accordions = document.querySelectorAll('details.accordion');
+        accordions.forEach(accordion => {
+            accordion.addEventListener('toggle', () => {
+                if (accordion.open) {
+                    accordions.forEach(otherAccordion => {
+                        if (otherAccordion !== accordion) {
+                            otherAccordion.open = false;
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
