@@ -28,3 +28,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adjusted the background image alignment to ensure the cross is not cut off at the top on desktop screens.
 - Moved the logo to permanently float in the upper-left corner across all device sizes for a stronger brand presence.
 - Added a subtle, continuous pulse animation to the "Our new website is coming soon." text to draw attention.
+- Redesigned the "WELCOME HOME!" text into a vibrant, glowing badge to make it pop prominently against the background.
