@@ -31,3 +31,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Redesigned the "WELCOME HOME!" text into a vibrant, glowing badge to make it pop prominently against the background.
 - Refined the contact action buttons into sleek, professional, compact pill shapes that wrap fluidly.
 - Implemented exclusive accordion logic so that expanding one section automatically collapses the others, maintaining a clean layout.
+- Added intelligent fallback logic to the accordions so that "Contact Us" automatically expands if a user attempts to collapse all sections, ensuring critical info is always visible.

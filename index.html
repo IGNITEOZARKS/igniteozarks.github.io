@@ -449,9 +449,11 @@
     </footer>
 
     <script>
-        // Ensure only one accordion is open at a time
         const accordions = document.querySelectorAll('details.accordion');
+        const contactUsAccordion = accordions[0];
+
         accordions.forEach(accordion => {
+            // Ensure only one accordion is open at a time
             accordion.addEventListener('toggle', () => {
                 if (accordion.open) {
                     accordions.forEach(otherAccordion => {
@@ -459,6 +461,16 @@
                             otherAccordion.open = false;
                         }
                     });
+                }
+            });
+
+            // If user tries to close the active section, fallback to Contact Us
+            accordion.querySelector('summary').addEventListener('click', (e) => {
+                if (accordion.open) {
+                    e.preventDefault(); // Prevent closing
+                    if (accordion !== contactUsAccordion) {
+                        contactUsAccordion.open = true; // Open Contact Us instead
+                    }
                 }
             });
         });
