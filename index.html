@@ -461,6 +461,14 @@
                             otherAccordion.open = false;
                         }
                     });
+
+                    // On mobile, smoothly scroll to the expanded section so it's easy to read
+                    setTimeout(() => {
+                        if (window.innerWidth <= 991) {
+                            const offsetTop = accordion.getBoundingClientRect().top + window.scrollY - 20;
+                            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                        }
+                    }, 150); // slight delay ensures the DOM has completely reflowed
                 }
             });
 
