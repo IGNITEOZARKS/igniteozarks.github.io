@@ -33,4 +33,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added intelligent fallback logic to the accordions so that "Contact Us" automatically expands if a user attempts to collapse all sections, ensuring critical info is always visible.
 - Added smooth auto-scrolling on mobile devices so that when a section is tapped to expand, the page smoothly scrolls to bring it into full view.
 - Updated the Family Diaper Bank schedule to accurately display the time block: "5:00 PM - 7:00 PM".
-- Replaced the embossed cross background with a highly realistic, AI-cleaned architectural photo of the actual IGNITE Church building, removing all parked vehicles, people, and equipment for a pristine look.
+- Replaced the embossed cross background with a highly realistic, AI-cleaned architectural photo of the actual IGNITE Church building, removing all parked vehicles, people, equipment, and power lines from the sky for a pristine look.
