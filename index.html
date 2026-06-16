@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta name="description" content="IGNITE Church - Our new website is coming soon. Connect with us for weekly service times and updates.">
+    <meta name="description"
+        content="IGNITE Church - Our new website is coming soon. Connect with us for weekly service times and updates.">
     <style>
         :root {
             --bg-dark: #0b0e14;
             --bg-light: #161b26;
             --text-primary: #ffffff;
             --text-secondary: #9ca3af;
-            --accent-color: #e63946; 
+            --accent-color: #e63946;
             --accent-hover: #d62828;
             --card-bg: rgba(22, 27, 38, 0.6);
             --border-color: rgba(255, 255, 255, 0.08);
@@ -65,7 +67,7 @@
             max-height: 70px;
             width: auto;
             z-index: 100;
-            filter: drop-shadow(0 0 15px rgba(0,0,0,0.6));
+            filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.6));
         }
 
         @media (min-width: 992px) {
@@ -83,16 +85,16 @@
             margin-bottom: 0.25rem;
             line-height: 1.1;
             letter-spacing: -1px;
-            text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
         }
-        
+
         .title-small {
             display: block;
             font-size: clamp(1.2rem, 3vw, 1.8rem);
             font-weight: 400;
             color: var(--text-secondary);
             margin-top: 0.25rem;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .welcome-text {
@@ -116,7 +118,7 @@
             color: var(--text-secondary);
             font-weight: 400;
             margin-bottom: 2rem;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             animation: pulseText 2.5s infinite ease-in-out;
         }
 
@@ -139,12 +141,12 @@
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         .accordion:hover {
             border-color: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
         }
 
         .accordion summary {
@@ -163,13 +165,13 @@
         .accordion summary::-webkit-details-marker {
             display: none;
         }
-        
+
         .accordion summary .summary-title {
             display: flex;
             align-items: center;
             gap: 0.75rem;
         }
-        
+
         .accordion summary .summary-title i {
             color: var(--accent-color);
             font-size: 1.1rem;
@@ -191,8 +193,15 @@
         }
 
         @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Contact Actions */
@@ -286,19 +295,38 @@
             padding: 2rem 1.5rem;
             color: var(--text-secondary);
             font-size: 0.85rem;
-            text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
         }
 
         /* Animations */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes pulseText {
-            0% { opacity: 0.7; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.05); color: #ffffff; }
-            100% { opacity: 0.7; transform: scale(1); }
+            0% {
+                opacity: 0.7;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+                color: #ffffff;
+            }
+
+            100% {
+                opacity: 0.7;
+                transform: scale(1);
+            }
         }
 
         /* Desktop Split Layout to Expose Center Background */
@@ -309,33 +337,37 @@
                 justify-content: space-between;
                 gap: 5rem;
             }
+
             .hero {
                 flex: 1;
                 text-align: left;
                 margin-top: 0;
             }
+
             .accordion-group {
                 flex: 1;
                 max-width: 500px;
                 margin: 0;
             }
         }
-        
+
         /* Mobile Layout */
         @media (max-width: 991px) {
             .hero {
-                margin-top: 15vh; /* Pushes content down so the top center cross is visible */
+                margin-top: 15vh;
+                /* Pushes content down so the top center cross is visible */
             }
         }
     </style>
 </head>
+
 <body>
     <img src="assets/images/ignitelakewood-white-121x71.png" alt="IGNITE Church at Lakewood Logo" class="top-left-logo">
     <div class="container">
         <header class="hero">
             <h1 class="title">IGNITE Church<span class="title-small">at Lakewood</span></h1>
             <h2 class="welcome-text">Welcome Home!</h2>
-            <p class="subtitle">Our new website is coming soon.</p>
+            <p class="subtitle">Our new website is coming soon!</p>
         </header>
 
         <main class="accordion-group">
@@ -352,7 +384,8 @@
                         <a href="mailto:info@ignitetheozark.com" class="btn btn-secondary">
                             <i class="fa-solid fa-envelope"></i> Email Us
                         </a>
-                        <a href="https://maps.google.com/?q=19585+Hwy+413,+Branson+West,+MO,+65737" target="_blank" class="btn btn-secondary">
+                        <a href="https://maps.google.com/?q=19585+Hwy+413,+Branson+West,+MO,+65737" target="_blank"
+                            class="btn btn-secondary">
                             <i class="fa-solid fa-location-dot"></i> 19585 Hwy 413, Branson West, MO 65737
                         </a>
                     </div>
@@ -415,4 +448,5 @@
         <p>&copy; 2026 IGNITE Church at Lakewood. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
