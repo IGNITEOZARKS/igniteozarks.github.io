@@ -23,9 +23,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed floating orb animations in favor of a subtle, elegant dark theme.
 - Improved mobile responsiveness with dynamic font scaling (`clamp()`) and better button stacking on small screens.
 - Reorganized the main content into three modern, collapsible accordion sections to reduce visual clutter.
-- Updated the background image to feature a majestic, translucent cross embossed into a beautiful sunny Ozark landscape.
-- Redesigned the layout: transitioned to a split-screen desktop view and adjusted mobile spacing to ensure the embossed cross in the center background is clearly visible and not obscured by content.
-- Adjusted the background image alignment to ensure the cross is not cut off at the top on desktop screens.
+- Redesigned the layout: transitioned to a split-screen desktop view and adjusted mobile spacing to ensure the center background is clearly visible and not obscured by content.
+- Adjusted the background image alignment to ensure it perfectly frames the background architecture without cutting off the top on desktop screens.
 - Moved the logo to permanently float in the upper-left corner across all device sizes for a stronger brand presence.
 - Added a subtle, continuous pulse animation to the "Our new website is coming soon." text to draw attention.
 - Redesigned the "WELCOME HOME!" text into a vibrant, glowing badge to make it pop prominently against the background.
@@ -34,3 +33,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added intelligent fallback logic to the accordions so that "Contact Us" automatically expands if a user attempts to collapse all sections, ensuring critical info is always visible.
 - Added smooth auto-scrolling on mobile devices so that when a section is tapped to expand, the page smoothly scrolls to bring it into full view.
 - Updated the Family Diaper Bank schedule to accurately display the time block: "5:00 PM - 7:00 PM".
+- Replaced the embossed cross background with a highly realistic, AI-cleaned architectural photo of the actual IGNITE Church building, removing all parked vehicles, people, and equipment for a pristine look.
