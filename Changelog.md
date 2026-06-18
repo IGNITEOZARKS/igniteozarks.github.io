@@ -8,6 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased] - 2026-06-17
 
 ### Changed
+- Cropped the church background image to remove excess sky, making the building more prominent.
+- Adjusted mobile background positioning (`center top`) and moved the hero section higher (`margin-top: 5vh`) so the church building is clearly visible above the accordion content on phones.
+- Added desktop background positioning (`center 25%`) to better frame the church building on larger screens.
+
+## [Unreleased] - 2026-06-17
+
+### Changed
 - Shortened event time formats for consistency: Food Pantry now shows "4-6:00 PM", Family Diaper Bank shows "5-7:00 PM", and IGNITEYoungAdults shows "6-8:00 PM".
 
 ## [Unreleased] - 2026-06-17
