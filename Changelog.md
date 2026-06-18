@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] - 2026-06-17
+
+### Changed
+- Moved IGNITEYoungAdults from the Sunday schedule to the Events section, now listed as "1st & 2nd Wednesdays Monthly, 6:00 PM - 8:00 PM".
+- Updated IGNITEYouth Sunday time from "6:00 PM - 8:00 PM" to "5:30PM - 8:00 PM".
+
 ## [Unreleased] - 2026-06-16
 
 ### Added
