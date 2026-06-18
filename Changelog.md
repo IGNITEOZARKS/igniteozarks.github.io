@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased] - 2026-06-17
 
 ### Changed
+- Shortened event time formats for consistency: Food Pantry now shows "4-6:00 PM", Family Diaper Bank shows "5-7:00 PM", and IGNITEYoungAdults shows "6-8:00 PM".
+
+## [Unreleased] - 2026-06-17
+
+### Changed
 - Moved IGNITEYoungAdults from the Sunday schedule to the Events section, now listed as "1st & 2nd Wednesdays Monthly, 6:00 PM - 8:00 PM".
 - Updated IGNITEYouth Sunday time from "6:00 PM - 8:00 PM" to "5:30PM - 8:00 PM".
 
