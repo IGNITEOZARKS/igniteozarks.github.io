@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] - 2026-06-18
+
+### Added
+- Added a link to the Church YouTube channel (youtube.com/@IgniteChurchatLakewoood) so visitors can catch up on latest messages.
+
+### Changed
+- Redesigned Contact Us buttons for a more polished, cohesive look: Facebook and YouTube now sit side-by-side with their recognizable brand colors (Facebook blue, YouTube red), while Email and Address use a subtle glassmorphic style with accent icons.
+- Switched button shape from pill to rounded-rectangle (12px radius) for a modern feel.
+- Added smooth hover lift animation and drop-shadow effect to all contact buttons.
+
 ## [Unreleased] - 2026-06-17
 
 ### Changed
