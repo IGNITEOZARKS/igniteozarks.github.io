@@ -122,6 +122,41 @@
             animation: pulseText 2.5s infinite ease-in-out;
         }
 
+        /* Give Button */
+        .btn-give {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            padding: 0.85rem 2rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ffffff;
+            background: linear-gradient(135deg, var(--accent-color), #ff5a5f);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 8px 28px rgba(230, 57, 70, 0.45);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-give:hover {
+            transform: translateY(-3px) scale(1.04);
+            box-shadow: 0 12px 36px rgba(230, 57, 70, 0.6);
+            background: linear-gradient(135deg, #ff2a3a, #ff6b70);
+        }
+
+        .btn-give:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        .btn-give i {
+            font-size: 1.15rem;
+        }
+
         /* Accordions */
         .accordion-group {
             animation: fadeIn 1s ease-out 0.2s both;
@@ -405,6 +440,9 @@
             <h1 class="title">IGNITE Church<span class="title-small">at Lakewood</span></h1>
             <h2 class="welcome-text">Welcome Home!</h2>
             <p class="subtitle">Our new website is coming soon!</p>
+            <a href="https://ignitenow.breezechms.com/give/online" target="_blank" rel="noopener noreferrer" class="btn-give" id="give-button">
+                <i class="fa-solid fa-heart"></i> Give
+            </a>
         </header>
 
         <main class="accordion-group">

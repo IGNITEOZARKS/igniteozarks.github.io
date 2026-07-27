@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] - 2026-07-27
+
+### Added
+- Added a prominent "Give" button in the hero section linking to the Breeze online giving page (https://ignitenow.breezechms.com/give/online).
+- Button features a heart icon, the site's red accent gradient, pill shape, glowing box-shadow, and smooth hover/press animations to match the existing design language.
+
 ## [Unreleased] - 2026-06-18
 
 ### Added
